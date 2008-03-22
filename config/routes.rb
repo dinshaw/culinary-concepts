@@ -1,6 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :roles
 
+  map.resources :roles
+
 	map.resources :users, :member => { :suspend   => :put,
                                      :unsuspend => :put,
                                      :purge     => :delete }
