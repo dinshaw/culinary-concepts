@@ -15,9 +15,7 @@ ActionController::Routing::Routes.draw do |map|
   map.reset_password '/reset_password/:password_reset_code', :controller => 'users', :action => 'reset_password'
   map.change_password '/change_password', :controller => 'users', :action => 'change_password'
   
-  map.resource :session
-  map.resources :photos
-  
+  map.resource :session  
   map.root :controller => "public"
 
   map.connect ':controller/:action/:id'
