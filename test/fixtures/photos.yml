@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  title: MyString
+  caption: MyString
+  uploaded_data: 
+  parent_id: 1
+
+two:
+  title: MyString
+  caption: MyString
+  uploaded_data: 
+  parent_id: 1

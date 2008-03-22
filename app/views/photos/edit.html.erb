@@ -1,0 +1,32 @@
+<h1>Editing photo</h1>
+
+<%= error_messages_for :photo %>
+
+<% form_for(@photo) do |f| %>
+  <p>
+    <b>Title</b><br />
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <b>Caption</b><br />
+    <%= f.text_field :caption %>
+  </p>
+
+  <p>
+    <b>Uploaded data</b><br />
+    <%= f.text_field :uploaded_data %>
+  </p>
+
+  <p>
+    <b>Parent</b><br />
+    <%= f.text_field :parent_id %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @photo %> |
+<%= link_to 'Back', photos_path %>

@@ -1,0 +1,23 @@
+<p>
+  <b>Title:</b>
+  <%=h @photo.title %>
+</p>
+
+<p>
+  <b>Caption:</b>
+  <%=h @photo.caption %>
+</p>
+
+<p>
+  <b>Uploaded data:</b>
+  <%=h @photo.uploaded_data %>
+</p>
+
+<p>
+  <b>Parent:</b>
+  <%=h @photo.parent_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_photo_path(@photo) %> |
+<%= link_to 'Back', photos_path %>
