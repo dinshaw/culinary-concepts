@@ -1,4 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :attachments
+
+  map.resources :attachments
+
   map.resources :roles
 
   map.resources :roles
