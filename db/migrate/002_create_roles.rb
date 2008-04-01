@@ -11,6 +11,10 @@ class CreateRoles < ActiveRecord::Migration
     end
     add_index "roles_users", "role_id"
     add_index "roles_users", "user_id"
+    
+    # adminize first user
+    execute "INSERT into roles (name) values ('name');"
+    execute "INSERT into roles_users (user_id, role_id) values ('1','1');"
   end
 
   def self.down

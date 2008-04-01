@@ -5,17 +5,25 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-	<title>DDD: <%= controller.action_name %></title>
+	<title>Culinary Concepts</title>
 	<%= stylesheet_link_tag 'layout' %>
 	<%= stylesheet_link_tag 'main' %>
 	<%= stylesheet_link_tag 'scaffold' %>
 </head>
 <body>
 	<div id="canvas">
-			
+
 		<div id="nav_main">
 			<ul>
-				<li><%= link_to "Home", "", :class => ("curr" if @controller.controller_name =~ /home/)  %></li>
+				<li><%= link_to "Home", root_path, :class => ("curr" if @controller.controller_name =~ /home/)  %></li>
+				<li><%= link_to "About Us", about_us_path, :class => ("curr" if @controller.controller_name =~ /home/)  %></li>
+				<li><%= link_to "Jean-Georges", jean_georges_path, :class => ("curr" if @controller.controller_name =~ /home/)  %></li>
+				<li><%= link_to "Concepts", "", :class => ("curr" if @controller.controller_name =~ /home/)  %></li>
+				<li><%= link_to "Press", "", :class => ("curr" if @controller.controller_name =~ /home/)  %></li>
+				<li><%= link_to "Locations", "", :class => ("curr" if @controller.controller_name =~ /home/)  %></li>
+				<li><%= link_to "Contact Us", contact_us_path, :class => ("curr" if @controller.controller_name =~ /home/)  %></li>
+				<li><%= link_to "Careers", careers_path, :class => ("curr" if @controller.controller_name =~ /home/)  %></li>
+
 				<% if logged_in? %>
 				<li><%= link_to "Signup", signup_path, :class => ("curr" if @controller.controller_name =~ /signup/)  %></li>
 				<li><%= link_to "Roles", roles_path, :class => ("curr" if @controller.controller_name =~ /role/)  %></li>
@@ -23,29 +31,49 @@
 			</ul>	
 		</div> <!-- nav_main -->
 
-		<div id="masthead">
-			<p>Masthead</p>
-		</div> <!-- masthead -->
-
-		<div id="sidebar">
-			<p>Sidebar</p>
-		</div> <!-- sidebar -->
-
-		<div id="main_content">
-			Main Content
-			<p id="flash"><%= flash[:notice] -%><%= flash[:message] -%></p>
-
-
-			<%= yield  %>
-
-		</div> <!-- main_content -->
-
 		<br class="clear" />
 
+		<div id="sidebar">
+			<object type="application/x-shockwave-flash" data="/swf/slideShow3.swf" width="236" height="666">
+				<param name="allowScriptAccess" value="sameDomain" />
+				<param name="allowFullScreen" value="false" />
+				<param name="movie" value="/swf/slideShow3.swf" />
+				<param name="flashvars" value="myXML=/xml/homeSlide.xml" />
+				<param name="quality" value="high" />
+				<param name="bgcolor" value="#000000" />
+				<img src="noflash.gif" width="200" height="100" alt="" />
+			</object>
+		</div> <!-- sidebar -->
+
+		<% if url_for == root_path %>
+			<div id="home">
+				<h1><span></span>Culinary Concepts :: Jean-Georges  - home</h1>
+				
+				<div id="tag">Local in content. Global in reach.</div>
+				
+				<ul id="nav_home_concepts">
+					<li><%= ["Jean Georges", "Resort", "Spice Market", "Bistro", "Kitchen", "Modern American", "Steakhouse"].collect {|l| link_to l,l}.join("</li>
+					<li>") %></li>
+				</ul>
+			</div>
+		<% else %>
+			<div id="masthead">
+				<h1><span></span>Culinary Concepts :: Jean-Georges</h1>
+			</div> <!-- masthead -->
+
+			<div id="main_content">
+				<div id="inner_content">
+					<p id="flash"><%= flash[:notice] -%><%= flash[:message] -%></p>
+					<%= yield  %>
+				</div>
+			</div> <!-- main_content -->
+		<% end %>
+
+
 		<div id="footer">
-			<p id="site_info">All content &copy; copyright <%= Date.today.year %> Dinshaw Design &amp; Development. All rights reserved. <%= logged_in? ? link_to('logout', logout_path) : link_to('login', login_path)%> | <%= render :partial => 'shared/credit_links' %></p>
+			<p id="site_info">&copy; <%= Date.today.year %> Culinary Concepts by Jean-Georges <%= ["Jean Georges", "Resort", "Spice Market", "Bistro", "Kitchen", "Modern American", "Steakhouse"].collect {|l| link_to l,l}.join(" &bull; ") %></p>
 		</div> <!-- footer -->
-	
+
 	</div>
 </body>
 </html>

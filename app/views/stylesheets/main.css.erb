@@ -1,5 +1,5 @@
 /*-----------------------------------------------------------------------------
-SITE_NAME DDD Template
+SITE_NAME Culinary Concepts
 
 version:   1.0
 author:    Dinshaw Gobhai
@@ -13,6 +13,7 @@ website:   http://www.dinshawdesign.com/
 
 /* Remove padding and margin */
 * {margin: 0;padding: 0;}
+
 /*Put it back on option tag*/
 option{margin:3px}
 
@@ -28,54 +29,157 @@ img {border: 0;}
 default font_size / line_height
 -----------------------------------------------------------------------------*/
 body {
-    font:100% verdana, arial, helvetica, sans-serif;
-    line-height:1.125em; /* 16×1.125=18 */
+	font:100% verdana, arial, helvetica, sans-serif;
+	line-height:1.3em; /* 16×1.125=18 */
+	background-color:<%= @bg_red %>;
+	color:<%= @off_white %>;
 }
 
 p {
-    font-size:0.875em;
+	font-size:0.7em;
 }
 
-.sidebar p {
-    font-size:0.75em;
-}
-
-#flash{
-	background-color:lime;
-	color:green;
+#nav_main li a{
+	font-size:0.9em;
+	letter-spacing:1px;
 }
 /* =Headings
 -----------------------------------------------------------------------------*/
-
+h1{
+	line-height:1.3em;
+	font-size:1em;
+}
 
 
 /* =Links
 -----------------------------------------------------------------------------*/
 
+a:link{color:<%= @off_white %>}
+a:visited{}
+a:hover{}
+a:active{}
+
+#footer a{
+	text-transform:uppercase;
+	text-decoration:none;
+}
+
+
+/* =Lists
+-----------------------------------------------------------------------------*/
+ul{
+	list-style:none;
+}
+
+li{
+	padding:2px;
+}
 
 
 
-/* =Branding
+/* =Masthead
 -----------------------------------------------------------------------------*/
 
+#masthead{
+	background-color:<%= @masthead_red %>;
+
+}
+
+#home{
+	position:relative;
+	background:<%= @masthead_red %> url(/images/map.jpg) no-repeat;
+}
+
+/* Gilder / Levin image replacement method for logo */
+#masthead h1, #home h1{
+	position:relative;
+	width:150px;
+	height:150px;
+
+	/* position h1 */
+	top:50%;
+	margin-top:-75px;
+	left:40px;
+}
+
+#tag{
+	color:<%= @off_white %>;
+	text-transform:uppercase;
+	position:relative;
+	top:50%;
+	margin-top:-45px;
+	left:210px;
+}
+
+#home ul{
+	position:relative;
+	top:70%;
+	margin-top:-45px;
+	left:40px;
+}
+
+#masthead h1 span, #home h1 span{
+	background:url(/images/culinary-concepts.gif) top left no-repeat;
+	position:absolute;
+	height:100%;
+	width:100%;
+}
 
 
 
 /* =Main Nav
 -----------------------------------------------------------------------------*/
+#nav_main ul{
+	float:left;
+}
+
+#nav_main ul li {
+	float:left;
+	padding-right:31px;
+}
+
+#nav_main ul a {
+	display:block;
+	color:<%= @off_white %>;
+	text-transform:uppercase;
+	text-decoration:none;
+}
+
+#nav_main ul a:hover, #nav_main ul a.curr{
+	color:#fff;
+	background-color:<%= @red %>;
+}
 
 
 
-
-/* =Sub Nav
+/* =Home Concept Nav
 -----------------------------------------------------------------------------*/
+
+#nav_home_concepts li {
+	float:left;
+	padding:5px 50px 5px 20px;
+}
+
+#nav_home_concepts a {
+	display:block;
+	color:<%= @salmon %>;
+	text-transform:uppercase;
+	text-decoration:none;
+}
+
+#nav_home_concepts a:hover, #nav_home_concepts a.curr{
+	color:#fff;
+	background-color:<%= @red %>;
+}
 
 
 
 
 /* =Main Content
 -----------------------------------------------------------------------------*/
-
+#main_content{
+	background-color:<%= @content_red %>;
+}
 
 
 
@@ -86,7 +190,9 @@ p {
 
 /* =Footer
 -----------------------------------------------------------------------------*/
-
+#footer{
+	padding:0;
+}
 
 
 /* =Forms
@@ -96,6 +202,7 @@ input.text{
 	border:1px solid #565656;
 	padding:1px 3px;
 }
+
 input.btn{
 	background-color:#dc8810;
 	color:#fff;
@@ -121,7 +228,10 @@ td {text-align: left;font-weight: normal;}
 
 /* =Misc 1
 -----------------------------------------------------------------------------*/
-
+#flash{
+	background-color:lime;
+	color:green;
+}
 
 
 /* =Misc 2

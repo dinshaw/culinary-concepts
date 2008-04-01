@@ -1,38 +1,51 @@
 html, body {
 	height: 100%;
+	text-align:center;
 }
 
 #canvas {
-	width:840px;
+	width:940px;
+	margin:auto;
+	text-align:left;
 	position: relative;
-	min-height: 100%;
-	height: 100%;
+	height: 750px;
 }
 
-html>body #canvas {
-	height: auto;
+#nav_main{
+
 }
 
+/* Add border to avoid margin collapse  */
+#home{
+	height:666px;
+	border:1px solid <%= @masthead_red %>;
+	border-width:1px 0;
+}
+#masthead{
+	height:214px;
+}
+
+#main_content, #masthead, #home{
+	width:704px;
+	margin-left:236px;
+}
+
+/* Add border to avoid margin collapse  */
 #main_content{
-	margin-bottom:40px;
+	height:450px;
+	border:1px solid <%= @content_red %>;
+	border-width:1px 0;
 }
 
-#main_content, #masthead{
-	float:left;
-}
-
-#main_content, #masthead{
-	width:620px;
-	margin-left:20px;
+#inner_content{
+	margin:100px 60px 60px 60px;
 }
 #sidebar{
-	width:180px;
-	float:right;
+	float:left;
+	height:666px;
+	width:236px;
 }
 
 #footer {
-	margin-left:20px;
-	position: absolute;
-	bottom: 0;
-
+	clear:both;
 }

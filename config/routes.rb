@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :pages
+
   map.resources :roles
 
   map.resources :roles
@@ -16,8 +18,13 @@ ActionController::Routing::Routes.draw do |map|
   map.change_password '/change_password', :controller => 'users', :action => 'change_password'
   
   map.resource :session  
-  map.root :controller => "public"
 
+  map.root :controller => "public"
+  map.about_us "about_us", :controller => "public", :action => "about_us"
+  map.contact_us "contact", :controller => "public", :action => "contact_us"
+  map.jean_georges "jean_georges", :controller => "public", :action => "jean_georges"
+  map.careers "careers", :controller => "public", :action => "careers"
+        
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action.:format'
   map.connect ':controller/:action/:id.:format'

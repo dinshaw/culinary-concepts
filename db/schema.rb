@@ -11,17 +11,9 @@
 
 ActiveRecord::Schema.define(:version => 3) do
 
-  create_table "photos", :force => true do |t|
+  create_table "pages", :force => true do |t|
     t.string   "title"
-    t.text     "caption"
-    t.integer  "parent_id"
-    t.integer  "position"
-    t.integer  "size"
-    t.string   "content_type"
-    t.string   "filename"
-    t.integer  "height"
-    t.integer  "width"
-    t.string   "thumbnail"
+    t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -35,8 +27,8 @@ ActiveRecord::Schema.define(:version => 3) do
     t.integer "user_id"
   end
 
-  add_index "roles_users", ["user_id"], :name => "index_roles_users_on_user_id"
   add_index "roles_users", ["role_id"], :name => "index_roles_users_on_role_id"
+  add_index "roles_users", ["user_id"], :name => "index_roles_users_on_user_id"
 
   create_table "users", :force => true do |t|
     t.string   "email"
