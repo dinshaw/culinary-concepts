@@ -2,11 +2,11 @@ class PublicController < ApplicationController
   skip_before_filter :login_required
 
   def index
-    @page = Page.find_by_title("Home") 
+    redirect_to :action => :index
   end
 
   def home
-    redirect_to :action => :index
+    @page = Page.find_by_title("Home") 
   end
   
   def about_us

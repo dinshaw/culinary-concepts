@@ -19,7 +19,7 @@ ActionController::Routing::Routes.draw do |map|
   
   map.resource :session  
 
-  map.root :controller => "public"
+  map.root :controller => "public", :action => "home"
   map.about_us "about_us", :controller => "public", :action => "about_us"
   map.contact_us "contact", :controller => "public", :action => "contact_us"
   map.jean_georges "jean_georges", :controller => "public", :action => "jean_georges"
