@@ -11,8 +11,6 @@ website:   http://www.dinshawdesign.com/
 -----------------------------------------------------------------------------*/
 
 
-/* Remove padding and margin */
-* {margin: 0;padding: 0;}
 
 /*Put it back on option tag*/
 option{margin:3px}
@@ -30,8 +28,8 @@ default font_size / line_height
 -----------------------------------------------------------------------------*/
 body {
 	font:100% verdana, arial, helvetica, sans-serif;
-	line-height:1.3em; /* 16×1.125=18 */
-	background-color:<%= @bg_red %>;
+	
+	background-color: <%= @bg_red %>;
 	color:<%= @off_white %>;
 }
 
@@ -39,10 +37,7 @@ p {
 	font-size:0.7em;
 }
 
-#nav_main li a{
-	font-size:0.825em;
-	letter-spacing:1px;
-}
+
 /* =Headings
 -----------------------------------------------------------------------------*/
 h1{
@@ -55,9 +50,9 @@ h1{
 -----------------------------------------------------------------------------*/
 
 a:link{color:<%= @off_white %>}
-a:visited{}
+/* a:visited{}
 a:hover{}
-a:active{}
+a:active{} */
 
 #footer a{
 	text-transform:uppercase;
@@ -71,18 +66,12 @@ ul{
 	list-style:none;
 }
 
-li{
-	padding:2px;
-}
-
-
 
 /* =Masthead
 -----------------------------------------------------------------------------*/
 
 #masthead{
 	background-color:<%= @masthead_red %>;
-
 }
 
 #home{
@@ -93,13 +82,19 @@ li{
 /* Gilder / Levin image replacement method for logo */
 #masthead h1, #home h1{
 	position:relative;
-	width:150px;
-	height:150px;
+	width:127px;
+	height:127px;
 
 	/* position h1 */
 	top:50%;
-	margin-top:-75px;
-	left:40px;
+	margin-top:-80px;
+}
+
+#home h1{
+	left:30px;
+}
+#masthead h1{
+	left:500px;
 }
 
 #tag{
@@ -108,7 +103,7 @@ li{
 	position:relative;
 	top:50%;
 	margin-top:-45px;
-	left:210px;
+	left:180px;
 }
 
 #home ul{
@@ -130,25 +125,29 @@ li{
 /* =Main Nav
 -----------------------------------------------------------------------------*/
 #nav_main ul{
-	float:left;
+
 }
 
 #nav_main ul li {
 	float:left;
-	padding:0 20px;
+	margin:0;
+	padding:0;
+	height:31px;
 }
 
 #nav_main ul a {
+	padding:0;margin:0;
 	display:block;
-	color:<%= @off_white %>;
+/*	color:<%= @off_white %>;
 	text-transform:uppercase;
-	text-decoration:none;
+	text-decoration:none; */
 }
 
+/*
 #nav_main ul a:hover, #nav_main ul a.curr{
 	color:#fff;
-	background-color:<%= @red %>;
 }
+*/
 
 
 
@@ -169,7 +168,6 @@ li{
 
 #nav_home_concepts a:hover, #nav_home_concepts a.curr{
 	color:#fff;
-	background-color:<%= @red %>;
 }
 
 
@@ -190,8 +188,8 @@ li{
 
 /* =Footer
 -----------------------------------------------------------------------------*/
-#footer{
-	padding:0;
+#footer p span{
+	float:right;
 }
 
 

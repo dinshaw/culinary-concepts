@@ -1,5 +1,8 @@
-html, body {
-	height: 100%;
+/* Remove padding and margin */
+* {margin: 0;padding: 0;}
+
+
+body {
 	text-align:center;
 }
 
@@ -7,29 +10,31 @@ html, body {
 	width:940px;
 	margin:auto;
 	text-align:left;
-	position: relative;
 	height: 750px;
 }
 
 #nav_main{
-	padding:25px 0 3px 0;
+	margin-top:25px;
+	height:31px;
 }
 
 /* Add border to avoid margin collapse  */
 #home{
 	height:664px;
-	border:1px solid <%= @masthead_red %>;
-	border-width:1px 0;
 }
+
 #masthead{
 	height:212px;
+}
+
+#masthead, #home{
 	border:1px solid <%= @masthead_red %>;
 	border-width:1px 0;
 }
 
 #main_content, #masthead, #home{
 	width:704px;
-	margin-left:236px;
+	float:left;
 }
 
 /* Add border to avoid margin collapse  */
@@ -48,6 +53,9 @@ html, body {
 	width:236px;
 }
 
+#main_content, #sidebar{
+	margin-bottom:10px;
+}
 #footer {
 	clear:both;
 }
