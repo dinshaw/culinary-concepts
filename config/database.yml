@@ -20,5 +20,5 @@ production:
   database: db39284_cc_prod
   username: db39284
   password: dWvPtUbW
-  host: internal-db.s39284.gridserver.com
+  host: external-db.s39284.gridserver.com
   
