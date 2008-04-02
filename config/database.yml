@@ -17,7 +17,7 @@ test:
 
 production:
   adapter: mysql
-  database: culniar_ccprod
-  username: culniar_ccprod
+  database: culinar_ccprod
+  username: culinar_ccprod
   password: ccProdWebUser08
-  host: localhost
+
