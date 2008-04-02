@@ -9,30 +9,30 @@
 	<%= stylesheet_link_tag 'layout' %>
 	<%= stylesheet_link_tag 'main' %>
 	<%= stylesheet_link_tag 'scaffold' %>
-	<%= javascript_include_tag "application", "rollover" %>
+	<%= javascript_include_tag "application", "rollover", "objectSwap" %>
 </head>
 <body>
 	<div id="canvas">
 		<div id="nav_main">
 			<ul>
-				<li><%= link_to image_tag(nav_image_path("main","home")), root_path %></li>
-				<li><%= link_to image_tag(nav_image_path("main","about_us")), about_us_path %></li>
-				<li><%= link_to image_tag(nav_image_path("main","jean_georges")), jean_georges_path %></li>
-				<li id="concepts"><%= link_to image_tag(nav_image_path("main","concepts")), ""  %>
+				<li><%= nav_image_for("main","home") %></li>
+				<li><%= nav_image_for("main","about_us") %></li>
+				<li><%= nav_image_for("main","jean_georges") %></li>
+				<li id="concepts"><%= nav_image_for("main","concepts")  %>
 					<ul id="nav_concept">
-						<li><%= link_to image_tag(nav_image_path("concepts","jean_georges")), ""  %></li>
-						<li><%= link_to image_tag(nav_image_path("concepts","resort")), ""  %></li>
-						<li><%= link_to image_tag(nav_image_path("concepts","spicemarket")), ""  %></li>
-						<li><%= link_to image_tag(nav_image_path("concepts","bistro")), ""  %></li>
-						<li><%= link_to image_tag(nav_image_path("concepts","kitchen")), ""  %></li>
-						<li><%= link_to image_tag(nav_image_path("concepts","modern_american")), ""  %></li>
-						<li><%= link_to image_tag(nav_image_path("concepts","steakhouse")), ""  %></li>
+						<li><%= nav_image_for("concepts","jean_georges") %></li>
+						<li><%= nav_image_for("concepts","resort") %></li>
+						<li><%= nav_image_for("concepts","spicemarket") %></li>
+						<li><%= nav_image_for("concepts","bistro") %></li>
+						<li><%= nav_image_for("concepts","kitchen") %></li>
+						<li><%= nav_image_for("concepts","modern_american") %></li>
+						<li><%= nav_image_for("concepts","steakhouse") %></li>
 					</ul>
 				</li>
-				<li><%= link_to image_tag(nav_image_path("main","press")), ""  %></li>
-				<li><%= link_to image_tag(nav_image_path("main","locations")), "" %></li>
-				<li><%= link_to image_tag(nav_image_path("main","contact_us")), contact_us_path  %></li>
-				<li><%= link_to image_tag(nav_image_path("main","careers")), careers_path %></li>
+				<li><%= nav_image_for("main","press") %></li>
+				<li><%= nav_image_for("main","locations") %></li>
+				<li><%= nav_image_for("main","contact_us")  %></li>
+				<li><%= nav_image_for("main","careers") %></li>
 			</ul>
 		</div><!-- nav_main -->
 				
@@ -43,7 +43,7 @@
 				<param name="movie" value="/swf/slideShow3.swf" />
 				<param name="flashvars" value="myXML=/xml/<%= @controller.action_name %>.xml" />
 				<param name="quality" value="high" />
-				<param name="bgcolor" value="#000000" />
+				<param name="bgcolor" value="#6f1100" />
 				<img src="noflash.gif" width="200" height="100" alt="" />
 			</object>
 		</div><!-- sidebar -->
@@ -76,7 +76,7 @@
 
 
 		<div id="footer">
-			<p id="site_info"><span id="footer_links"><%= ["Jean Georges", "Resort", "Spice Market", "Bistro", "Kitchen", "Modern American", "Steakhouse"].collect {|l| link_to l,l}.join(" &bull; ") %></span>&copy; <%= Date.today.year %> Culinary Concepts by Jean-Georges</p>
+			<p id="site_info"><span id="footer_links"><%= ["Jean Georges", "Resort", "Spice Market", "Bistro", "Kitchen", "Modern American", "Steakhouse"].collect {|l| link_to l,l}.join(" | ") %></span>&copy; <%= Date.today.year %> Culinary Concepts by Jean-Georges</p>
 		</div> <!-- footer -->
 
 	</div>
