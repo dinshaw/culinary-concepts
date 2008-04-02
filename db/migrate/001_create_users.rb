@@ -14,6 +14,8 @@ class CreateUsers < ActiveRecord::Migration
       t.column :state, :string, :null => :no, :default => 'passive'
       t.column :deleted_at, :datetime
     end
+    execute "INSERT into users (email, crypted_password, salt, activated_at, state) values ('info@dinshawdesign.com', '1dd361037e0c84a46f5f9d5f0cb5fd029c72d432', 'd8b58c297a86cc62f7a2a507c65012adc7645ad9',now(),'active');"
+    
   end
 
   def self.down

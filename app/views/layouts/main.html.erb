@@ -15,14 +15,14 @@
 	<div id="canvas">
 		<div id="nav_main">
 			<ul>
-				<li><%= link_to image_tag(nav_image_path("home")), root_path, :class => ("curr" if @controller.controller_name =~ /home/)  %></li>
-				<li><%= link_to image_tag(nav_image_path("about_us")), about_us_path, :class => ("curr" if @controller.controller_name =~ /home/)  %></li>
-				<li><%= link_to image_tag(nav_image_path("jean_georges")), jean_georges_path, :class => ("curr" if @controller.controller_name =~ /home/)  %></li>
-				<li><%= link_to image_tag(nav_image_path("concepts")), "", :class => ("curr" if @controller.controller_name =~ /home/)  %></li>
-				<li><%= link_to image_tag(nav_image_path("press")), "", :class => ("curr" if @controller.controller_name =~ /home/)  %></li>
-				<li><%= link_to image_tag(nav_image_path("locations")), "", :class => ("curr" if @controller.controller_name =~ /home/)  %></li>
-				<li><%= link_to image_tag(nav_image_path("contact_us")), contact_us_path, :class => ("curr" if @controller.controller_name =~ /home/)  %></li>
-				<li><%= link_to image_tag(nav_image_path("careers")), careers_path, :class => ("curr" if @controller.controller_name =~ /home/)  %></li>
+				<li><%= link_to image_tag(nav_image_path("home")), root_path %></li>
+				<li><%= link_to image_tag(nav_image_path("about_us")), about_us_path %></li>
+				<li><%= link_to image_tag(nav_image_path("jean_georges")), jean_georges_path %></li>
+				<li><%= link_to image_tag(nav_image_path("concepts")), ""  %></li>
+				<li><%= link_to image_tag(nav_image_path("press")), ""  %></li>
+				<li><%= link_to image_tag(nav_image_path("locations")), "" %></li>
+				<li><%= link_to image_tag(nav_image_path("contact_us")), contact_us_path  %></li>
+				<li><%= link_to image_tag(nav_image_path("careers")), careers_path %></li>
 			</ul>
 		</div><!-- nav_main -->
 				
