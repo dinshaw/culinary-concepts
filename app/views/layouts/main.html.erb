@@ -15,14 +15,24 @@
 	<div id="canvas">
 		<div id="nav_main">
 			<ul>
-				<li><%= link_to image_tag(nav_image_path("home")), root_path %></li>
-				<li><%= link_to image_tag(nav_image_path("about_us")), about_us_path %></li>
-				<li><%= link_to image_tag(nav_image_path("jean_georges")), jean_georges_path %></li>
-				<li><%= link_to image_tag(nav_image_path("concepts")), ""  %></li>
-				<li><%= link_to image_tag(nav_image_path("press")), ""  %></li>
-				<li><%= link_to image_tag(nav_image_path("locations")), "" %></li>
-				<li><%= link_to image_tag(nav_image_path("contact_us")), contact_us_path  %></li>
-				<li><%= link_to image_tag(nav_image_path("careers")), careers_path %></li>
+				<li><%= link_to image_tag(nav_image_path("main","home")), root_path %></li>
+				<li><%= link_to image_tag(nav_image_path("main","about_us")), about_us_path %></li>
+				<li><%= link_to image_tag(nav_image_path("main","jean_georges")), jean_georges_path %></li>
+				<li id="concepts"><%= link_to image_tag(nav_image_path("main","concepts")), ""  %>
+					<ul id="nav_concept">
+						<li><%= link_to image_tag(nav_image_path("concepts","jean_georges")), ""  %></li>
+						<li><%= link_to image_tag(nav_image_path("concepts","resort")), ""  %></li>
+						<li><%= link_to image_tag(nav_image_path("concepts","spicemarket")), ""  %></li>
+						<li><%= link_to image_tag(nav_image_path("concepts","bistro")), ""  %></li>
+						<li><%= link_to image_tag(nav_image_path("concepts","kitchen")), ""  %></li>
+						<li><%= link_to image_tag(nav_image_path("concepts","modern_american")), ""  %></li>
+						<li><%= link_to image_tag(nav_image_path("concepts","steakhouse")), ""  %></li>
+					</ul>
+				</li>
+				<li><%= link_to image_tag(nav_image_path("main","press")), ""  %></li>
+				<li><%= link_to image_tag(nav_image_path("main","locations")), "" %></li>
+				<li><%= link_to image_tag(nav_image_path("main","contact_us")), contact_us_path  %></li>
+				<li><%= link_to image_tag(nav_image_path("main","careers")), careers_path %></li>
 			</ul>
 		</div><!-- nav_main -->
 				

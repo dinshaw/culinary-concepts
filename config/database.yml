@@ -17,7 +17,7 @@ test:
 
 production:
   adapter: mysql
-  database: db39284_cc_prod
-  username: db39284
-  password: dWvPtUbW
-  host: internal-db.s39284.gridserver.com
+  database: culniar_ccprod
+  username: culniar_ccprod
+  password: ccProdWebUser08
+  host: localhost

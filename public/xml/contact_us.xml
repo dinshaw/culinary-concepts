@@ -1,6 +1,11 @@
 <slideshow>
 	<properties delay="3" color="ffffff" over="006699">
-		<image url="/images/homeflash/spice.jpg" text="Image1" name=""/>
-		<image url="/images/homeflash/steakhouse.jpg" text="Image2" name=""/>
+		<image url="/images/slideshow/bistro5.jpg" text="Image1" name=""/>
+		<image url="/images/slideshow/kitchen4.jpg" text="Image1" name=""/>
+		<image url="/images/slideshow/modern1.jpg" text="Image1" name=""/>
+		<image url="/images/slideshow/modern4.jpg" text="Image1" name=""/>		
+		<image url="/images/slideshow/resort3.jpg" text="Image1" name=""/>		
+		<image url="/images/slideshow/resort5.jpg" text="Image1" name=""/>				
+		<image url="/images/slideshow/steakhouse3.jpg" text="Image1" name=""/>				
 	</properties>
 </slideshow>

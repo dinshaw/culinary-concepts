@@ -36,7 +36,9 @@ p {
 	font-size:0.7em;
 }
 
-
+#canvas{
+	position:relative;
+}
 /* =Headings
 -----------------------------------------------------------------------------*/
 h1{
@@ -149,11 +151,23 @@ ul{
 }
 */
 
+#nav_main li#concepts ul#nav_concept{
+
+}
+
+#nav_main li#concepts{
+	position:relative;
+	z-index:4000;
+	width:127px;
+}
+
+#nav_main li#concepts:hover ul#nav_concept,#nav_main li#concepts.hover ul#nav_concept{
+	display:block;
+}
 
 
 /* =Home Concept Nav
 -----------------------------------------------------------------------------*/
-
 #nav_home_concepts li {
 	float:left;
 	padding:5px 50px 5px 0;
@@ -166,11 +180,23 @@ ul{
 	text-decoration:none;
 }
 
-#nav_home_concepts a:hover, #nav_home_concepts a.curr{
-	color:#fff;
+
+/* =Concept Sub Nav
+-----------------------------------------------------------------------------*/
+
+#nav_concept{
+	position:absolute;
+	display:none;
+	left:12px;
+	background-color:<%= @bg_red %>;
 }
 
-
+#nav_main #nav_concept li{
+	height:23px;
+	float:none;
+	margin:0;
+	padding:0;
+}
 
 
 /* =Main Content

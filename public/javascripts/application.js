@@ -25,7 +25,7 @@ function preparePopups() {
 		//Checkif popup is in the styles
 		if(links[i].className.indexOf("popup") != -1 ) {
 			title = links[i].getAttribute("title")			
-			
+
 			links[i].onclick = function() {	
 				return popup(this,title,this.className);
 			}
@@ -43,12 +43,27 @@ function popup(target,title,classname) {
 		w = 640
 		h = 480
 	}
-	
+
 	attributes = 'width='+w+',height='+h+',scrollbars=yes,resizable=yes'
 	window.open(target,'NextGenPopup',attributes)
 	return false
 }
 
+function startList() {
+	if (document.all&&document.getElementById) {
+		navItem = document.getElementById("concepts");
+
+		navItem.onmouseover=function() {
+			this.className+="hover";
+		}
+		node.onmouseout=function() {
+			this.className=this.className.replace("hover", "");
+		}
+
+	}
+}
+
+
+
 addLoadEvent(preparePopups);
-// don't know what this is for -= vajPlayer i think
-AC_FL_RunContent = 0;
+addLoadEvent(startList);
