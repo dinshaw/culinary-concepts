@@ -22,7 +22,10 @@ option{margin:3px}
 /* Remove border around linked images */
 img {border: 0;}
 
-
+img.right{
+	float:right;
+	margin-left:10px;
+}
 /* =Typography
 default font_size / line_height
 -----------------------------------------------------------------------------*/
@@ -32,7 +35,7 @@ body {
 	color:<%= @off_white %>;
 }
 
-p {
+p, h2, li {
 	font-size:0.7em;
 }
 
@@ -211,6 +214,16 @@ ul{
 
 /* =Secondary Content
 -----------------------------------------------------------------------------*/
+.contact_us{
+	background:url(/images/pages/contact_us.jpg) top right no-repeat;
+}
+
+.careers{
+	background:url(/images/pages/careers.jpg) top right no-repeat;
+}
+.careers #inner_content{
+	width:400px;
+}
 
 
 
