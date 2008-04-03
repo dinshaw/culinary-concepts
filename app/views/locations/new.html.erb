@@ -1,0 +1,27 @@
+<h1>New location</h1>
+
+<%= error_messages_for :location %>
+
+<% form_for(@location) do |f| %>
+  <p>
+    <b>Title</b><br />
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <b>Parent</b><br />
+    <%= f.collection_select :parent_id, Location.find(:all, :conditions => "parent_id is null"), :id, :title, :prompt => "Choose one..." %>
+  </p>
+
+
+  <p>
+    <b>Url</b><br />
+    <%= f.text_field :url %>
+  </p>
+
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', locations_path %>
