@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :concepts
+
   map.resources :pages
 
   map.resources :roles

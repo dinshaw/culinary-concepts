@@ -49,21 +49,19 @@ function popup(target,title,classname) {
 	return false
 }
 
-function startList() {
-	if (document.all&&document.getElementById) {
-		navItem = document.getElementById("concepts");
+function IEHoverPseudo() {
 
-		navItem.onmouseover=function() {
-			this.className+="hover";
+	var navItems = document.getElementById("nav_main").getElementsByTagName("li");
+	
+	for (var i=0; i<navItems.length; i++) {
+		if(navItems[i].className == "concepts") {
+			navItems[i].onmouseover=function() { this.className += " over"; }
+			navItems[i].onmouseout=function() { this.className = "concepts"; }
 		}
-		node.onmouseout=function() {
-			this.className=this.className.replace("hover", "");
-		}
-
 	}
+
 }
 
 
-
 addLoadEvent(preparePopups);
-addLoadEvent(startList);
+addLoadEvent(IEHoverPseudo);

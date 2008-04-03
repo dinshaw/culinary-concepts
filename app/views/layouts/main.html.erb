@@ -10,6 +10,7 @@
 	<%= stylesheet_link_tag 'main' %>
 	<%= stylesheet_link_tag 'scaffold' %>
 	<%= javascript_include_tag "application", "rollover" %>
+	<script type="text/javascript" src="objectSwap.js"> </script>
 </head>
 <body>
 	<div id="canvas">
@@ -18,7 +19,7 @@
 				<li><%= nav_image_for("main","home") %></li>
 				<li><%= nav_image_for("main","about_us") %></li>
 				<li><%= nav_image_for("main","jean_georges") %></li>
-				<li id="concepts"><%= nav_image_for("main","concepts")  %>
+				<li id="concepts" class="concepts"><%= nav_image_for("main","concepts")  %>
 					<ul id="nav_concept">
 						<li><%= nav_image_for("concepts","jean_georges") %></li>
 						<li><%= nav_image_for("concepts","resort") %></li>
@@ -74,11 +75,9 @@
 			</div> <!-- main_content -->
 		<% end %>
 
-
 		<div id="footer">
 			<p id="site_info"><span id="footer_links"><%= ["Jean Georges", "Resort", "Spice Market", "Bistro", "Kitchen", "Modern American", "Steakhouse"].collect {|l| link_to l,root_path}.join(" | ") %></span>&copy; <%= Date.today.year %> Culinary Concepts by Jean-Georges</p>
 		</div> <!-- footer -->
-
 	</div>
 </body>
 </html>

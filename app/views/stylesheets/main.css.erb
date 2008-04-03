@@ -26,6 +26,11 @@ img.right{
 	float:right;
 	margin-left:10px;
 }
+
+img.left{
+	float:left;
+	margin-right:10px;
+}
 /* =Typography
 default font_size / line_height
 -----------------------------------------------------------------------------*/
@@ -138,35 +143,42 @@ ul{
 	margin:0;
 	padding:0;
 	height:31px;
+	position:relative;
 }
 
-#nav_main ul a {
+#nav_main ul li a, 
+#nav_main ul li li a {
 	padding:0;margin:0;
 	display:block;
-/*	color:<%= @off_white %>;
-	text-transform:uppercase;
-	text-decoration:none; */
 }
 
-/*
-#nav_main ul a:hover, #nav_main ul a.curr{
-	color:#fff;
-}
-*/
-
-#nav_main li#concepts ul#nav_concept{
-
+#nav_main ul ul{
+	position:absolute;
+	top:31px;
+	z-index:5000;
+	display:none;
 }
 
-#nav_main li#concepts{
-	position:relative;
-	z-index:4000;
-	width:127px;
-}
-
-#nav_main li#concepts:hover ul#nav_concept,#nav_main li#concepts.hover ul#nav_concept{
+#nav_main ul li:hover ul, #nav_main ul li.over ul {
 	display:block;
 }
+
+/* =Concept Sub Nav
+-----------------------------------------------------------------------------*/
+
+#nav_concept{
+	width:200px;
+	left:12px;
+	background-color:<%= @bg_red %>;
+}
+
+#nav_concept li{
+	height:23px;
+	float:none;
+	margin:0;
+	padding:0;
+}
+
 
 
 /* =Home Concept Nav
@@ -184,22 +196,6 @@ ul{
 }
 
 
-/* =Concept Sub Nav
------------------------------------------------------------------------------*/
-
-#nav_concept{
-	position:absolute;
-	display:none;
-	left:12px;
-	background-color:<%= @bg_red %>;
-}
-
-#nav_main #nav_concept li{
-	height:23px;
-	float:none;
-	margin:0;
-	padding:0;
-}
 
 
 /* =Main Content
@@ -229,6 +225,10 @@ ul{
 
 /* =Footer
 -----------------------------------------------------------------------------*/
+#footer{
+margin:0;
+width:940px;
+}
 #footer, #footer a {
 	color:<%= @salmon %>;
 }
