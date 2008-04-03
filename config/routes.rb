@@ -1,5 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :locations
+  map.resources :locations, :member => {:up => :put, :down => :put}
 
   map.resources :presses
 

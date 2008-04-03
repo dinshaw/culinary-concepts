@@ -75,6 +75,41 @@ ul{
 	list-style:none;
 }
 
+#united_states{
+	float:left;
+}
+#international{
+	float:right;
+	margin-right:100px;
+}
+ul.locations_list li{
+	font-size:1em;
+}
+
+ul.locations_list li.parent{
+	font-size:20px;
+	color:<%= @brown %>;
+}
+ul.locations_list li li{
+	font-size:16px;	
+}
+
+ul.locations_list li li li{
+	font-size:12px;	
+}
+ul.locations_list li a{
+	text-decoration:none;
+	color:<%= @brown %>;
+}
+
+ul.locations_list li a:hover{
+	text-decoration:underline;
+}
+ul.locations_list li.child{
+	margin-top:10px;
+	color:<%= @off_white %>;
+}
+
 
 /* =Masthead
 -----------------------------------------------------------------------------*/

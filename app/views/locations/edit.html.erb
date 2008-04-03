@@ -10,12 +10,7 @@
 
   <p>
     <b>Parent</b><br />
-    <%= f.text_field :parent_id %>
-  </p>
-
-  <p>
-    <b>Position</b><br />
-    <%= f.text_field :position %>
+    <%= f.collection_select :parent_id, Location.find(:all, :conditions => "parent_id is null"), :id, :title, :prompt => "Choose one..." %>
   </p>
 
   <p>

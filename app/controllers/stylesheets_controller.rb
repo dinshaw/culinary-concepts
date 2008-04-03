@@ -12,6 +12,7 @@ class StylesheetsController < ApplicationController
     @bg_red = "#6f1100"
     @content_red = "#510a00"
     @salmon = "#a2766c"
+    @brown = "#b4683b"
   end
   
   def main
