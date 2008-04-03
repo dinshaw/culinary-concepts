@@ -9,8 +9,7 @@
 	<%= stylesheet_link_tag 'layout' %>
 	<%= stylesheet_link_tag 'main' %>
 	<%= stylesheet_link_tag 'scaffold' %>
-	<%= javascript_include_tag "application", "rollover" %>
-	<script type="text/javascript" src="objectSwap.js"> </script>
+	<%= javascript_include_tag "application", "rollover", "AC_RunActiveContent" %>
 </head>
 <body>
 	<div id="canvas">
@@ -38,22 +37,14 @@
 		</div><!-- nav_main -->
 				
 		<div id="sidebar">
-			<object type="application/x-shockwave-flash" data="/swf/slideShow3.swf" width="236" height="666">
-				<param name="allowScriptAccess" value="sameDomain" />
-				<param name="allowFullScreen" value="false" />
-				<param name="movie" value="/swf/slideShow3.swf" />
-				<param name="flashvars" value="myXML=/xml/<%= @controller.action_name %>.xml" />
-				<param name="quality" value="high" />
-				<param name="bgcolor" value="#6f1100" />
-				<img src="noflash.gif" width="200" height="100" alt="" />
-			</object>
+			<%= render :partial => "public/slideshow" %>
 		</div><!-- sidebar -->
 		
 		<% if url_for == root_path %>
 			<div id="home">
 				<h1><span></span>Culinary Concepts :: Jean-Georges  - home</h1>
 				
-				<!-- <div id="tag">Local in content. Global in reach.</div> -->
+				<div id="tag"><span></span>Local in content. Global in reach.</div>
 				
 				<div id="nav_home_concepts">
 				<ul>
