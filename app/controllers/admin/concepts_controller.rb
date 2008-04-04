@@ -44,7 +44,7 @@ class Admin::ConceptsController < AdminController
     @concept = Concept.new(params[:concept])
 
     respond_to do |format|
-      if @concept.save
+      if @concept.save_with_attachments
         flash[:notice] = 'Concept was successfully created.'
         format.html { redirect_to admin_concept_url(@concept) }
         format.xml  { render :xml => @concept, :status => :created, :location => @concept }
@@ -61,7 +61,7 @@ class Admin::ConceptsController < AdminController
     @concept = Concept.find(params[:id])
 
     respond_to do |format|
-      if @concept.update_attributes(params[:concept])
+      if @concept.update_with_attachments(params[:concept])
         flash[:notice] = 'Concept was successfully updated.'
         format.html { redirect_to admin_concept_url(@concept) }
         format.xml  { head :ok }

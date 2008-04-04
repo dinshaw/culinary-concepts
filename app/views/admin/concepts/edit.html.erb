@@ -2,7 +2,7 @@
 
 <%= error_messages_for :concept %>
 
-<% form_for([:admin,@concept]) do |f| %>
+<% form_for([:admin,@concept], :html => {:multipart => true}) do |f| %>
   <p>
     <b>Title</b><br />
     <%= f.text_field :title %>
@@ -19,9 +19,47 @@
   </p>
 
   <p>
+    <b>Sidebar Image</b><br />
+	<%= image_tag @concept.attachments.image_sidebar.public_filename(:thumb), :class => :thumb if !@concept.attachments.image_sidebar.nil? %><br />
+    <%= f.file_field :uploaded_data_sidebar %>
+  </p>
+
+
+
+  <p>
+    <b>Main Image</b><br />
+	<%= image_tag @concept.attachments.image_main.public_filename(:thumb), :class => :thumb if !@concept.attachments.image_main.nil? %><br />
+    <%= f.file_field :uploaded_data_main %>
+  </p>
+
+
+  <p>
+	<b>Concept image 1</b><br />	
+	<%= image_tag @concept.attachments.image_concept1.public_filename(:thumb), :class => :thumb if !@concept.attachments.image_concept1.nil? %><br />
+    <%= f.file_field :uploaded_data_concept1 %>
+  </p>
+
+  <p>
+    <b>Concept image 2</b><br />
+	<%= image_tag @concept.attachments.image_concept2.public_filename(:thumb), :class => :thumb if !@concept.attachments.image_concept2.nil? %><br />
+    <%= f.file_field :uploaded_data_concept2 %>
+  </p>
+
+  <p>
+    <b>Menu image 1</b><br />
+	<%= image_tag @concept.attachments.image_menu1.public_filename(:thumb), :class => :thumb if !@concept.attachments.image_menu1.nil? %><br />
+    <%= f.file_field :uploaded_data_menu1 %>
+  </p>
+
+  <p>
+    <b>Menu image 2</b><br />
+	<%= image_tag @concept.attachments.image_menu2.public_filename(:thumb), :class => :thumb if !@concept.attachments.image_menu2.nil? %><br />
+    <%= f.file_field :uploaded_data_menu2 %>
+  </p>
+  <p>
     <%= f.submit "Update" %>
   </p>
 <% end %>
 
-<%= link_to 'Show', @concept %> |
-<%= link_to 'Back', concepts_path %>
+<%= link_to 'Show', [:admin,@concept] %> |
+<%= link_to 'Back', admin_concepts_path %>

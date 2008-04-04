@@ -10,5 +10,36 @@
   <%=h @concept.body %>
 </p>
 
+<p>
+   <b>Main Image</b><br />
+	<%= image_tag @concept.attachments.image_main.public_filename(:thumb), :class => :thumb if !@concept.attachments.image_main.nil? %><br />
+
+ </p>
+
+
+ <p>
+	<b>Concept image 1</b><br />	
+	<%= image_tag @concept.attachments.image_concept1.public_filename(:thumb), :class => :thumb if !@concept.attachments.image_concept1.nil? %><br />
+ 
+ </p>
+
+ <p>
+   <b>Concept image 2</b><br />
+	<%= image_tag @concept.attachments.image_concept2.public_filename(:thumb), :class => :thumb if !@concept.attachments.image_concept2.nil? %><br />
+
+ </p>
+
+ <p>
+   <b>Menu image 1</b><br />
+	<%= image_tag @concept.attachments.image_menu1.public_filename(:thumb), :class => :thumb if !@concept.attachments.image_menu1.nil? %><br />
+ 
+ </p>
+
+ <p>
+   <b>Menu image 2</b><br />
+	<%= image_tag @concept.attachments.image_menu2.public_filename(:thumb), :class => :thumb if !@concept.attachments.image_menu2.nil? %><br />
+
+ </p>
+
 <%= link_to 'Edit', edit_admin_concept_path(@concept) %> |
 <%= link_to 'Back', admin_concepts_path %>

@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 9) do
+ActiveRecord::Schema.define(:version => 10) do
 
   create_table "articles", :force => true do |t|
     t.string   "title"
@@ -18,6 +18,24 @@ ActiveRecord::Schema.define(:version => 9) do
     t.date     "date_published"
     t.string   "publication_name"
     t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "attachments", :force => true do |t|
+    t.string   "title"
+    t.text     "body"
+    t.integer  "position"
+    t.string   "attachee_type"
+    t.integer  "attachee_id"
+    t.string   "attachment_type"
+    t.integer  "size"
+    t.string   "content_type"
+    t.string   "filename"
+    t.integer  "height"
+    t.integer  "width"
+    t.integer  "parent_id"
+    t.string   "thumbnail"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
