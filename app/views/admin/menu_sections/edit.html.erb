@@ -1,27 +1,19 @@
-<h1>Editing menu_section</h1>
+<h1>Editing Menu Section</h1>
 
 <%= error_messages_for :menu_section %>
 
-<% form_for(@menu_section) do |f| %>
+<% form_for(@menu_section,:url => admin_concept_menu_section_path(@concept, @menu_section)) do |f| %>
   <p>
     <b>Title</b><br />
     <%= f.text_field :title %>
   </p>
 
-  <p>
-    <b>Position</b><br />
-    <%= f.text_field :position %>
-  </p>
 
-  <p>
-    <b>Concept</b><br />
-    <%= f.text_field :concept_id %>
-  </p>
 
   <p>
     <%= f.submit "Update" %>
   </p>
 <% end %>
 
-<%= link_to 'Show', @menu_section %> |
-<%= link_to 'Back', menu_sections_path %>
+<%= link_to 'Show', admin_concept_menu_section_path(@concept,@menu_section) %> |
+<%= link_to 'Back', admin_concept_menu_sections_path( @menu_section) %>

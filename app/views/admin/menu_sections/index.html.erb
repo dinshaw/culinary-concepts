@@ -1,24 +1,23 @@
-<h1>Listing menu_sections</h1>
-
+<h1>Menu Sections for: <%= @concept.title %></h1>
+<p><%= link_to 'New menu section', new_admin_concept_menu_section_path(@concept) %></p>
 <table>
-  <tr>
+<thead> 
+ <tr>
     <th>Title</th>
-    <th>Position</th>
-    <th>Concept</th>
+	<th colspan="5">Actions</th>
   </tr>
-
+</thead>
 <% for menu_section in @menu_sections %>
   <tr>
     <td><%=h menu_section.title %></td>
-    <td><%=h menu_section.position %></td>
-    <td><%=h menu_section.concept_id %></td>
-    <td><%= link_to 'Show', menu_section %></td>
-    <td><%= link_to 'Edit', edit_menu_section_path(menu_section) %></td>
-    <td><%= link_to 'Destroy', menu_section, :confirm => 'Are you sure?', :method => :delete %></td>
+	<td><%= link_to "Menu Items", admin_concept_menu_section_menu_items_path(@concept,menu_section) %></td>
+	<td><%= link_to 'Up', up_admin_concept_menu_section_path(@concept,menu_section), :method => :put %> | <%= link_to 'Down', down_admin_concept_menu_section_path(@concept,menu_section), :method => :put %></td>
+    <td><%= link_to 'Edit', edit_admin_concept_menu_section_path(@concept,menu_section) %></td>
+    <td><%= link_to 'Destroy', admin_concept_menu_section_path(@concept,menu_section), :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New menu_section', new_menu_section_path %>
+
