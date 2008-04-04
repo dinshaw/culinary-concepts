@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	<title>Culinary Concepts</title>
+	<%= stylesheet_link_tag 'main' %>
+	<%= stylesheet_link_tag 'admin' %>	
+	<%= stylesheet_link_tag 'scaffold' %>
+	<%= javascript_include_tag "application", "rollover", "AC_RunActiveContent" %>
+</head>
+<body>
+	<div id="canvas">
+		<div id="nav_admin">
+			<ul>
+				<li><%= link_to "Locations", admin_locations_path %></li>
+				<li><%= link_to "Press", admin_articles_path %></li>				
+			</ul>
+		</div><!-- nav_main -->
+				
+		
+		<div id="admin_content">
+			<div id="inner_content">
+				<p id="flash"><%= flash[:notice] -%><%= flash[:message] -%></p>
+				<%= yield  %>
+			</div>
+		</div>
+	
+	</div>
+</body>
+</html>
