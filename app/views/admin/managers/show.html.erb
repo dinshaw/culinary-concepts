@@ -1,5 +1,5 @@
 <h1>Manager: <%= @manager.name %></h1>
-
+<p>	<%= image_tag @manager.photo.public_filename(:thumb), :class => :thumb if !@manager.photo.nil? %></p>
 <p><%= @manager.body %></p>
 
 

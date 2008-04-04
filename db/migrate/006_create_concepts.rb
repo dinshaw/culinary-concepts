@@ -5,6 +5,7 @@ class CreateConcepts < ActiveRecord::Migration
       t.string :slug      
       t.text :quote
       t.text :body
+      t.string :bg_color
       t.integer :position
 
       t.timestamps

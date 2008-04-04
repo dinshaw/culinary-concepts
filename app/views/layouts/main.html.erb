@@ -23,7 +23,6 @@
 	}
 	#inner_concept {
 		height:619px;
-		
 		background:url(<%= image_path @concept.attachments.image_concept2.public_filename(:square) %>) bottom left no-repeat;
 	}
 	<% elsif @image_type == "menu" %>
@@ -32,9 +31,7 @@
 	}
 	#inner_concept {
 		height:619px;
-		
 		background:url(<%= image_path @concept.attachments.image_menu2.public_filename(:square) %>) 0 46% no-repeat;
-
 	}
 	<% end %>
 	</style>
@@ -55,7 +52,7 @@
 						<% end %>
 					</ul>
 				</li>
-				<li><%= nav_image_for("main","press") %></li>
+				<li><%= nav_image_for("main","articles") %></li>
 				<li><%= nav_image_for("main","locations") %></li>
 				<li><%= nav_image_for("main","contact_us")  %></li>
 				<li><%= nav_image_for("main","careers") %></li>

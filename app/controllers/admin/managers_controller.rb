@@ -43,7 +43,7 @@ class Admin::ManagersController < AdminController
     @manager = Manager.new(params[:manager])
 
     respond_to do |format|
-      if @manager.save
+      if @manager.save_with_attachments
         flash[:notice] = 'Manager was successfully created.'
         format.html { redirect_to admin_manager_url(@manager) }
         format.xml  { render :xml => @manager, :status => :created, :location => @manager }
@@ -60,7 +60,7 @@ class Admin::ManagersController < AdminController
     @manager = Manager.find(params[:id])
 
     respond_to do |format|
-      if @manager.update_attributes(params[:manager])
+      if @manager.update_with_attachments(params[:manager])
         flash[:notice] = 'Manager was successfully updated.'
         format.html { redirect_to admin_manager_url(@manager) }
         format.xml  { head :ok }

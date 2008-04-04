@@ -2,7 +2,7 @@
 
 <%= error_messages_for :manager %>
 
-<% form_for([:admin,@manager]) do |f| %>
+<% form_for([:admin,@manager], :html => {:multipart => true}) do |f| %>
   <p>
     <b>Name</b><br />
     <%= f.text_field :name %>
@@ -16,6 +16,12 @@
   <p>
     <b>Location</b><br />
     <%= f.collection_select :location_id, Location.find(:all), :id, :title %>
+  </p>
+
+  <p>
+    <b>Image</b><br />
+	<%= image_tag @manager.photo.public_filename(:thumb), :class => :thumb if !@manager.photo.nil? %><br />
+    <%= f.file_field :uploaded_data_img_manager %>
   </p>
 
 

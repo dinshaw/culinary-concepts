@@ -19,40 +19,43 @@
   </p>
 
   <p>
+    <b>Background Color for copy</b><br />
+    <%= f.text_field :bg_color %>
+  </p>
+  <p>
     <b>Sidebar Image</b><br />
-	<%= image_tag @concept.attachments.image_sidebar.public_filename(:thumb), :class => :thumb if !@concept.attachments.image_sidebar.nil? %><br />
-    <%= f.file_field :uploaded_data_sidebar %>
+	<%= image_tag @concept.attachments.img_sidebar.public_filename(:thumb), :class => :thumb if !@concept.attachments.img_sidebar.nil? %><br />
+    <%= f.file_field :uploaded_data_img_sidebar %>
   </p>
 
   <p>
     <b>Main Image</b><br />
-	<%= image_tag @concept.attachments.image_main.public_filename(:thumb), :class => :thumb if !@concept.attachments.image_main.nil? %><br />
-    <%= f.file_field :uploaded_data_main %>
+	<%= image_tag @concept.attachments.img_main.public_filename(:thumb), :class => :thumb if !@concept.attachments.img_main.nil? %><br />
+    <%= f.file_field :uploaded_data_img_main %>
   </p>
-
 
   <p>
 	<b>Concept image 1</b><br />	
-	<%= image_tag @concept.attachments.image_concept1.public_filename(:thumb), :class => :thumb if !@concept.attachments.image_concept1.nil? %><br />
-    <%= f.file_field :uploaded_data_concept1 %>
+	<%= image_tag @concept.attachments.img_concept1.public_filename(:thumb), :class => :thumb if !@concept.attachments.img_concept1.nil? %><br />
+    <%= f.file_field :uploaded_data_img_concept1 %>
   </p>
 
   <p>
     <b>Concept image 2</b><br />
-	<%= image_tag @concept.attachments.image_concept2.public_filename(:thumb), :class => :thumb if !@concept.attachments.image_concept2.nil? %><br />
-    <%= f.file_field :uploaded_data_concept2 %>
+	<%= image_tag @concept.attachments.img_concept2.public_filename(:thumb), :class => :thumb if !@concept.attachments.img_concept2.nil? %><br />
+    <%= f.file_field :uploaded_data_img_concept2 %>
   </p>
 
   <p>
     <b>Menu image 1</b><br />
-	<%= image_tag @concept.attachments.image_menu1.public_filename(:thumb), :class => :thumb if !@concept.attachments.image_menu1.nil? %><br />
-    <%= f.file_field :uploaded_data_menu1 %>
+	<%= image_tag @concept.attachments.img_menu1.public_filename(:thumb), :class => :thumb if !@concept.attachments.img_menu1.nil? %><br />
+    <%= f.file_field :uploaded_data_img_menu1 %>
   </p>
 
   <p>
     <b>Menu image 2</b><br />
-	<%= image_tag @concept.attachments.image_menu2.public_filename(:thumb), :class => :thumb if !@concept.attachments.image_menu2.nil? %><br />
-    <%= f.file_field :uploaded_data_menu2 %>
+	<%= image_tag @concept.attachments.img_menu2.public_filename(:thumb), :class => :thumb if !@concept.attachments.img_menu2.nil? %><br />
+    <%= f.file_field :uploaded_data_img_menu2 %>
   </p>
   <p>
     <%= f.submit "Update" %>
