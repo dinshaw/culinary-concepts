@@ -9,7 +9,25 @@
 	<%= stylesheet_link_tag 'main' %>
 	<%= stylesheet_link_tag 'admin' %>	
 	<%= stylesheet_link_tag 'scaffold' %>
-	<%= javascript_include_tag "application", "rollover", "AC_RunActiveContent" %>
+	<%= javascript_include_tag "application", "rollover", "AC_RunActiveContent", "tiny_mce/tiny_mce" %>
+	<script type="text/javascript">
+		tinyMCE.init({
+			// General options
+			mode : "textareas",
+			theme : "advanced",
+			plugins : "paste",
+
+			// Theme options
+			theme_advanced_buttons1 : "pastetext,pasteword,bold,italic,underline,|,justifyleft,justifycenter,justifyright",
+			theme_advanced_buttons2 : "",
+			theme_advanced_toolbar_location : "top",
+			theme_advanced_toolbar_align : "center",
+			theme_advanced_statusbar_location : "bottom",
+
+		});
+	</script>
+	<!-- /TinyMCE -->
+
 </head>
 <body>
 	<div id="canvas">
