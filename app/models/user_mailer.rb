@@ -11,13 +11,13 @@ class UserMailer < ActionMailer::Base
   def activation(user)
     setup_email(user)
     @subject    += 'Your account has been activated!'
-    @body[:url]  = "http://localhost:3000/"
+    @body[:url]  = PRIMARY_DOMAIN
   end
   
   def forgot_password(user)
     setup_email(user)
     @subject    += 'You have requested to change your password'
-    @body[:url]  = "http://localhost:3000/reset_password/#{user.password_reset_code}"
+    @body[:url]  = PRIMARY_DOMAIN+"reset_password/#{user.password_reset_code}"
   end
  
   def reset_password(user)
@@ -28,8 +28,8 @@ class UserMailer < ActionMailer::Base
   protected
     def setup_email(user)
       @recipients  = "#{user.email}"
-      @from        = "mail@yourapplication.com"
-      @subject     = "YourApplication - "
+      @from        = "admin@4"+PRIMARY_DOMAIN
+      @subject     = "Culinary Concepts - "
       @sent_on     = Time.now
       @body[:user] = user
     end
