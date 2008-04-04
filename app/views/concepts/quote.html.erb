@@ -1,5 +1,5 @@
 <h2><%= link_to "concept", concept_path(@concept) %> <span><%= link_to "menu", concept_menu_section_path(@concept, @concept.menu_sections.first) %></span></h2>
 
-<p>"<%=h @concept.quote %>"</p>
+<p><%= @concept.quote %></p>
 
 <p><%= link_to ":: next", concept_path(@concept) %></p>

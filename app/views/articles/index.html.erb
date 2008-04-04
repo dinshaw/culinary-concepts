@@ -7,17 +7,15 @@
     <th>State</th>
     <th>Date published</th>
     <th>Publication name</th>
-    <th>Position</th>
   </tr>
 
 <% for article in @articles %>
   <tr>
     <td><%=h article.title %></td>
-    <td><%=h article.body %></td>
+    <td><%= article.body %></td>
     <td><%=h article.state %></td>
     <td><%=h article.date_published %></td>
     <td><%=h article.publication_name %></td>
-    <td><%=h article.position %></td>
     <td><%= link_to 'Show', article %></td>
     <td><%= link_to 'Edit', edit_article_path(article) %></td>
     <td><%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete %></td>

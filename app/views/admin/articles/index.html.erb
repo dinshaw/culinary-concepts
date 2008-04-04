@@ -14,7 +14,7 @@
 <% for article in @articles %>
   <tr class="<%= cycle "odd", "even" %>">
     <td><%=h article.title %></td>
-    <td><%=h article.body %></td>
+    <td><%= article.body %></td>
     <td><%=h article.state %></td>
     <td><%=h article.date_published %></td>
     <td><%=h article.publication_name %></td>

@@ -1,13 +1,5 @@
-<p>
-  <b>Title:</b>
-  <%=h @page.title %>
-</p>
-
-<p>
-  <b>Description:</b>
-  <%=h @page.description %>
-</p>
-
+<h2><%= @page.title %></h2>
+<p><%= @page.description %></p>
 
 <%= link_to 'Edit', edit_admin_page_path(@page) %> |
 <%= link_to 'Back', admin_pages_path %>

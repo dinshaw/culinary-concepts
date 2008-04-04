@@ -5,12 +5,7 @@
 
 <p>
   <b>Body:</b>
-  <%=h @article.body %>
-</p>
-
-<p>
-  <b>State:</b>
-  <%=h @article.state %>
+  <%= @article.body %>
 </p>
 
 <p>
@@ -23,10 +18,6 @@
   <%=h @article.publication_name %>
 </p>
 
-<p>
-  <b>Position:</b>
-  <%=h @article.position %>
-</p>
 
 
 <%= link_to 'Edit', edit_article_path(@article) %> |

@@ -6,16 +6,15 @@
     <th>Name</th>
     <th>Body</th>
     <th>Location</th>
-    <th>Position</th>
 	<th colspan="4"></th>
   </tr>
 </thead>
 <% for manager in @managers %>
   <tr>
     <td><%=h manager.name %></td>
-    <td><%=h manager.body %></td>
-    <td><%=h manager.location_id %></td>
-    <td><%=h manager.position %></td>
+    <td><%= manager.body %></td>
+    <td><%=h manager.location.title %></td>
+
 	<td><%= link_to 'Up', up_admin_manager_path(manager), :method => :put %> | <%= link_to 'Down', down_admin_manager_path(manager), :method => :put %></td>
     <td><%= link_to 'Show', [:admin,manager] %></td>
     <td><%= link_to 'Edit', edit_admin_manager_path(manager) %></td>
