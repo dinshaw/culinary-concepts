@@ -1,17 +1,11 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :menu_items
-
-  map.resources :menu_sections
-
   map.resources :managers
 
-  map.resources :concepts
+  map.resources :concepts, :member => {:quote => :get}, :has_many => :menu_sections
 
   map.resources :articles
 
   map.resources :locations, :member => {:up => :put, :down => :put}
-
-  map.resources :roles
 
   map.resources :roles
 

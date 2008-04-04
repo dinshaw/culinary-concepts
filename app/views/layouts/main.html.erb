@@ -10,6 +10,35 @@
 	<%= stylesheet_link_tag 'main' %>
 	<%= stylesheet_link_tag 'scaffold' %>
 	<%= javascript_include_tag "application", "rollover", "AC_RunActiveContent" %>
+	<% if @concept %>
+	<style>
+	<% if @image_type == 'start' %>
+	#concept {
+		background:url(<%= image_path @concept.attachments.image_main.public_filename(:concept) %>) top left no-repeat;
+	}
+	<% elsif @image_type == "concept" %>
+	#concept {
+		background:url(<%= image_path @concept.attachments.image_concept1.public_filename(:square) %>) top left no-repeat;
+	}
+	#inner_concept {
+		height:619px;
+		
+		background:url(<%= image_path @concept.attachments.image_concept2.public_filename(:square) %>) bottom left no-repeat;
+	}
+	<% elsif @image_type == "menu" %>
+	#concept {
+		background:url(<%= image_path @concept.attachments.image_menu1.public_filename(:square) %>) 39% 0 no-repeat;
+	}
+	#inner_concept {
+		height:619px;
+		
+		background:url(<%= image_path @concept.attachments.image_menu2.public_filename(:square) %>) 0 46% no-repeat;
+
+	}
+	<% end %>
+	</style>
+	<% end %>
+
 </head>
 <body>
 	<div id="canvas">
@@ -21,7 +50,7 @@
 				<li id="concepts" class="concepts"><%= nav_image_for("main","concepts")  %>
 					<ul id="nav_concept">
 						<% Concept.find(:all).each do |c| %>
-						<li><%= link_to image_tag("nav/concepts/#{c.slug.gsub("-","_")}-off.gif"), c %></li>
+						<li><%= link_to image_tag("nav/concepts/#{c.slug.gsub("-","_")}-off.gif"), quote_concept_path(c) %></li>
 						<% end %>
 					</ul>
 				</li>
@@ -49,6 +78,15 @@
 				</ul>
 				</div>
 			</div>
+		<% elsif @concept %>
+		<div id="concept">
+			<h1><span></span>Culinary Concepts :: Jean-Georges  - home</h1>
+				<div id="inner_concept">
+					<div id="concept_content">
+						<%= yield  %>
+					</div>
+				</div>
+		</div>
 		<% else %>
 			<div id="masthead" <%= "style=\"background-image:url(#{@concept.attachments.image_main.public_filename(:main)}) top left no-repeat\"" if !@concept.nil? %>>
 				<h1><span></span>Culinary Concepts :: Jean-Georges</h1>

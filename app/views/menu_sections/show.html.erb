@@ -1,18 +1,19 @@
-<p>
-  <b>Title:</b>
-  <%=h @menu_section.title %>
-</p>
+<h2><%= link_to "concept", concept_path(@concept) %></h2>
 
-<p>
-  <b>Position:</b>
-  <%=h @menu_section.position %>
-</p>
+<% if @concept.menu_sections.length > 0 %>
+<ul id="menu_sections">
+	<% @concept.menu_sections.each do |m| %>
+	<li><%= link_to m.title, concept_menu_section_path(@concept,m) %></li>
+	<% end %>
+</ul>
+<% end %>
 
-<p>
-  <b>Concept:</b>
-  <%=h @menu_section.concept_id %>
-</p>
+<br class="clear" />
 
-
-<%= link_to 'Edit', edit_menu_section_path(@menu_section) %> |
-<%= link_to 'Back', menu_sections_path %>
+<% if @menu_section.menu_items.length > 0 %>
+<ul id="menu_items">
+	<% @menu_section.menu_items.each do |mi| %>
+		<li><%= mi.title %></li>
+	<% end %>
+</ul>
+<% end %>

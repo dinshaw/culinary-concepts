@@ -14,6 +14,7 @@ class StylesheetsController < ApplicationController
     @salmon = "#a2766c"
     @brown = "#b4683b"
     @light_red = "#CD5C5C"
+    @pink = "#fdca90"
   end
   
   def main

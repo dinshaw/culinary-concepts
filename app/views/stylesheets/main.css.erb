@@ -124,8 +124,11 @@ ul.locations_list li.child{
 	background:<%= @masthead_red %> url(/images/map.jpg) 20px 40px no-repeat;
 }
 
+#concept{
+		position:relative;
+}
 /* Gilder / Levin image replacement method for logo */
-#masthead h1, #home h1{
+#masthead h1, #home h1, #concept h1{
 	position:relative;
 	width:127px;
 	height:127px;
@@ -142,6 +145,41 @@ ul.locations_list li.child{
 }
 #masthead h1{
 	left:550px;
+}
+
+#concept h1{
+	top:20%;
+	left:550px;
+}
+
+#concept_content{
+	position:absolute;
+	width:463px;
+	height:450px;
+	bottom:0;
+	right:0;
+	
+	background-color:<%= @pink %>;
+}
+
+#concept a,#concept p,#concept li, #concept h2{color:<%= @bg_red %>;}
+#concept p,#concept ul, #concept h2{
+	margin:20px 20px 0 20px;
+}
+
+
+#menu_sections{
+
+}
+#menu_sections li{
+	float:left;
+	margin-right:20px;
+	
+}
+
+#menu_items li{
+	font-weight:bold;
+	font-size:1em;
 }
 
 #tag{
@@ -161,7 +199,7 @@ ul.locations_list li.child{
 	left:30px;
 }
 
-#masthead h1 span, #home h1 span{
+#masthead h1 span, #home h1 span, #concept h1 span{
 	background:url(/images/culinary-concepts.gif) top left no-repeat;
 	position:absolute;
 	height:100%;
