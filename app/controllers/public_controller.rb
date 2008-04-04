@@ -6,7 +6,6 @@ class PublicController < ApplicationController
   end
 
   def home
-    @page = Page.find_by_title("Home") 
   end
   
   def about_us

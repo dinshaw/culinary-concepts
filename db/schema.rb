@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 5) do
+ActiveRecord::Schema.define(:version => 9) do
 
   create_table "articles", :force => true do |t|
     t.string   "title"
@@ -22,11 +22,45 @@ ActiveRecord::Schema.define(:version => 5) do
     t.datetime "updated_at"
   end
 
+  create_table "concepts", :force => true do |t|
+    t.string   "title"
+    t.text     "quote"
+    t.text     "body"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "locations", :force => true do |t|
     t.string   "title"
     t.integer  "parent_id"
     t.integer  "position"
     t.string   "url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "managers", :force => true do |t|
+    t.string   "name"
+    t.text     "body"
+    t.integer  "location_id"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "menu_items", :force => true do |t|
+    t.string   "title"
+    t.integer  "position"
+    t.integer  "menu_section_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "menu_sections", :force => true do |t|
+    t.string   "title"
+    t.integer  "position"
+    t.integer  "concept_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

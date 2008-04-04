@@ -1,9 +1,15 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :menu_items
+
+  map.resources :menu_sections
+
+  map.resources :managers
+
+  map.resources :concepts
+
   map.resources :articles
 
   map.resources :locations, :member => {:up => :put, :down => :put}
-
-  map.resources :pages
 
   map.resources :roles
 
@@ -15,8 +21,17 @@ ActionController::Routing::Routes.draw do |map|
   }
 
   map.namespace(:admin) do |admin| 
+    admin.resources :pages
     admin.resources :locations, :member => { :up => :put, :down => :put }
     admin.resources :articles, :member => { :up => :put, :down => :put }
+
+    admin.resources :concepts, :member => { :up => :put, :down => :put } do |concept|
+      concept.resources :menu_sections, :member => { :up => :put, :down => :put } do |menu|
+        menu.resources :menu_items, :member => { :up => :put, :down => :put }
+      end
+    end
+
+    admin.resources :managers, :member => { :up => :put, :down => :put }
   end
 
   map.activate '/activate/:activation_code', :controller => 'users', :action => 'activate', :activation_code => nil
@@ -37,6 +52,8 @@ ActionController::Routing::Routes.draw do |map|
   map.jean_georges "jean_georges", :controller => "public", :action => "jean_georges"
   map.careers "careers", :controller => "public", :action => "careers"
 
+  map.admin "admin", :controller => "admin/pages", :action => "index"
+  
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action.:format'
   map.connect ':controller/:action/:id.:format'
