@@ -1,21 +1,11 @@
-<h1>Editing menu_item</h1>
+<h1>Editing Menu Item</h1>
 
 <%= error_messages_for :menu_item %>
 
-<% form_for(@menu_item) do |f| %>
+<% form_for([:admin,@menu_section.concept,@menu_section,@menu_item]) do |f| %>
   <p>
     <b>Title</b><br />
     <%= f.text_field :title %>
-  </p>
-
-  <p>
-    <b>Position</b><br />
-    <%= f.text_field :position %>
-  </p>
-
-  <p>
-    <b>Menu section</b><br />
-    <%= f.text_field :menu_section_id %>
   </p>
 
   <p>
@@ -23,5 +13,4 @@
   </p>
 <% end %>
 
-<%= link_to 'Show', @menu_item %> |
 <%= link_to 'Back', menu_items_path %>

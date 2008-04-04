@@ -1,3 +1,4 @@
+# list method couldn't handle the deeply nested rout so i just reopended it and overrode it
 module ListMethods
   def up
     MenuSection.find(params[:id]).move_higher
