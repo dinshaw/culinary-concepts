@@ -10,10 +10,16 @@
   <%=h @concept.body %>
 </p>
 
+
+<p>
+  <b>Sidebar Image</b><br />
+	<%= image_tag @concept.attachments.image_sidebar.public_filename(:thumb), :class => :thumb if !@concept.attachments.image_sidebar.nil? %><br />
+</p>
+
+
 <p>
    <b>Main Image</b><br />
 	<%= image_tag @concept.attachments.image_main.public_filename(:thumb), :class => :thumb if !@concept.attachments.image_main.nil? %><br />
-
  </p>
 
 

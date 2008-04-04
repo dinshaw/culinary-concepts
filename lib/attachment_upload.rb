@@ -42,7 +42,7 @@ module AttachmentUpload
     update_attachment_details("concept2") if uploaded_data_concept2 && uploaded_data_concept2.size > 0 
     update_attachment_details("menu1") if uploaded_data_menu1 && uploaded_data_menu1.size > 0 
     update_attachment_details("menu2") if uploaded_data_menu2 && uploaded_data_menu2.size > 0
-    update_attachment_details("sidebar") if uploaded_data_menu2 && uploaded_data_menu2.size > 0
+    update_attachment_details("sidebar") if uploaded_data_sidebar && uploaded_data_sidebar.size > 0
   end
   
   def update_attachment_details(type)

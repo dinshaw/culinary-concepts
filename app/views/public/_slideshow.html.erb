@@ -1,3 +1,6 @@
+<% if concept %>
+<%= image_tag concept.attachments.image_sidebar.public_filename(:sidebar) %>
+<% else %>
 <script language="javascript">
 	if (AC_FL_RunContent == 0) {
 		alert("This page requires AC_RunActiveContent.js.");
@@ -38,3 +41,4 @@
 	<embed src="/swf/slideShow3.swf" flashvars="myXML=/xml/<%= @controller.action_name %>.xml" quality="high" bgcolor="#ffffff" width="236" height="666" name="slideShow3" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />
 	</object>
 </noscript>
+<% end %>

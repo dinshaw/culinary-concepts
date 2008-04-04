@@ -24,8 +24,6 @@
     <%= f.file_field :uploaded_data_sidebar %>
   </p>
 
-
-
   <p>
     <b>Main Image</b><br />
 	<%= image_tag @concept.attachments.image_main.public_filename(:thumb), :class => :thumb if !@concept.attachments.image_main.nil? %><br />

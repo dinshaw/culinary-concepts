@@ -1,6 +1,11 @@
 class Concept < ActiveRecord::Base
   include AttachmentUpload
 
+  def to_param
+    "#{id}-#{slug}"
+  end
+
+
   acts_as_list
   validates_presence_of :title,:quote, :body
   has_many :menu_sections, :order => :position

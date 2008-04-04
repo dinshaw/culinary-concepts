@@ -20,13 +20,9 @@
 				<li><%= nav_image_for("main","jean_georges") %></li>
 				<li id="concepts" class="concepts"><%= nav_image_for("main","concepts")  %>
 					<ul id="nav_concept">
-						<li><%= nav_image_for("concepts","jean_georges") %></li>
-						<li><%= nav_image_for("concepts","resort") %></li>
-						<li><%= nav_image_for("concepts","spicemarket") %></li>
-						<li><%= nav_image_for("concepts","bistro") %></li>
-						<li><%= nav_image_for("concepts","kitchen") %></li>
-						<li><%= nav_image_for("concepts","modern_american") %></li>
-						<li><%= nav_image_for("concepts","steakhouse") %></li>
+						<% Concept.find(:all).each do |c| %>
+						<li><%= link_to image_tag("nav/concepts/#{c.slug.gsub("-","_")}-off.gif"), c %></li>
+						<% end %>
 					</ul>
 				</li>
 				<li><%= nav_image_for("main","press") %></li>
@@ -37,7 +33,7 @@
 		</div><!-- nav_main -->
 				
 		<div id="sidebar">
-			<%= render :partial => "public/slideshow" %>
+			<%= render :partial => "public/slideshow", :locals => {:concept => @concept} %>
 		</div><!-- sidebar -->
 		
 		<% if url_for == root_path %>
@@ -54,7 +50,7 @@
 				</div>
 			</div>
 		<% else %>
-			<div id="masthead">
+			<div id="masthead" <%= "style=\"background-image:url(#{@concept.attachments.image_main.public_filename(:main)}) top left no-repeat\"" if !@concept.nil? %>>
 				<h1><span></span>Culinary Concepts :: Jean-Georges</h1>
 			</div> <!-- masthead -->
 
