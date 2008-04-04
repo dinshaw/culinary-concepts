@@ -13,6 +13,7 @@ class StylesheetsController < ApplicationController
     @content_red = "#510a00"
     @salmon = "#a2766c"
     @brown = "#b4683b"
+    @light_red = "#CD5C5C"
   end
   
   def main
@@ -24,6 +25,14 @@ class StylesheetsController < ApplicationController
   end
 
   def layout
+    respond_to do |format|
+      format.css do 
+        render
+      end # end format.css
+    end
+  end
+  
+  def admin
     respond_to do |format|
       format.css do 
         render

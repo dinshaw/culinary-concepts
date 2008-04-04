@@ -2,7 +2,7 @@
 
 <%= error_messages_for :location %>
 
-<% form_for(@location) do |f| %>
+<% form_for([:admin,@location]) do |f| %>
   <p>
     <b>Title</b><br />
     <%= f.text_field :title %>
@@ -24,4 +24,4 @@
 <% end %>
 
 <%= link_to 'Show', @location %> |
-<%= link_to 'Back', locations_path %>
+<%= link_to 'Back', admin_locations_path %>

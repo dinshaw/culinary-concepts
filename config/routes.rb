@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :articles
+
   map.resources :locations, :member => {:up => :put, :down => :put}
 
   map.resources :pages
@@ -13,7 +15,8 @@ ActionController::Routing::Routes.draw do |map|
   }
 
   map.namespace(:admin) do |admin| 
-    admin.resources :concepts, :member => { :up => :put, :down => :put }, :has_many   => [ :menus ]
+    admin.resources :locations, :member => { :up => :put, :down => :put }
+    admin.resources :articles, :member => { :up => :put, :down => :put }
   end
 
   map.activate '/activate/:activation_code', :controller => 'users', :action => 'activate', :activation_code => nil

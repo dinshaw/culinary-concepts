@@ -1,0 +1,16 @@
+<h1>Locations</h1>
+<div>
+	<ul class="locations_list">
+		<li class="parent">UNITED STATES		
+			<%= render :partial => "ul_list", :locals => {:parent => @united_states} %>
+		</li>
+	</ul>
+</div>
+
+<div>
+	<ul class="locations_list">
+		<li class="parent">INTERNATIONAL		
+			<%= render :partial => "ul_list", :locals => {:parent => @international} %>
+		</li>
+	</ul>
+</div>

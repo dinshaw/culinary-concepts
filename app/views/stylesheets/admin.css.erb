@@ -1,0 +1,45 @@
+body{
+	background:#000 url(/images/culinary-concepts.gif) 20px 20px no-repeat;
+}
+
+#nav_admin{
+	width:147px;
+	float:left;
+}
+
+#nav_admin a{
+	color:white;
+	text-decoration:underline;
+}
+
+
+#admin_content{
+	margin:147px 0 0 147px;
+	background-color:#fff;
+	color:#000;
+	border:1px solid green;
+	padding:20px;
+}
+
+#admin_content p, #admin_content td, #admin_content th{
+		font-size:0.775em;
+}
+
+#admin_content a{ color:blue;}
+#admin_content a:visited{ color:purple;}
+#admin_content a:hover{ color:red;}
+
+#admin_content h1{font-size:2em;margin:0;color:<%= @bg_red %>; border:1px solid <%= @bg_red %>; border-width:0 0 1px 0;}
+
+table {border-spacing: 0;border-collapse: collapse; margin:10px 0;}
+table#layout,td.layout{border:0;vertical-align:top;font-size:1em;}
+td {text-align: left;font-weight: normal; }
+td#left_td {width:16em;}
+
+td,th{padding:0.1em 1em;border:1px solid #ccc;}
+thead{color:#fff;background-color:#ccc;}
+
+tr.odd {background-color:#e4efef;}
+
+tr:hover{background-color:<%= @light_red %>;color:#fff;}
+thead tr:hover{background-color:#ccc;}

@@ -1,0 +1,30 @@
+<h1>Press</h1>
+
+<table>
+<thead>  <tr>
+    <th>Title</th>
+    <th>Body</th>
+    <th>State</th>
+    <th>Date published</th>
+    <th>Publication name</th>
+	<th colspan="4">Actions</th>
+  </tr>
+</thead>
+<% for article in @articles %>
+  <tr class="<%= cycle "odd", "even" %>">
+    <td><%=h article.title %></td>
+    <td><%=h article.body %></td>
+    <td><%=h article.state %></td>
+    <td><%=h article.date_published %></td>
+    <td><%=h article.publication_name %></td>
+	<td><%= link_to 'Up', up_admin_article_path(article), :method => :put %> | <%= link_to 'Down', down_admin_article_path(article), :method => :put %></td>
+    <td><%= link_to 'Show', [:admin,article] %></td>
+    <td><%= link_to 'Edit', edit_admin_article_path(article) %></td>
+    <td><%= link_to 'Destroy', [:admin,article], :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New', new_admin_article_path %>
