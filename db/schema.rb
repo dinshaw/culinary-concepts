@@ -9,18 +9,61 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 6) do
+ActiveRecord::Schema.define(:version => 4) do
 
-  create_table "concepts", :force => true do |t|
+  create_table "admin_concepts", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.integer  "position"
+    t.text     "quote"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "locations", :force => true do |t|
+  create_table "admin_locations", :force => true do |t|
     t.string   "title"
-    t.integer  "parent_id"
-    t.integer  "position"
     t.string   "url"
+    t.string   "parent_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "admin_managers", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.integer  "location_id"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "admin_menu_items", :force => true do |t|
+    t.string   "name"
+    t.integer  "position"
+    t.integer  "menu_section_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "admin_menu_sections", :force => true do |t|
+    t.string   "name"
+    t.integer  "position"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "admin_presses", :force => true do |t|
+    t.string   "title"
+    t.text     "body"
+    t.integer  "position"
+    t.string   "state"
+    t.date     "date_published"
+    t.string   "publication_name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "concepts", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -28,11 +71,6 @@ ActiveRecord::Schema.define(:version => 6) do
   create_table "pages", :force => true do |t|
     t.string   "title"
     t.text     "description"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "presses", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
