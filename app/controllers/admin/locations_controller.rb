@@ -1,6 +1,5 @@
-class Admin::LocationsController < ApplicationController
-  layout "admin"
-  include ListMethods
+class Admin::LocationsController < AdminController
+  
   # GET /locations
   # GET /locations.xml
   def index

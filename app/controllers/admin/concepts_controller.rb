@@ -1,5 +1,5 @@
-class Admin::ConceptsController < ApplicationController
-  layout "admin"
+class Admin::ConceptsController < AdminController
+
   # GET /concepts
   # GET /concepts.xml
   def index

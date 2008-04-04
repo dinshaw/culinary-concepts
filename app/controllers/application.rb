@@ -7,8 +7,6 @@ class ApplicationController < ActionController::Base
 
   include AuthenticatedSystem
   include RoleRequirementSystem
-
-  before_filter :login_required, :except => [:index, :show]
   
   helper :all # include all helpers, all the time
 

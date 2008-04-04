@@ -1,2 +1,2 @@
-class Admin::MenuItemsController < ApplicationController
+class Admin::MenuItemsController < AdminController
 end

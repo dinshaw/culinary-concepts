@@ -1,5 +1,5 @@
-class Admin::PagesController < ApplicationController
-  layout "admin"
+class Admin::PagesController < AdminController
+
   # GET /pages
   # GET /pages.xml
   def index

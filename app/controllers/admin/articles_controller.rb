@@ -1,8 +1,5 @@
-class Admin::ArticlesController < ApplicationController  
-  include ListMethods
-  
-  layout "admin"
-  
+class Admin::ArticlesController < AdminController  
+    
   # GET /articles
   # GET /articles.xml
   def index

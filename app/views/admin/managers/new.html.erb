@@ -2,7 +2,7 @@
 
 <%= error_messages_for :manager %>
 
-<% form_for(@manager) do |f| %>
+<% form_for([:admin,@manager]) do |f| %>
   <p>
     <b>Name</b><br />
     <%= f.text_field :name %>
@@ -15,12 +15,7 @@
 
   <p>
     <b>Location</b><br />
-    <%= f.text_field :location_id %>
-  </p>
-
-  <p>
-    <b>Position</b><br />
-    <%= f.text_field :position %>
+    <%= f.collection_select :location_id, Location.find(:all), :id, :title %>
   </p>
 
   <p>

@@ -1,26 +1,29 @@
-<h1>Listing managers</h1>
-
+<h1>Managers</h1>
+<p><%= link_to 'New manager', new_admin_manager_path %></p>
 <table>
+<thead>	
   <tr>
     <th>Name</th>
     <th>Body</th>
     <th>Location</th>
     <th>Position</th>
+	<th colspan="4"></th>
   </tr>
-
+</thead>
 <% for manager in @managers %>
   <tr>
     <td><%=h manager.name %></td>
     <td><%=h manager.body %></td>
     <td><%=h manager.location_id %></td>
     <td><%=h manager.position %></td>
-    <td><%= link_to 'Show', manager %></td>
-    <td><%= link_to 'Edit', edit_manager_path(manager) %></td>
-    <td><%= link_to 'Destroy', manager, :confirm => 'Are you sure?', :method => :delete %></td>
+	<td><%= link_to 'Up', up_admin_manager_path(manager), :method => :put %> | <%= link_to 'Down', down_admin_manager_path(manager), :method => :put %></td>
+    <td><%= link_to 'Show', [:admin,manager] %></td>
+    <td><%= link_to 'Edit', edit_admin_manager_path(manager) %></td>
+    <td><%= link_to 'Destroy', [:admin,manager], :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New manager', new_manager_path %>
+
