@@ -1,0 +1,14 @@
+<h1>Concept: <%= @concept.title %></h1>
+
+<p>
+  <b>Quote:</b>
+  <%=h @concept.quote %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%=h @concept.body %>
+</p>
+
+<%= link_to 'Edit', edit_admin_concept_path(@concept) %> |
+<%= link_to 'Back', admin_concepts_path %>

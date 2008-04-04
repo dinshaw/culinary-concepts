@@ -1,0 +1,32 @@
+<h1>Editing manager</h1>
+
+<%= error_messages_for :manager %>
+
+<% form_for(@manager) do |f| %>
+  <p>
+    <b>Name</b><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <b>Body</b><br />
+    <%= f.text_area :body %>
+  </p>
+
+  <p>
+    <b>Location</b><br />
+    <%= f.text_field :location_id %>
+  </p>
+
+  <p>
+    <b>Position</b><br />
+    <%= f.text_field :position %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @manager %> |
+<%= link_to 'Back', managers_path %>

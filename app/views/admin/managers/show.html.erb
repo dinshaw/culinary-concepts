@@ -1,0 +1,23 @@
+<p>
+  <b>Name:</b>
+  <%=h @manager.name %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%=h @manager.body %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%=h @manager.location_id %>
+</p>
+
+<p>
+  <b>Position:</b>
+  <%=h @manager.position %>
+</p>
+
+
+<%= link_to 'Edit', edit_manager_path(@manager) %> |
+<%= link_to 'Back', managers_path %>

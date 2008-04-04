@@ -1,0 +1,27 @@
+<h1>Concept</h1>
+
+<%= error_messages_for :concept %>
+
+<% form_for([:admin,@concept]) do |f| %>
+  <p>
+    <b>Title</b><br />
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <b>Quote</b><br />
+    <%= f.text_area :quote %>
+  </p>
+
+  <p>
+    <b>Body</b><br />
+    <%= f.text_area :body %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @concept %> |
+<%= link_to 'Back', concepts_path %>

@@ -1,0 +1,18 @@
+<p>
+  <b>Title:</b>
+  <%=h @menu_item.title %>
+</p>
+
+<p>
+  <b>Position:</b>
+  <%=h @menu_item.position %>
+</p>
+
+<p>
+  <b>Menu section:</b>
+  <%=h @menu_item.menu_section_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_menu_item_path(@menu_item) %> |
+<%= link_to 'Back', menu_items_path %>

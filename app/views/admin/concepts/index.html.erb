@@ -1,0 +1,30 @@
+<h1>Concepts</h1>
+<p><%= link_to 'New concept', new_admin_concept_path %></p>
+
+<table>
+<thead>
+  <tr>
+    <th>Title</th>
+    <th>Quote</th>
+    <th>Body</th>
+    <th>Position</th>
+	<th colspan="4">Actions</th>
+  </tr>
+
+</thead><% for concept in @concepts %>
+  <tr>
+    <td><%=h concept.title %></td>
+    <td><%=h concept.quote %></td>
+    <td><%=h concept.body %></td>
+    <td><%=h concept.position %></td>
+	<td><%= link_to 'Up', up_admin_concept_path(concept), :method => :put %> | <%= link_to 'Down', down_admin_concept_path(concept), :method => :put %></td>
+    <td><%= link_to 'Show', admin_concept_path(concept) %></td>
+    <td><%= link_to 'Edit', edit_admin_concept_path(concept) %></td>
+    <td><%= link_to 'Destroy', admin_concept_path(concept), :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+

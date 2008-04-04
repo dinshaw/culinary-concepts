@@ -1,0 +1,24 @@
+<h1>Listing menu_items</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Position</th>
+    <th>Menu section</th>
+  </tr>
+
+<% for menu_item in @menu_items %>
+  <tr>
+    <td><%=h menu_item.title %></td>
+    <td><%=h menu_item.position %></td>
+    <td><%=h menu_item.menu_section_id %></td>
+    <td><%= link_to 'Show', menu_item %></td>
+    <td><%= link_to 'Edit', edit_menu_item_path(menu_item) %></td>
+    <td><%= link_to 'Destroy', menu_item, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New menu_item', new_menu_item_path %>
