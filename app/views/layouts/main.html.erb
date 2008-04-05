@@ -24,17 +24,16 @@
 		background:<%= @masthead_red %> url(<%= image_path @concept.attachments.img_concept1.public_filename(:square) %>) top left no-repeat;
 	}
 	#inner_concept {
-		height:619px;
+
 		background:url(<%= image_path @concept.attachments.img_concept2.public_filename(:square) %>) bottom left no-repeat;
 	}
 	
 	<% elsif  @controller.controller_name =~ /menu_section/ %>
-	#concept {
-		background:<%= @masthead_red %> url(<%= image_path @concept.attachments.img_menu1.public_filename(:square) %>) 51.5% 0 no-repeat;
+	#concept_image_top {
+		background:url(<%= image_path @concept.attachments.img_menu1.public_filename(:square) %>) top left no-repeat;
 	}
 	#inner_concept {
-		height:619px;
-		background: url(<%= image_path @concept.attachments.img_menu2.public_filename(:square) %>) 0 43.5% no-repeat;
+		background: url(<%= image_path @concept.attachments.img_menu2.public_filename(:square) %>) top left no-repeat;
 	}
 
 	<% end %>
@@ -90,6 +89,7 @@
 		<% elsif @concept %>
 		<div id="concept">
 			<h1><span></span>Culinary Concepts :: Jean-Georges  - home</h1>
+				<div id="concept_image_top"></div>
 				<div id="inner_concept">
 					<div id="concept_content">
 						<%= yield  %>

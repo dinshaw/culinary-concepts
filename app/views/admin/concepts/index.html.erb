@@ -10,7 +10,8 @@
 	<th colspan="5">Actions</th>
   </tr>
 
-</thead><% for concept in @concepts %>
+</thead>
+<% for concept in @concepts %>
   <tr class="<%= cycle "odd", "even" %>">
     <td><%=h concept.title %></td>
     <td><%= concept.quote %></td>
