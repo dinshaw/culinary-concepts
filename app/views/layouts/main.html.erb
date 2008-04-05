@@ -11,27 +11,30 @@
 	<%= stylesheet_link_tag 'scaffold' %>
 	<%= javascript_include_tag "application", "rollover", "AC_RunActiveContent" %>
 	
-	<% if @concept %>
+	<% if @controller.controller_name =~ /concept/ || @controller.controller_name =~ /menu_section/ %>
+	
 	<style>
-	<% if @image_type == 'start' %>
+	
+	<% if @controller.action_name =~ /quote/ && @controller.controller_name =~ /concept/ %>
 	#concept {
 		background:<%= @masthead_red %> url(<%= image_path @concept.attachments.img_main.public_filename(:concept) %>) top left no-repeat;
 	}
-	<% elsif @image_type == "concept" %>
+	<% elsif @controller.action_name =~ /show/ && @controller.controller_name =~ /concept/ %>
 	#concept {
 		background:<%= @masthead_red %> url(<%= image_path @concept.attachments.img_concept1.public_filename(:square) %>) top left no-repeat;
 	}
 	#inner_concept {
 		height:619px;
-		background:<%= @masthead_red %> url(<%= image_path @concept.attachments.img_concept2.public_filename(:square) %>) bottom left no-repeat;
+		background:url(<%= image_path @concept.attachments.img_concept2.public_filename(:square) %>) bottom left no-repeat;
 	}
-	<% elsif @image_type == "menu" %>
+	
+	<% elsif  @controller.controller_name =~ /menu_section/ %>
 	#concept {
 		background:<%= @masthead_red %> url(<%= image_path @concept.attachments.img_menu1.public_filename(:square) %>) 51.5% 0 no-repeat;
 	}
 	#inner_concept {
 		height:619px;
-		background:<%= @masthead_red %> url(<%= image_path @concept.attachments.img_menu2.public_filename(:square) %>) 0 43.5% no-repeat;
+		background: url(<%= image_path @concept.attachments.img_menu2.public_filename(:square) %>) 0 43.5% no-repeat;
 	}
 
 	<% end %>
@@ -39,11 +42,14 @@
 	#concept_content{
 		background-color:<%= @concept.bg_color %>;
 	}
-		</style>
+	</style>
+	
 	<% end %>
+
 
 </head>
 <body>
+
 	<div id="canvas">
 		<div id="nav_main">
 			<ul>

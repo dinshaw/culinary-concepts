@@ -22,4 +22,10 @@ class Concept < ActiveRecord::Base
     end
 
   end
+  
+  # override for now
+  def bg_color
+    "#fdca90"
+  end
+  
 end

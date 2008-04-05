@@ -1,5 +1,5 @@
 class MenuSectionsController < ApplicationController
-
+  before_filter :do_colors
   # GET /menu_sections/1
   # GET /menu_sections/1.xml
   def show
