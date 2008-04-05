@@ -27,11 +27,14 @@
 	}
 	<% elsif @image_type == "menu" %>
 	#concept {
-		background:url(<%= image_path @concept.attachments.img_menu1.public_filename(:square) %>) 39% 0 no-repeat;
+		background:url(<%= image_path @concept.attachments.img_menu1.public_filename(:square) %>) 51.5% 0 no-repeat;
 	}
 	#inner_concept {
 		height:619px;
-		background:<%= @concept.bg_color %> url(<%= image_path @concept.attachments.img_menu2.public_filename(:square) %>) 0 46% no-repeat;
+		background:url(<%= image_path @concept.attachments.img_menu2.public_filename(:square) %>) 0 43.5% no-repeat;
+	}
+	#concept_content{
+		backgroun-color:<%= @concept.bg_color %>;
 	}
 	<% end %>
 	</style>
