@@ -23,7 +23,7 @@
 	}
 	#inner_concept {
 		height:619px;
-		background: url(<%= image_path @concept.attachments.img_concept2.public_filename(:square) %>) bottom left no-repeat;
+		background:<%= @masthead_red %> url(<%= image_path @concept.attachments.img_concept2.public_filename(:square) %>) bottom left no-repeat;
 	}
 	<% elsif @image_type == "menu" %>
 	#concept {
@@ -31,7 +31,7 @@
 	}
 	#inner_concept {
 		height:619px;
-		background:url(<%= image_path @concept.attachments.img_menu2.public_filename(:square) %>) 0 43.5% no-repeat;
+		background:<%= @masthead_red %> url(<%= image_path @concept.attachments.img_menu2.public_filename(:square) %>) 0 43.5% no-repeat;
 	}
 
 	<% end %>
