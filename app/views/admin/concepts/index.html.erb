@@ -11,7 +11,7 @@
   </tr>
 
 </thead><% for concept in @concepts %>
-  <tr>
+  <tr class="<%= cycle "odd", "even" %>">
     <td><%=h concept.title %></td>
     <td><%= concept.quote %></td>
     <td><%= concept.body %></td>

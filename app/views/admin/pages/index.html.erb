@@ -9,7 +9,7 @@
   </tr>
 </thead>
 <% for page in @pages %>
-  <tr>
+  <tr class="<%= cycle "odd", "even" %>">
     <td><%=h page.title %></td>
     <td><%= page.description %></td>
     <td><%= link_to 'Show', admin_page_path(page) %></td>

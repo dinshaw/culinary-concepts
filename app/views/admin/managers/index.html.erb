@@ -10,7 +10,7 @@
   </tr>
 </thead>
 <% for manager in @managers %>
-  <tr>
+  <tr class="<%= cycle "odd", "even" %>">
     <td><%=h manager.name %></td>
     <td><%= manager.body %></td>
     <td><%=h manager.location.title %></td>
