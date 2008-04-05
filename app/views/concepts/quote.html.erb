@@ -1,4 +1,4 @@
-<h2><%= link_to "concept", concept_path(@concept) %> <span><%= link_to "menu", concept_menu_section_path(@concept, @concept.menu_sections.first) %></span></h2>
+<h2><%= link_to "concept", concept_path(@concept) %> <span><%= link_to "menu", concept_menu_section_path(@concept, @concept.menu_sections.first) if @concept.menu_sections.length > 1 %></span></h2>
 
 <p><%= @concept.quote %></p>
 <% image = @concept.attachments.img_signature.public_filename rescue "signature.gif" %>
