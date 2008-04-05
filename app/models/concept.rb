@@ -12,7 +12,7 @@ class Concept < ActiveRecord::Base
   has_many :menu_items, :through => :menu_sections
 
   has_many :attachments, :as => :attachee, :dependent => :destroy do
-    ['img_main','img_concept1','img_concept2','img_menu1','img_menu2','img_sidebar'].each do |type|
+    ['img_main','img_concept1','img_concept2','img_menu1','img_menu2','img_sidebar','img_signature'].each do |type|
       class_eval <<-EOS
       def #{type}(reload=false)
         @#{type} = nil if reload

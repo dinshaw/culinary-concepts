@@ -20,6 +20,12 @@
 
 <p>
   <b>Sidebar Image</b><br />
+	<%= image_tag @concept.attachments.img_signature.public_filename, :class => :thumb if !@concept.attachments.img_signature.nil? %><br />
+</p>
+
+
+<p>
+  <b>Sidebar Image</b><br />
 	<%= image_tag @concept.attachments.img_sidebar.public_filename(:thumb), :class => :thumb if !@concept.attachments.img_sidebar.nil? %><br />
 </p>
 

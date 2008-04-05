@@ -1,6 +1,6 @@
 module AttachmentUpload
   
-  attr_accessor :uploaded_data_img_main, :uploaded_data_img_concept1, :uploaded_data_img_concept2, :uploaded_data_img_menu1, :uploaded_data_img_menu2, :uploaded_data_img_sidebar, :uploaded_data_img_manager
+  attr_accessor :uploaded_data_img_main, :uploaded_data_img_concept1, :uploaded_data_img_concept2, :uploaded_data_img_menu1, :uploaded_data_img_menu2, :uploaded_data_img_sidebar, :uploaded_data_img_manager, :uploaded_data_img_signature
 
   def save_with_attachments
     # begin 
@@ -45,6 +45,7 @@ module AttachmentUpload
     update_attachment_details("img_menu2") if uploaded_data_img_menu2 && uploaded_data_img_menu2.size > 0
     update_attachment_details("img_sidebar") if uploaded_data_img_sidebar && uploaded_data_img_sidebar.size > 0
     update_attachment_details("img_manager") if uploaded_data_img_manager && uploaded_data_img_manager.size > 0
+    update_attachment_details("img_signature") if uploaded_data_img_signature && uploaded_data_img_signature.size > 0
   end
   
   def update_attachment_details(attachment_type)

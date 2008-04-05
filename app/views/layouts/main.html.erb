@@ -15,23 +15,23 @@
 	<style>
 	<% if @image_type == 'start' %>
 	#concept {
-		background:url(<%= image_path @concept.attachments.image_main.public_filename(:concept) %>) top left no-repeat;
+		background:url(<%= image_path @concept.attachments.img_main.public_filename(:concept) %>) top left no-repeat;
 	}
 	<% elsif @image_type == "concept" %>
 	#concept {
-		background:url(<%= image_path @concept.attachments.image_concept1.public_filename(:square) %>) top left no-repeat;
+		background:url(<%= image_path @concept.attachments.img_concept1.public_filename(:square) %>) top left no-repeat;
 	}
 	#inner_concept {
 		height:619px;
-		background:url(<%= image_path @concept.attachments.image_concept2.public_filename(:square) %>) bottom left no-repeat;
+		background:url(<%= image_path @concept.attachments.img_concept2.public_filename(:square) %>) bottom left no-repeat;
 	}
 	<% elsif @image_type == "menu" %>
 	#concept {
-		background:url(<%= image_path @concept.attachments.image_menu1.public_filename(:square) %>) 39% 0 no-repeat;
+		background:url(<%= image_path @concept.attachments.img_menu1.public_filename(:square) %>) 39% 0 no-repeat;
 	}
 	#inner_concept {
 		height:619px;
-		background:url(<%= image_path @concept.attachments.image_menu2.public_filename(:square) %>) 0 46% no-repeat;
+		background:<%= @concept.bg_color %> url(<%= image_path @concept.attachments.img_menu2.public_filename(:square) %>) 0 46% no-repeat;
 	}
 	<% end %>
 	</style>
