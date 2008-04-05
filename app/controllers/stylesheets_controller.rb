@@ -6,17 +6,6 @@ class StylesheetsController < ApplicationController
 
   before_filter :do_colors
   
-  def do_colors
-    @off_white = "#e5e1d8"
-    @masthead_red = "#600d00"
-    @bg_red = "#6f1100"
-    @content_red = "#510a00"
-    @salmon = "#a2766c"
-    @brown = "#b4683b"
-    @light_red = "#CD5C5C"
-    @pink = "#fdca90"
-  end
-  
   def main
     respond_to do |format|
       format.css do 

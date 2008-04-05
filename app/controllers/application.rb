@@ -13,4 +13,15 @@ class ApplicationController < ActionController::Base
   # See ActionController::RequestForgeryProtection for details
   # Uncomment the :secret if you're not using the cookie session store
   protect_from_forgery # :secret => 'e92a3fadf10b881809520e0c1898b881'
+  
+  def do_colors
+     @off_white = "#e5e1d8"
+     @masthead_red = "#600d00"
+     @bg_red = "#6f1100"
+     @content_red = "#510a00"
+     @salmon = "#a2766c"
+     @brown = "#b4683b"
+     @light_red = "#CD5C5C"
+     @pink = "#fdca90"
+   end
 end

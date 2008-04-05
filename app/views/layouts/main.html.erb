@@ -15,11 +15,11 @@
 	<style>
 	<% if @image_type == 'start' %>
 	#concept {
-		background:url(<%= image_path @concept.attachments.img_main.public_filename(:concept) %>) top left no-repeat;
+		background:<%= @masthead_red %> url(<%= image_path @concept.attachments.img_main.public_filename(:concept) %>) top left no-repeat;
 	}
 	<% elsif @image_type == "concept" %>
 	#concept {
-		background:url(<%= image_path @concept.attachments.img_concept1.public_filename(:square) %>) top left no-repeat;
+		background:<%= @masthead_red %> url(<%= image_path @concept.attachments.img_concept1.public_filename(:square) %>) top left no-repeat;
 	}
 	#inner_concept {
 		height:619px;

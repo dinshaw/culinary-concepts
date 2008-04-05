@@ -1,5 +1,5 @@
 class ConceptsController < ApplicationController
-
+  before_filter :do_colors
   # GET /concepts/1
   # GET /concepts/1.xml
   def show
