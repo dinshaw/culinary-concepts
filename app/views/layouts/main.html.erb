@@ -33,11 +33,13 @@
 		height:619px;
 		background:url(<%= image_path @concept.attachments.img_menu2.public_filename(:square) %>) 0 43.5% no-repeat;
 	}
-	#concept_content{
-		backgroun-color:<%= @concept.bg_color %>;
-	}
+
 	<% end %>
-	</style>
+
+	#concept_content{
+		background-color:<%= @concept.bg_color %>;
+	}
+		</style>
 	<% end %>
 
 </head>
