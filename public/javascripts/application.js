@@ -50,7 +50,8 @@ function popup(target,title,classname) {
 }
 
 function IEHoverPseudo() {
-
+	if (!document.getElementById("nav_main")) return false;
+	
 	var navItems = document.getElementById("nav_main").getElementsByTagName("li");
 	
 	for (var i=0; i<navItems.length; i++) {

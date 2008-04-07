@@ -11,7 +11,7 @@
 <% for page in @pages %>
   <tr class="<%= cycle "odd", "even" %>">
     <td><%=h page.title %></td>
-    <td><%= page.description %></td>
+    <td><%= truncate(page.description, 50) %></td>
     <td><%= link_to 'Show', admin_page_path(page) %></td>
     <td><%= link_to 'Edit', edit_admin_page_path(page) %></td>
     <td><%= link_to 'Destroy', admin_page_path(page), :confirm => 'Are you sure?', :method => :delete %></td>

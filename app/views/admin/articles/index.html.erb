@@ -14,14 +14,14 @@
 <% for article in @articles %>
   <tr class="<%= cycle "odd", "even" %>">
     <td><%=h article.title %></td>
-    <td><%= article.body %></td>
+    <td><%= truncate(article.body, 50) %></td>
     <td><%=h article.state %></td>
     <td><%=h article.date_published %></td>
     <td><%=h article.publication_name %></td>
 	<td><%= link_to 'Up', up_admin_article_path(article), :method => :put %> | <%= link_to 'Down', down_admin_article_path(article), :method => :put %></td>
     <td><%= link_to 'Show', [:admin,article] %></td>
     <td><%= link_to 'Edit', edit_admin_article_path(article) %></td>
-    <td><%= link_to 'Destroy', [:admin,article], :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Destroy', [:admin,article], :confirm => confirm_text, :method => :delete %></td>
   </tr>
 <% end %>
 </table>

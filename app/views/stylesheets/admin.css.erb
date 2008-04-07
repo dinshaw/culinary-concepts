@@ -1,16 +1,13 @@
 body{
 	background:#000 url(/images/culinary-concepts.gif) 20px 20px no-repeat;
 }
+#canvas{
+		margin-top:150px;
+}
 
 #nav_admin{
 	width:147px;
-	float:left;
-margin-top:150px;
-	
-}
-
-html > body #nav_admin{
-	margin-top:0;
+	float:left;	
 }
 #nav_admin a{
 	color:white;
@@ -63,9 +60,12 @@ td,th{
 	border:1px solid #ccc;
 	}
 
+td a{
+	font-size:0.8em;
+}
 thead{color:#fff;background-color:#ccc;}
 
 tr.odd td{background-color:#e4efef;}
 
-tr:hover{background-color:<%= @light_red %>;color:#fff;}
+tr:hover td{background-color:<%= @off_white %>;}
 thead tr:hover{background-color:#ccc;}

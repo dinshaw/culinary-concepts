@@ -24,4 +24,8 @@ module ApplicationHelper
      @light_red = "#CD5C5C"
      @pink = "#fdca90"
    end
+   
+   def confirm_text
+     "Are you sure you want to delete this?  Action cannot be reversed."
+   end
 end
