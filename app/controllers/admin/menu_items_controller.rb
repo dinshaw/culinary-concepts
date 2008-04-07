@@ -13,7 +13,7 @@ end
 
 
 class Admin::MenuItemsController < AdminController
-  
+
   before_filter :get_menu_section
   
   def get_menu_section
