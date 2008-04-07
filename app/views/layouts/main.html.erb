@@ -110,7 +110,7 @@
 		<% end %>
 
 		<div id="footer">
-			<p id="site_info"><span id="footer_links"><%= ["Jean Georges", "Resort", "Spice Market", "Bistro", "Kitchen", "Modern American", "Steakhouse"].collect {|l| link_to l,root_path}.join(" | ") %></span>&copy; <%= Date.today.year %> Culinary Concepts by Jean-Georges</p>
+			<p id="site_info"><span id="footer_links"><%= Concept.find(:all).collect{|concept| link_to(concept.title.upcase,concept) }.join(" | ") %></span>&copy; <%= Date.today.year %> Culinary Concepts by Jean-Georges</p>
 		</div> <!-- footer -->
 	</div>
 </body>
