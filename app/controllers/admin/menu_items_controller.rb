@@ -65,7 +65,7 @@ class Admin::MenuItemsController < AdminController
 
     respond_to do |format|
       if @menu_item.save
-        flash[:notice] = 'MenuItem was successfully created.'
+        flash[:notice] = 'Menu Item was successfully created.'
         format.html { redirect_to admin_concept_menu_section_menu_items_path(@menu_section.concept, @menu_section ) }
         format.xml  { render :xml => @menu_item, :status => :created, :location => @menu_item }
       else
@@ -82,7 +82,7 @@ class Admin::MenuItemsController < AdminController
 
     respond_to do |format|
       if @menu_item.update_attributes(params[:menu_item])
-        flash[:notice] = 'MenuItem was successfully updated.'
+        flash[:notice] = 'Menu Item was successfully updated.'
         format.html { redirect_to admin_concept_menu_section_menu_items_path(@menu_section.concept, @menu_section )  }
         format.xml  { head :ok }
       else

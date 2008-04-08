@@ -1,11 +1,11 @@
-<h1>Editing Menu Item</h1>
+<h1>Concept: <strong><%= link_to @menu_section.concept.title, admin_concept_path(@menu_section.concept) %></strong> Menu: <strong><%= @menu_section.title %></strong></h1>
 
 <%= error_messages_for :menu_item %>
 
 <% form_for([:admin,@menu_section.concept,@menu_section,@menu_item]) do |f| %>
   <p>
     <b>Title</b><br />
-    <%= f.text_field :title %>
+    <%= f.text_field :title, :class => "text long" %>
   </p>
 
   <p>
@@ -13,4 +13,4 @@
   </p>
 <% end %>
 
-<%= link_to 'Back', admin_concept_menu_section_menu_items_path(@concept,@menu_section) %>
+<%= link_to 'Back', admin_concept_menu_section_menu_items_path(@menu_section.concept,@menu_section) %>
