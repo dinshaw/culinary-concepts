@@ -116,7 +116,7 @@ ul.locations_list li.child{
 
 #masthead{
 	background-color:<%= @masthead_red %>;
-	
+
 }
 
 #home{
@@ -125,8 +125,8 @@ ul.locations_list li.child{
 }
 
 #concept{
-		background-color:<%= @masthead_red %>;
-		position:relative;
+	background-color:<%= @masthead_red %>;
+	position:relative;
 }
 
 /* Gilder / Levin image replacement method for logo */
@@ -155,13 +155,12 @@ ul.locations_list li.child{
 }
 
 #concept_content{
-	position:absolute;
+	float:right;
 	width:465px;
 	height:445px;
-	bottom:0;
-	right:0;	
 	background-color:<%= @pink %>;
 }
+
 
 #concept_image_top{
 	position:absolute;
@@ -170,6 +169,7 @@ ul.locations_list li.child{
 	height:221px;
 	width:465px;
 }
+
 #inner_concept{
 	position:absolute;
 	bottom:0;
@@ -177,6 +177,29 @@ ul.locations_list li.child{
 	width:704px;
 }
 
+
+#scroll_up { 
+	cursor: pointer; 
+	position:absolute;
+	right:0;
+	top:70px;
+	margin:0;
+} 
+#scroll_down { 
+	cursor: pointer; 
+	position:absolute;
+	right:0;
+	bottom:20px;
+	margin:0;	
+} 
+
+#scroll_box {
+	
+	margin-top:20px;
+	height: 350px; 
+	width: 450px; 
+	overflow: auto; 
+}
 
 
 img#signature{
@@ -192,6 +215,9 @@ img#signature{
 #concept p,#concept ul, #concept h2{
 	margin:20px 20px 0 20px;
 }
+#concept #scroll_box p{
+	margin:0 20px;
+}
 
 #menu_sections li{
 	float:left;
@@ -203,7 +229,7 @@ img#signature{
 }
 
 #concept_content h2, #menu_sections li,#menu_sections li a{
-		font-size:9px;
+	font-size:9px;
 }
 
 #tag{
@@ -339,8 +365,8 @@ img#signature{
 /* =Footer
 -----------------------------------------------------------------------------*/
 #footer{
-margin:0;
-width:940px;
+	margin:0;
+	width:940px;
 }
 #footer, #footer a {
 	color:<%= @salmon %>;

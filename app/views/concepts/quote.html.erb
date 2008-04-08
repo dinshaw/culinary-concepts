@@ -1,6 +1,7 @@
 <h2><%= link_to "Concept", concept_path(@concept) %> <span><%= @concept.menu_sections.length > 0 ? link_to("Menu", concept_menu_section_path(@concept, @concept.menu_sections.first)) : "Menu" %></span></h2>
 
 <p><%= @concept.quote %></p>
+
 <% image = @concept.attachments.img_signature.public_filename rescue "signature.gif" %>
 <%= image_tag(image, :id => :signature)  %>
 <p id="next"><%= link_to ":: NEXT", concept_path(@concept) %></p>

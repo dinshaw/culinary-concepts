@@ -1,3 +1,4 @@
 <h2>Concept <span><%= @concept.menu_sections.length > 0 ? link_to("Menu", concept_menu_section_path(@concept, @concept.menu_sections.first)) : "Menu" %></span></h2>
 
-<p><%= @concept.body %></p>
+<%= render :partial => "shared/scroll_pane", :locals => {:text => @concept.body} %>
+
