@@ -13,20 +13,29 @@ function TextScroll(scrollname, div_name, up_name, down_name)
 	this.dn_name = down_name; 
 	{ 
 		if (document.getElementById) { 
-			div_obj = document.getElementById(this.div_name); 
+			div_obj = document.getElementById(this.div_name);
 			if (div_obj) { 
 				this.div_obj = div_obj; 
 				this.div_obj.style.overflow = 'hidden'; 
-			} 
+			}
+
+			
+		
+				
 			div_up_obj = document.getElementById(this.up_name); 
 			div_dn_obj = document.getElementById(this.dn_name); 
-			if (div_up_obj && div_dn_obj) { 
-				div_up_obj.onmouseover = function() { eval(scrollname + ".scrollUp();") }; 
-				div_up_obj.onmouseout = function() { eval(scrollname + ".stopScroll();") }; 
-				div_dn_obj.onmouseover = function() { eval(scrollname + ".scrollDown();") }; 
-				div_dn_obj.onmouseout = function() { eval(scrollname + ".stopScroll();") }; 
-
-			} 
+			
+			if (div_obj.scrollHeight > 350) {
+				if (div_up_obj && div_dn_obj) { 
+					div_up_obj.onmouseover = function() { eval(scrollname + ".scrollUp();") }; 
+					div_up_obj.onmouseout = function() { eval(scrollname + ".stopScroll();") }; 
+					div_dn_obj.onmouseover = function() { eval(scrollname + ".scrollDown();") }; 
+					div_dn_obj.onmouseout = function() { eval(scrollname + ".stopScroll();") }; 
+				}
+			}else{
+				div_up_obj.style.display = "none";
+ 				div_dn_obj.style.display = "none";
+			}  
 		} 
 	} 
 	this.stopScroll = function() { 
