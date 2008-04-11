@@ -2,6 +2,7 @@
 <p><%= image_tag @manager.photo.public_filename(:thumb), :class => :left if !@manager.photo.nil? %></p>
 <%= @manager.body %>
 
+<br class="claer" />
 
 <%= link_to 'Edit', edit_admin_manager_path(@manager) %> |
 <%= link_to 'Back', admin_managers_path %>
