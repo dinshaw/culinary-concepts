@@ -1,7 +1,9 @@
-<h1>Manager: <%= @manager.name %>, <%= @manager.location.title %></h1>
-<p><%= image_tag @manager.photo.public_filename(:thumb), :class => :left if !@manager.photo.nil? %></p>
-<%= @manager.body %>
+<div class="mannager">
+	<h1>Manager: <%= @manager.name %>, <%= @manager.location.title %></h1>
+	<p><%= image_tag @manager.photo.public_filename(:thumb), :class => :left if !@manager.photo.nil? %></p>
+	<%= @manager.body %>
 
-<br class="claer" />
+	<br class="clear" />
+</div>
 
 <p><%= link_to 'Edit', edit_admin_manager_path(@manager) %> | <%= link_to 'Back', admin_managers_path %></p>
