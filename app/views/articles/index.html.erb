@@ -6,7 +6,7 @@
 
 	<% @articles.each do |article| %>
 	<div class="article">
-		<%= link_to(image_tag( article.attachments.img_article.public_filename(:thumb), :class => :left), article) if !article.attachments.img_article.nil? %>
+		<%= link_to(image_tag( article.attachments.img_publication.public_filename(:thumb), :class => :left), article) if !article.attachments.img_article.nil? %>
 		<p><%= article.date_published.strftime("%x") %></p>
 		<p><%= article.title %></p>
 		<br class="clear" />
