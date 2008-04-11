@@ -178,11 +178,8 @@ ul.locations_list li.child{
 }
 
 #outer_scroll{
-	position:relative;
-}
-
-#outer_scroll span{
-	border:0;
+	position:absolute;
+	width:640px;
 }
 
 #scroll_up { 
@@ -192,6 +189,14 @@ ul.locations_list li.child{
 	top:70px;
 	margin:0;
 } 
+
+#outer_scroll #scroll_up{
+	top:20px;
+}
+
+#outer_scroll #scroll_down{
+	bottom:0;
+}
 #scroll_down { 
 	cursor: pointer; 
 	position:absolute;
@@ -290,6 +295,8 @@ img#signature{
 
 
 .manager{
+	float:left;
+	width:620px;
 	margin:20px 0;
 	padding-bottom:10px;
 	border:1px solid <%= @off_white %>;
@@ -390,8 +397,11 @@ img#signature{
 
 
 .article{
+	float:left;
 	padding-bottom:10px;
+	margin-bottom:10px;	
 	border-bottom:1px solid <%= @off_white %>;
+	width:620px;
 }
 
 .article p{
