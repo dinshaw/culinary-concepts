@@ -28,4 +28,14 @@ module ApplicationHelper
    def confirm_text
      "Are you sure you want to delete this?  Action cannot be reversed."
    end
+   
+   def slideshow_xml
+
+     if @controller.controller_name == "articles"
+       file_name = "home.xml"
+     else
+       file_name = "#{@controller.action_name}.xml"
+     end
+     file_name
+   end
 end

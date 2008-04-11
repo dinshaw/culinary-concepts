@@ -40,7 +40,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.root :controller => "public", :action => "home"
   map.home "/", :controller => "public", :action => "home"
-  map.press "press", :controller => "presses"
+  map.press "press", :controller => "articles"
   map.about_us "about_us", :controller => "public", :action => "about_us"
   map.contact_us "contact", :controller => "public", :action => "contact_us"
   map.jean_georges "jean_georges", :controller => "public", :action => "jean_georges"
