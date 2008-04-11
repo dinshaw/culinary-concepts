@@ -1,24 +1,17 @@
-<p>
-  <b>Title:</b>
-  <%=h @article.title %>
-</p>
+<div id="outer_scroll">
+	
+<h2><%=h @article.title %></h2>
 
-<p>
-  <b>Body:</b>
-  <%= @article.body %>
-</p>
+<div id="scroll_box" class="noheight">
+<p><%=h @article.publication_name %> <%=h @article.date_published %></p>
+<%= image_tag @article.attachments.img_article.public_filename(:sidebar), :class => :left %>
+<%= @article.body %>
+  </div>
+<span id="scroll_up"><%= image_tag "up_arrow.gif" %></span><span id="scroll_down"><%= image_tag "down_arrow.gif" %></span> 
 
-<p>
-  <b>Date published:</b>
-  <%=h @article.date_published %>
-</p>
-
-<p>
-  <b>Publication name:</b>
-  <%=h @article.publication_name %>
-</p>
+</div>
 
 
-
-<%= link_to 'Edit', edit_article_path(@article) %> |
-<%= link_to 'Back', articles_path %>
+<script type="text/javascript"> 
+var div_scroll1 = new TextScroll('div_scroll1', 'scroll_box', 'scroll_up', 'scroll_down'); 
+</script>

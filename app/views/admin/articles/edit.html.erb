@@ -2,7 +2,7 @@
 
 <%= error_messages_for :article %>
 
-<% form_for([:admin,@article]) do |f| %>
+<% form_for([:admin,@article], :html => {:multipart => true}) do |f| %>
   <p>
     <b>Title</b><br />
     <%= f.text_field :title %>
@@ -26,6 +26,16 @@
   <p>
     <b>Publication name</b><br />
     <%= f.text_field :publication_name %>
+  </p>
+
+  <p>
+    <b>Publication Image</b><br />
+    <%= f.file_field :uploaded_data_img_publication %>
+  </p>
+
+  <p>
+    <b>Article Image</b><br />
+    <%= f.file_field :uploaded_data_img_article %>
   </p>
 
   <p>

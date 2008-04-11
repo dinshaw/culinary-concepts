@@ -20,12 +20,11 @@ function TextScroll(scrollname, div_name, up_name, down_name)
 			}
 
 			
-		
 				
 			div_up_obj = document.getElementById(this.up_name); 
 			div_dn_obj = document.getElementById(this.dn_name); 
 			
-			if (div_obj.scrollHeight > 350) {
+			if (div_obj.scrollHeight > 350 || div_obj.className.indexOf("noheight") != -1) {
 				if (div_up_obj && div_dn_obj) { 
 					div_up_obj.onmouseover = function() { eval(scrollname + ".scrollUp();") }; 
 					div_up_obj.onmouseout = function() { eval(scrollname + ".stopScroll();") }; 

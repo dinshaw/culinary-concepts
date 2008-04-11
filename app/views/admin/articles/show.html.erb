@@ -1,24 +1,14 @@
-<h1>Press: <%= @article.title %></h1>
+<h1><%=h @article.title %></h1>
+<p><%=h @article.date_published %></p>
+<h2>Publication Image:</h2>
+<%= image_tag @article.attachments.img_publication.public_filename(:thumb) %>
 
 
-<p><%= @article.body %></p>
+<%= image_tag @article.attachments.img_article.public_filename(:sidebar), :class => :left %>
+<%= @article.body %>
+
+<br class="clear" /> 
 
 
-<p>
-  <b>State:</b>
-  <%=h @article.state %>
-</p>
 
-<p>
-  <b>Date published:</b>
-  <%= @article.date_published %>
-</p>
-
-<p>
-  <b>Publication name:</b>
-  <%=h @article.publication_name %>
-</p>
-
-
-<%= link_to 'Edit', edit_admin_article_path(@article) %> |
-<%= link_to 'Back', admin_articles_path %>
+<p><%= link_to 'Edit', edit_admin_article_path(@article) %> | <%= link_to 'Back', admin_articles_path %></p>

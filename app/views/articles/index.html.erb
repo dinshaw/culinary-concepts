@@ -1,17 +1,25 @@
-<h2>Press</h2>
-<p>Coming soon...</p>
-<!-- <h2>Press</h2>
+<div id="outer_scroll">
 
-<% for article in @articles %>
-  <%=h article.title %>
-<%= article.body %>
-    <%=h article.state %>
-    <%=h article.date_published %>
-    <%=h article.publication_name %>
-    <%= link_to 'Show', article %>
-    <%= link_to 'Edit', edit_article_path(article) %>
-    <%= link_to 'Destroy', article, :confirm => 'Are you sure?', :method => :delete %>
-  </tr>
-<% end %>
-</table> -->
+	<h2>Press</h2>
 
+	<div id="scroll_box" class="noheight">
+
+	<% @articles.each do |article| %>
+	<div class="article">
+		<%= link_to(image_tag( article.attachments.img_article.public_filename(:thumb), :class => :left), article) if !article.attachments.img_article.nil? %>
+		<p><%= article.date_published.strftime("%x") %></p>
+		<p><%= article.title %></p>
+		<br class="clear" />
+	</div>
+	<br class="clear" />
+	<% end %>
+</div>
+
+<span id="scroll_up"><%= image_tag "up_arrow.gif" %></span><span id="scroll_down"><%= image_tag "down_arrow.gif" %></span> 
+
+</div>
+
+
+<script type="text/javascript"> 
+var div_scroll1 = new TextScroll('div_scroll1', 'scroll_box', 'scroll_up', 'scroll_down'); 
+</script>

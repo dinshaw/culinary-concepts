@@ -2,7 +2,10 @@
 <p><%= link_to 'New press', new_admin_article_path %></p>
 
 <table>
-<thead>  <tr>
+<thead>
+	<tr>
+	<th>Publication Image</th>
+	<th>Article Image</th>
     <th>Title</th>
     <th>Body</th>
     <th>State</th>
@@ -13,7 +16,9 @@
 </thead>
 <% for article in @articles %>
   <tr class="<%= cycle "odd", "even" %>">
-    <td><%=h article.title %></td>
+	<td><%= image_tag article.attachments.img_publication.public_filename(:thumb) if !article.attachments.img_publication.nil? %></td>
+	<td><%= image_tag article.attachments.img_article.public_filename(:thumb) if !article.attachments.img_article.nil? %></td>	
+	<td><%=h article.title %></td>
     <td><%= truncate(article.body, 50) %></td>
     <td><%=h article.state %></td>
     <td><%=h article.date_published %></td>

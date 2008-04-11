@@ -1,61 +1,82 @@
 module AttachmentUpload
+
+  def self.included(base)        #:nodoc:
+    base.extend AttachmentUpload
+    @@class = base
+  end
+
   
-  attr_accessor :uploaded_data_img_main, :uploaded_data_img_concept1, :uploaded_data_img_concept2, :uploaded_data_img_menu1, :uploaded_data_img_menu2, :uploaded_data_img_sidebar, :uploaded_data_img_manager, :uploaded_data_img_signature
+  def attachment_names(*names)
+    @@attachment_names = names
+    has_many :attachments, :as => :attachee, :dependent => :destroy do
+      names.each do |name|        
+        class_eval <<-EOS
+        #{@@class}.send(:attr_accessor, :uploaded_data_#{name}, :remove_#{name})
+        def #{name}(reload=false)
+          @#{name} = nil if reload
+          @#{name} ||= find(:first, :conditions => ["attachment_type = ?",'#{name}'])
+        end
+        EOS
+      end
+    end
+  end
 
   def save_with_attachments
-    # begin 
-      self.transaction do 
-        do_all_updates
+    begin 
+      @@attachment_names.each do |attachment|
+        eval <<-EOS
+        @attachment = Attachment.new
+        if uploaded_data_#{attachment} && uploaded_data_#{attachment}.size > 0   
+          self.attachments.#{attachment}.destroy if self.attachments.#{attachment}
+          @attachment.uploaded_data = uploaded_data_#{attachment}
+          @attachment.attachment_type = "#{attachment}"
+          @attachment.thumbnails.clear 
+          @attachment.save! 
+          self.attachments << @attachment
+        end
+        EOS
         save! 
       end 
-    # rescue 
-    #       if @attachment.errors.on(:size) 
-    #         errors.add_to_base("Uploaded file is too big (3MB max).") 
-    #       end 
-    #       if @attachment.errors.on(:content_type) 
-    #         errors.add_to_base("Uploaded image content-type is not valid.") 
-    #       end 
-    #       false 
-    #     end 
+    rescue 
+      add_attachment_errors(@attachment)
+    end 
   end
 
   def update_with_attachments(params) 
-    # begin
+    begin
       self.transaction do
         self.update_attributes(params)
-        do_all_updates
+        @@attachment_names.each do |attachment|
+          eval <<-EOS
+          @attachment = Attachment.new
+          if remove_#{attachment} == '1' && self.attachments.#{attachment}
+            self.attachments.#{attachment}.destroy
+          elsif uploaded_data_#{attachment} && uploaded_data_#{attachment}.size > 0   
+            self.attachments.#{attachment}.destroy if self.attachments.#{attachment}
+            @attachment.uploaded_data = uploaded_data_#{attachment}
+            @attachment.attachment_type = "#{attachment}"
+            @attachment.thumbnails.clear 
+            @attachment.save! 
+            self.attachments << @attachment
+          end
+          EOS
+        end
         save!
       end 
-    # rescue 
-    #      if @attachment.errors.on(:size) 
-    #        errors.add_to_base("Uploaded file is too big (3MB max).") 
-    #      end 
-    #      if @attachment.errors.on(:content_type) 
-    #        errors.add_to_base("Uploaded file content-type is not valid.") 
-    #      end 
-    #      false 
-    #    end 
-  end
-
-  def do_all_updates
-    update_attachment_details("img_main") if uploaded_data_img_main && uploaded_data_img_main.size > 0 
-    update_attachment_details("img_concept1") if uploaded_data_img_concept1 && uploaded_data_img_concept1.size > 0 
-    update_attachment_details("img_concept2") if uploaded_data_img_concept2 && uploaded_data_img_concept2.size > 0 
-    update_attachment_details("img_menu1") if uploaded_data_img_menu1 && uploaded_data_img_menu1.size > 0 
-    update_attachment_details("img_menu2") if uploaded_data_img_menu2 && uploaded_data_img_menu2.size > 0
-    update_attachment_details("img_sidebar") if uploaded_data_img_sidebar && uploaded_data_img_sidebar.size > 0
-    update_attachment_details("img_manager") if uploaded_data_img_manager && uploaded_data_img_manager.size > 0
-    update_attachment_details("img_signature") if uploaded_data_img_signature && uploaded_data_img_signature.size > 0
+    rescue 
+      add_attachment_errors(@attachment)
+    end 
   end
   
-  def update_attachment_details(attachment_type)
-    @attachment = Attachment.new
-    eval("self.attachments.#{attachment_type}.destroy") if eval("self.attachments.#{attachment_type}")
-    @attachment.uploaded_data = eval("uploaded_data_#{attachment_type}")
-    @attachment.attachment_type = attachment_type          
-    @attachment.thumbnails.clear 
-    @attachment.save! 
-    self.attachments << @attachment
+  def add_attachment_errors(attachment)
+    if attachment.errors.on(:size)
+      errors.add_to_base("#{attachment.filename} file (#{attachment.size}) is too big (1MB max).") 
+    end 
+    if attachment.errors.on(:content_type) 
+      errors.add_to_base("#{attachment.filename} file content-type (#{attachment.content_type}) is not valid.") 
+    end
+    false
   end
-
+  
 end
+

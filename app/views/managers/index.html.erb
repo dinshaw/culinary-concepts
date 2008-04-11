@@ -1,26 +1,23 @@
-<h1>Listing managers</h1>
+<div id="outer_scroll">
+<h2><%= link_to "ABout Us", about_us_path %> <span id="manager_link"><%= link_to "Mangers", managers_path %></span></h2>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Body</th>
-    <th>Location</th>
-    <th>Position</th>
-  </tr>
-
-<% for manager in @managers %>
-  <tr>
-    <td><%=h manager.name %></td>
-    <td><%=h manager.body %></td>
-    <td><%=h manager.location_id %></td>
-    <td><%=h manager.position %></td>
-    <td><%= link_to 'Show', manager %></td>
-    <td><%= link_to 'Edit', edit_manager_path(manager) %></td>
-    <td><%= link_to 'Destroy', manager, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+<div id="scroll_box" class="noheight">
+	
+<% @managers.each do |m| %>
+<div class="manager">
+	<h3><%= m.name %>, <%= m.location.title %></h3>
+	<p><%= image_tag m.photo.public_filename(:thumb), :class => :left if !m.photo.nil? %></p>
+	<%= m.body %>
+	<br class="clear" />
+</div>
 <% end %>
-</table>
+</div>
 
-<br />
 
-<%= link_to 'New manager', new_manager_path %>
+<span id="scroll_up"><%= image_tag "up_arrow.gif" %></span><span id="scroll_down"><%= image_tag "down_arrow.gif" %></span> 
+
+</div>
+
+<script type="text/javascript"> 
+  var div_scroll1 = new TextScroll('div_scroll1', 'scroll_box', 'scroll_up', 'scroll_down'); 
+</script>

@@ -44,7 +44,7 @@ class Admin::ArticlesController < AdminController
     @article = Article.new(params[:article])
 
     respond_to do |format|
-      if @article.save
+      if @article.save_with_attachments
         flash[:notice] = 'Article was successfully created.'
         format.html { redirect_to([:admin,@article]) }
         format.xml  { render :xml => @article, :status => :created, :location => @article }
@@ -61,7 +61,7 @@ class Admin::ArticlesController < AdminController
     @article = Article.find(params[:id])
 
     respond_to do |format|
-      if @article.update_attributes(params[:article])
+      if @article.update_with_attachments(params[:article])
         flash[:notice] = 'Article was successfully updated.'
         format.html { redirect_to([:admin,@article]) }
         format.xml  { head :ok }

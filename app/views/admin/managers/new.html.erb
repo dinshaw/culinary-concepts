@@ -2,7 +2,7 @@
 
 <%= error_messages_for :manager %>
 
-<% form_for([:admin,@manager]) do |f| %>
+<% form_for([:admin,@manager], :html => {:multipart => true}) do |f| %>
   <p>
     <b>Name</b><br />
     <%= f.text_field :name %>

@@ -5,16 +5,7 @@ class Manager < ActiveRecord::Base
   validates_presence_of :name,:body
   belongs_to :location
   
-  has_many :attachments, :as => :attachee, :dependent => :destroy do
-    ['img_manager'].each do |type|
-      class_eval <<-EOS
-      def #{type}(reload=false)
-        @#{type} = nil if reload
-        @#{type} ||= find(:first, :conditions => "attachment_type = '#{type}'")
-      end
-      EOS
-    end
-  end
+  attachment_names :img_manager
   
   def photo
     attachments.img_manager
