@@ -12,6 +12,12 @@
   <%= @concept.body %>
 </p>
 
+<fieldset>
+	<legend>Meta Tags</legend>
+<p><%=h meta "description", meta_description %></p>
+<p><%=h meta "keywords", meta_keywords %></p>
+</fieldset>
+
 
 <p id="concpet_bg_color" style="background-color:<%= @concept.bg_color %>;">
   <b>BG Color:</b> 
