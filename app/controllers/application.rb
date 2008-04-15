@@ -1,10 +1,9 @@
 # Filters added to this controller apply to all controllers in the application.
 # Likewise, all the methods added will be available for all controllers.
-
 class ApplicationController < ActionController::Base
   layout "main"
   filter_parameter_logging :password, :password_hash, :password_salt, :email
-
+  
   include AuthenticatedSystem
   include RoleRequirementSystem
   

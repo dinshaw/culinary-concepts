@@ -1,5 +1,6 @@
+<% @page_title = "Managers" %> 
 <div id="outer_scroll">
-	<h2><%= link_to "ABout Us", about_us_path %> <span id="manager_link"><%= link_to "Mangers", managers_path %></span></h2>
+	<h2><%= link_to "About Us", about_us_path %> <span id="manager_link"><%= link_to "Mangers", managers_path %></span></h2>
 
 	<div id="scroll_box" class="noheight">
 		<% @managers.each do |m| %>

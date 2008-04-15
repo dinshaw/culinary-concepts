@@ -1,48 +1,4 @@
-<!-- <h1>Locations</h1>
-<% for location in @locations %>
-<ul id="locations_list">
-	<li><%= !location.url.blank? ? link_to(location.title, location.url, :class => "popup full") : location.title %> 
-		<%= link_to "edit", location %> | <%= link_to "up", up_location_path(location), :method => :put %> | <%= link_to "down", down_location_path(location), :method => :put %>
-
-
-		<% if location.children.length > 0 %>
-		<ul>
-			<% location.children.each do |c| %>
-			<li><%= !c.url.blank? ? link_to(c.title, c.url, :class => "popup full") : c.title %>
-				<%= link_to "edit", c %> | <%= link_to "up", up_location_path(c), :method => :put %> | <%= link_to "down", down_location_path(c), :method => :put %> 
-
-
-				<% if c.children.length > 0 %>
-				<ul>
-					<% c.children.each do |cc| %>
-					<li><%= !cc.url.blank? ? link_to(cc.title, cc.url, :class => "popup full") : cc.title %>
-						<%= link_to "edit", cc %> | <%= link_to "up", up_location_path(cc), :method => :put %> | <%= link_to "down", down_location_path(cc), :method => :put %> </li>
-						<% end %>
-					</ul>	
-					<% end %>
-
-
-				</li>
-				<% end %>
-			</ul>	
-			<% end %>
-
-
-		</li>
-	</ul>
-
-
-	<td><%= link_to 'Show', location %></td>
-	<td><%= link_to 'Edit', edit_location_path(location) %></td>
-	<td><%= link_to 'Destroy', location, :confirm => 'Are you sure?', :method => :delete %></td>
-</tr>
-<% end %>
-</table>
-
-<br /> -->
-
-
-
+<%= render :partial => "shared/html_head_tags", :locals => {:page_item => Page.find_by_title("locations")} %>
 
 <div id="united_states">
 	<ul class="locations_list">

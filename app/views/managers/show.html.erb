@@ -1,3 +1,4 @@
+<% @page_title = @manager.name %> 
 <h1>Manager: <%= @manager.name %>, <%= @manager.location.title %></h1>
 <p><%= image_tag @manager.photo.public_filename(:thumb), :class => :left if !@manager.photo.nil? %></p>
 <%= @manager.body %>
