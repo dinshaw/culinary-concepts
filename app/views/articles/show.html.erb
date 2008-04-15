@@ -1,15 +1,17 @@
 <%= render :partial => "shared/html_head_tags", :locals => {:page_item => @article} %>
 
 <div id="outer_scroll">
-	
-<h2><%=h @article.title %></h2>
 
-<div id="scroll_box" class="noheight">
-<p><%=h @article.publication_name %> <%=h @article.date_published %></p>
-<%= image_tag @article.attachments.img_article.public_filename(:sidebar), :class => :left %>
-<%= @article.body %>
-  </div>
-<span id="scroll_up"><%= image_tag "up_arrow.gif" %></span><span id="scroll_down"><%= image_tag "down_arrow.gif" %></span> 
+	<h2><%= @article.attachments.content_file.nil? ? @article.title : link_to(@article.title, @article.attachments.content_file.public_filename) %></h2>
+
+	<div id="scroll_box" class="noheight">
+		<p><%=h @article.publication_name %> <%=h @article.date_published %></p>
+		<%= image_tag @article.attachments.img_article.public_filename(:sidebar), :class => :left %>
+		<%= @article.body %>
+	</div>
+
+
+	<span id="scroll_up"><%= image_tag "up_arrow.gif" %></span><span id="scroll_down"><%= image_tag "down_arrow.gif" %></span> 
 
 </div>
 

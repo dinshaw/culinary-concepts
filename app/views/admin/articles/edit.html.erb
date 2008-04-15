@@ -28,15 +28,22 @@
     <%= f.text_field :publication_name %>
   </p>
 
+  <%= image_tag @article.attachments.img_publication.public_filename(:thumb) if !@article.attachments.img_publication.nil? %>
   <p>
     <b>Publication Image</b><br />
     <%= f.file_field :uploaded_data_img_publication %>
   </p>
-
+  <%= image_tag @article.attachments.img_article.public_filename(:thumb) if !@article.attachments.img_article.nil? %>
   <p>
     <b>Article Image</b><br />
     <%= f.file_field :uploaded_data_img_article %>
   </p>
+  <%= image_tag @article.attachments.content_file.public_filename(:thumb) if !@article.attachments.content_file.nil? %>
+  <p>
+    <b>Content file (pdf?)</b><br />
+    <%= f.file_field :uploaded_data_content_file %>
+  </p>
+
 
   <p>
     <%= f.submit "Update" %>
