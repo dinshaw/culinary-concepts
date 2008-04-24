@@ -1,4 +1,4 @@
-<% @page_title = @page.title %> 
+<%= render :partial => "shared/html_head_tags", :locals => {:page_item => @page } %>
 <h1><%=h @page.title %></h1>
 <%= image_tag "pages/jean_georges.jpg", :class => :left %>
 <%= @page.description %>
