@@ -1,10 +1,10 @@
 <h1><%=h @article.title %></h1>
 <p><%=h @article.date_published %></p>
 <h2>Publication Image:</h2>
-<%= image_tag @article.attachments.img_publication.public_filename(:thumb) %>
+<%= image_tag @article.attachments.img_publication.public_filename(:thumb) if !@article.attachments.img_publication.nil? %>
 
 
-<%= image_tag @article.attachments.img_article.public_filename(:sidebar), :class => :left %>
+<%= image_tag @article.attachments.img_article.public_filename(:sidebar), :class => :left if !@article.attachments.img_article.nil? %>
 <%= @article.body %>
 
 <%= link_to "Content File", @article.attachments.content_file.public_filename if !@article.attachments.content_file.nil? %>
