@@ -28,7 +28,7 @@
     <%= f.text_field :publication_name %>
   </p>
 
-	<%= image_tag @article.attachmetns.img_publication.public_filename(:thumb) if @article.attachmetns.img_publication.public_filename %>
+	<%= image_tag @article.attachments.img_publication.public_filename(:thumb) if @article.attachments.img_publication.public_filename %>
   <p>
     <b>Publication Image</b><br />
     <%= f.file_field :uploaded_data_img_publication %>
