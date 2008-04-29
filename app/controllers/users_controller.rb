@@ -1,8 +1,13 @@
 class UsersController < ApplicationController
-  before_filter :admin_required, :only => [:suspend, :unsuspend, :destroy, :purge]
+  layout "admin"
+
   before_filter :find_user, :only => [:suspend, :unsuspend, :destroy, :purge]
 
   skip_before_filter :login_required, :only => [:forgot_password, :reset_password]
+  
+  def index
+    @users = User.find(:all, :conditions => "deleted_at is null")
+  end
   
   # render new.rhtml
   def new
@@ -45,7 +50,7 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    @user.delete!
+    @user.delete! unless @user == current_user  
     redirect_to users_path
   end
 

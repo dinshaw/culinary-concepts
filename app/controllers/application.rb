@@ -23,4 +23,5 @@ class ApplicationController < ActionController::Base
      @light_red = "#CD5C5C"
      @pink = "#fdca90"
    end
+   
 end
