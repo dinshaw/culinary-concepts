@@ -12,7 +12,7 @@
     <td><%=h menu_item.title %></td>
 	<td><%= link_to 'Up', up_admin_concept_menu_section_menu_item_path(@menu_section.concept,@menu_section,menu_item), :method => :put %> | <%= link_to 'Down', down_admin_concept_menu_section_menu_item_path(@menu_section.concept,@menu_section,menu_item), :method => :put %></td>
     <td><%= link_to 'Edit', edit_admin_concept_menu_section_menu_item_path(@menu_section.concept,@menu_section,menu_item) %></td>
-    <td><%= link_to 'Destroy', admin_concept_menu_section_menu_item_path(@menu_section.concept,@menu_section,menu_item), :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Delete', admin_concept_menu_section_menu_item_path(@menu_section.concept,@menu_section,menu_item), :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>

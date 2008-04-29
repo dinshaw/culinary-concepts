@@ -13,10 +13,10 @@
     <%= f.text_area :body %>
   </p>
 
-  <p>
+  <!-- <p>
     <b>Location</b><br />
     <%= f.collection_select :location_id, Location.find(:all), :id, :title %>
-  </p>
+  </p> -->
 
   <p>
     <b>Image</b><br />
@@ -30,5 +30,5 @@
   </p>
 <% end %>
 
-<%= link_to 'Show', @manager %> |
+<%= link_to 'View', @manager %> |
 <%= link_to 'Back', managers_path %>

@@ -8,9 +8,9 @@
 <% for role in @roles %>
   <tr>
     <td><%=h role.name %></td>
-    <td><%= link_to 'Show', role %></td>
+    <td><%= link_to 'View', role %></td>
     <td><%= link_to 'Edit', edit_role_path(role) %></td>
-    <td><%= link_to 'Destroy', role, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Delete', role, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>

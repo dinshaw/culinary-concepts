@@ -18,9 +18,9 @@
     <td><%= truncate(concept.body, 50) %></td>
 	<td><%= link_to "Menu", admin_concept_menu_sections_path(concept) %></td>
 	<td nowrap="nowrap"><%= link_to 'Up', up_admin_concept_path(concept), :method => :put %> | <%= link_to 'Down', down_admin_concept_path(concept), :method => :put %></td>
-    <td><%= link_to 'Show', admin_concept_path(concept) %></td>
+    <td><%= link_to 'View', admin_concept_path(concept) %></td>
     <td><%= link_to 'Edit', edit_admin_concept_path(concept) %></td>
-    <td><%= link_to 'Destroy', admin_concept_path(concept), :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Delete', admin_concept_path(concept), :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>

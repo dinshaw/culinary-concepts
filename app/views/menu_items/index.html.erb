@@ -12,9 +12,9 @@
     <td><%=h menu_item.title %></td>
     <td><%=h menu_item.position %></td>
     <td><%=h menu_item.menu_section_id %></td>
-    <td><%= link_to 'Show', menu_item %></td>
+    <td><%= link_to 'View', menu_item %></td>
     <td><%= link_to 'Edit', edit_menu_item_path(menu_item) %></td>
-    <td><%= link_to 'Destroy', menu_item, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Delete', menu_item, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>

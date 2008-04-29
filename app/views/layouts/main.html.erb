@@ -86,7 +86,10 @@
 					<li><%= Concept.find(:all).collect{|concept| link_to(concept.title.upcase,concept) }.join("</li>
 					<li>") %></li>
 				</ul>
+				<br class="clear" />
+				<%= yield  %>
 				</div>
+				
 			</div>
 		<% elsif @concept %>
 		<div id="concept">
