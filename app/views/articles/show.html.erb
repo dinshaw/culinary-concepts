@@ -5,7 +5,7 @@
 	<h1><%= @article.title %><span id="back"><%= link_to "Back", articles_path %></span></h1>
 	<h2><%= link_to("Download PDF", @article.attachments.content_file.public_filename) if !@article.attachments.content_file.nil? %></h2>
 
-	<div id="scroll_box" class="noheight">
+	<div id="scroll_box_sm" class="noheight">
 		<p><%=h @article.publication_name %> <%=h @article.date_published.strftime("%B %d, %Y") %></p>
 		<%= image_tag @article.attachments.img_article.public_filename(:sidebar), :class => :left %>
 		<%= @article.body %>
@@ -17,5 +17,5 @@
 
 
 <script type="text/javascript"> 
-var div_scroll1 = new TextScroll('div_scroll1', 'scroll_box', 'scroll_up', 'scroll_down'); 
+var div_scroll1 = new TextScroll('div_scroll1', 'scroll_box_sm', 'scroll_up', 'scroll_down'); 
 </script>
