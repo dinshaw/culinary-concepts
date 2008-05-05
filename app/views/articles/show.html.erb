@@ -7,7 +7,7 @@
 
 	<div id="scroll_box_sm" class="noheight">
 		<p><%=h @article.publication_name %> <%=h @article.date_published.strftime("%B %d, %Y") %></p>
-		<%= image_tag @article.attachments.img_article.public_filename(:sidebar), :class => :left %>
+		<%= image_tag @article.attachments.img_article.public_filename(:sidebar), :class => :left if !@article.attachments.img_article.nil? %>
 		<%= @article.body %>
 	</div>
 	
