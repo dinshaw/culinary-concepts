@@ -30,7 +30,7 @@
 
 	<%= image_tag @article.attachments.img_publication.public_filename(:thumb) if @article.attachments.img_publication %>
   <p>
-    <b>Publication Image</b><br />
+    <b>Publication Logo</b><br />
     <%= f.file_field :uploaded_data_img_publication %>
   </p>
 
@@ -40,7 +40,7 @@
   </p>
 
   <p>
-    <b>Content file (pdf?)</b><br />
+    <b>Article Download (PDF)</b><br />
     <%= f.file_field :uploaded_data_content_file %>
   </p>
 
