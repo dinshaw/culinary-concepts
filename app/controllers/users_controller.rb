@@ -24,7 +24,7 @@ class UsersController < ApplicationController
       @user.register!
       @user.activate!
       flash[:notice] = "User has been created and activated"
-      redirect_to admin_users_url
+      redirect_to users_url
     else
       render :action => 'new'
     end
