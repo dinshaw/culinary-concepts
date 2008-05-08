@@ -5,7 +5,6 @@
   <tr>
     <th>Name</th>
     <th>Title</th>
-    <th>Body</th>
     <!-- <th>Location</th> -->
 	<th colspan="4"></th>
   </tr>
@@ -15,7 +14,6 @@
     <td><%=h manager.name %></td>
     <td><%=h manager.title %></td>
 
-    <td><%= manager.body %></td>
     <!-- <td><%=h manager.location.title if !manager.location.nil? %></td> -->
 
 	<td><%= link_to 'Up', up_admin_manager_path(manager), :method => :put %> | <%= link_to 'Down', down_admin_manager_path(manager), :method => :put %></td>
