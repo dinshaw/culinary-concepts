@@ -49,9 +49,10 @@ module AttachmentUpload
         @@attachment_names.each do |attachment|
           eval <<-EOS
           @attachment = Attachment.new
-          if remove_#{attachment} == '1' && self.attachments.#{attachment}
-            self.attachments.#{attachment}.destroy
-          elsif uploaded_data_#{attachment} && uploaded_data_#{attachment}.size > 0   
+          
+          self.attachments.#{attachment}.destroy if remove_#{attachment} == '1' && self.attachments.#{attachment}
+            
+          if uploaded_data_#{attachment} && uploaded_data_#{attachment}.size > 0   
             self.attachments.#{attachment}.destroy if self.attachments.#{attachment}
             @attachment.uploaded_data = uploaded_data_#{attachment}
             @attachment.attachment_type = "#{attachment}"
