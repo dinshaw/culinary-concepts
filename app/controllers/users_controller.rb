@@ -6,7 +6,7 @@ class UsersController < ApplicationController
   skip_before_filter :login_required, :only => [:forgot_password, :reset_password]
   
   def index
-    @users = User.find(:all, :conditions => "deleted_at is null")
+    @users = User.find(:all)
   end
   
   # render new.rhtml
@@ -50,7 +50,7 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    @user.delete! unless @user == current_user  
+    @user.destroy! unless @user == current_user  
     redirect_to users_path
   end
 
