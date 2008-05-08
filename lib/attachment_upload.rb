@@ -1,11 +1,14 @@
 module AttachmentUpload
 
+  # Add the attachment_names to the including model
   def self.included(base)        #:nodoc:
     base.extend AttachmentUpload
     @@class = base
   end
 
-  
+  # List the different named attacments
+  # add the attr_accessor for each one
+  # add the named association through the has_many :attachments
   def attachment_names(*names)
     @@attachment_names = names
     has_many :attachments, :as => :attachee, :dependent => :destroy do
@@ -21,63 +24,54 @@ module AttachmentUpload
     end
   end
 
+  # for create
   def save_with_attachments
     begin 
-      @@attachment_names.each do |attachment|
-        eval <<-EOS
-        @attachment = Attachment.new
-        if uploaded_data_#{attachment} && uploaded_data_#{attachment}.size > 0   
-          self.attachments.#{attachment}.destroy if self.attachments.#{attachment}
-          @attachment.uploaded_data = uploaded_data_#{attachment}
-          @attachment.attachment_type = "#{attachment}"
-          @attachment.thumbnails.clear 
-          @attachment.save! 
-          self.attachments << @attachment
-        end
-        EOS
-        save! 
-      end 
+      @@attachment_names.each { |attachment| do_attachment(attachment) }
+      save! 
     rescue 
-      add_attachment_errors(@attachment)
+      add_errors(@attachment)
     end 
   end
 
+  # for update
   def update_with_attachments(params) 
     begin
       self.transaction do
-        self.update_attributes(params)
-        @@attachment_names.each do |attachment|
-          eval <<-EOS
-          @attachment = Attachment.new
-          
-          self.attachments.#{attachment}.destroy if remove_#{attachment} == '1' && self.attachments.#{attachment}
-            
-          if uploaded_data_#{attachment} && uploaded_data_#{attachment}.size > 0   
-            self.attachments.#{attachment}.destroy if self.attachments.#{attachment}
-            @attachment.uploaded_data = uploaded_data_#{attachment}
-            @attachment.attachment_type = "#{attachment}"
-            @attachment.thumbnails.clear 
-            @attachment.save! 
-            self.attachments << @attachment
-          end
-          EOS
-        end
+        update_attributes(params)
+        @@attachment_names.each { |attachment| do_attachment(attachment) }
         save!
       end 
     rescue 
-      add_attachment_errors(@attachment)
+      add_errors(@attachment)
     end 
   end
+
+  # popuplates the Attachment.new
+  def do_attachment(attachment_name)
+    @attachment = Attachment.new
+     # Remove the attachemnt if the checkbox is checked and there is a attachment
+     eval("self.attachments.#{attachment_name}.destroy") if eval("remove_#{attachment_name} == '1' && self.attachments.#{attachment_name}")
+     
+    if eval("uploaded_data_#{attachment_name} && uploaded_data_#{attachment_name}.size > 0")   
+      eval("self.attachments.#{attachment_name}.destroy if self.attachments.#{attachment_name}")
+      @attachment.uploaded_data = eval("uploaded_data_#{attachment_name}")
+      @attachment.attachment_type = attachment_name.to_s
+      @attachment.thumbnails.clear 
+      @attachment.save! 
+      self.attachments << @attachment
+    end
+    @attachment
+  end
   
-  def add_attachment_errors(attachment)
-    if attachment.errors.on(:size)
+  # Assigns Attachment errors to base
+  def add_errors(attachment)
+    if attachment.errors.on(:size) 
       errors.add_to_base("#{attachment.filename} file (#{attachment.size}) is too big (1MB max).") 
     end 
     if attachment.errors.on(:content_type) 
-      errors.add_to_base("#{attachment.filename} file content-type (#{attachment.content_type}) is not valid.") 
-    end
+      errors.add_to_base("#{attachment.filename} content-type (#{attachment.content_type}) is not valid.") 
+    end 
     false
   end
-  
 end
-
