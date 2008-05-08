@@ -25,9 +25,16 @@
 
   <p>
     <b>Image</b><br />
-	<%= image_tag @manager.photo.public_filename(:thumb), :class => :thumb if !@manager.photo.nil? %><br />
     <%= f.file_field :uploaded_data_img_manager %>
   </p>
+
+<% if !@manager.photo.nil? %>
+	<%= image_tag @manager.photo.public_filename(:thumb), :class => :thumb  %>
+<p>
+	<%= label :manager, :remove_img_manager, "Remove Manager Image", :class => "left" %>
+	<%= f.check_box :remove_img_manager %>
+</p>
+<% end %>
 
 
   <p>
