@@ -10,6 +10,7 @@ class Attachment < ActiveRecord::Base
                   :path_prefix => 'public/attachments',
                   :resize_to => '800x800>',
                   :thumbnails => {:concept => '469x666>', :sidebar => '236x666>', :square => '241x241>', :thumb => 'x150>' }
+                  
   validates_as_attachment
   
 end
