@@ -4,6 +4,7 @@
 <thead>	
   <tr>
     <th>Name</th>
+    <th>Title</th>
     <th>Body</th>
     <!-- <th>Location</th> -->
 	<th colspan="4"></th>
@@ -12,6 +13,8 @@
 <% for manager in @managers %>
   <tr class="<%= cycle "odd", "even" %>">
     <td><%=h manager.name %></td>
+    <td><%=h manager.title %></td>
+
     <td><%= manager.body %></td>
     <!-- <td><%=h manager.location.title if !manager.location.nil? %></td> -->
 

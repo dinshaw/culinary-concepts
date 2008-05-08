@@ -1,5 +1,7 @@
 <div class="mannager">
 	<h1>Manager: <%= @manager.name %></h1>
+	<p>Title: <%= @manager.title %></p>
+	
 	<p><%= image_tag @manager.photo.public_filename(:thumb), :class => :left if !@manager.photo.nil? %></p>
 	<%= @manager.body %>
 

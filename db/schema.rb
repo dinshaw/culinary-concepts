@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 12) do
+ActiveRecord::Schema.define(:version => 13) do
 
   create_table "articles", :force => true do |t|
     t.string   "title"
@@ -70,6 +70,7 @@ ActiveRecord::Schema.define(:version => 12) do
     t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "title"
   end
 
   create_table "menu_items", :force => true do |t|
