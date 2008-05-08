@@ -166,6 +166,6 @@ class User < ActiveRecord::Base
     @activated = true
     self.activated_at = Time.now.utc
     self.deleted_at = self.activation_code = nil
-    UserMailer.deliver_activation(self)
+    # UserMailer.deliver_activation(self)
   end
 end

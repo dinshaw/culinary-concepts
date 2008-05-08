@@ -22,9 +22,9 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
     if @user.save
       @user.register!
-      self.current_user = @user
+      @user.activate!
       redirect_back_or_default('/')
-      flash[:notice] = "Thanks for signing up!"
+      flash[:notice] = "User has been created and activated"
     else
       render :action => 'new'
     end
