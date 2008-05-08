@@ -50,7 +50,7 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    @user.destroy! unless @user == current_user  
+    @user.destroy unless @user == current_user  
     redirect_to users_path
   end
 
