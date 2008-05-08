@@ -10,9 +10,8 @@
 <div id="outer_scroll">
 
 	<div id="scroll_box_xsm" class="noheight">
-
-				<%= image_tag @manager.photo.public_filename(:thumb), :class => :left if !@manager.photo.nil? %>
-				<%= @manager.body %>
+			<%= image_tag @manager.photo.public_filename(:thumb), :class => :left if !@manager.photo.nil? %>
+			<%= @manager.body %>
 	</div>
 	<span id="scroll_up"><%= image_tag "up_arrow.gif" %></span><span id="scroll_down"><%= image_tag "down_arrow.gif" %></span> 
 </div>
