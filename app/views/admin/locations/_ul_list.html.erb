@@ -1,13 +1,13 @@
 <ul>
 	<% parent.children.each do |c| %>
 	<li class="child"><%= !c.url.blank? ? link_to(c.title, c.url, :class => "popup full") : c.title %> | 
-		<%= link_to "edit", edit_admin_location_path(c) %> | <%= link_to "up", up_admin_location_path(c), :method => :put %> | <%= link_to "down", down_admin_location_path(c), :method => :put %> | <%= link_to 'Delete', [:admin,c], :confirm => confirm_text, :method => :delete %>
+		<%= link_to "edit", edit_admin_location_path(c) %> | <%= link_to "up", up_admin_location_path(c), :method => :put %> | <%= link_to "down", down_admin_location_path(c), :method => :put %> | <%= link_to 'delete', [:admin,c], :confirm => confirm_text, :method => :delete %>
 
 		<% if c.children.length > 0 %>
 		<ul>
 			<% c.children.each do |cc| %>
 			<li class="sub_child"><%= !cc.url.blank? ? link_to(cc.title, cc.url, :class => "popup full") : cc.title %> | 
-				<%= link_to "edit", edit_admin_location_path(cc) %> | <%= link_to "up", up_admin_location_path(cc), :method => :put %> | <%= link_to "down", down_admin_location_path(cc), :method => :put %> | <%= link_to 'Delete', [:admin,cc], :confirm => confirm_text, :method => :delete %>
+				<%= link_to "edit", edit_admin_location_path(cc) %> | <%= link_to "up", up_admin_location_path(cc), :method => :put %> | <%= link_to "down", down_admin_location_path(cc), :method => :put %> | <%= link_to 'delete', [:admin,cc], :confirm => confirm_text, :method => :delete %>
 			</li>
 
 			<% end %>
