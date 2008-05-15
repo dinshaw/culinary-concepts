@@ -9,8 +9,8 @@ module AttachmentUpload
   # List the different named attacments
   # add the attr_accessor for each one
   # add the named association through the has_many :attachments
-  def attachment_names(*names)
-    @@attachment_names = names
+  def attachment_names(names=[])
+    @@att_names = names
     has_many :attachments, :as => :attachee, :dependent => :destroy do
       names.each do |name|        
         class_eval <<-EOS
@@ -27,7 +27,7 @@ module AttachmentUpload
   # for create
   def save_with_attachments
     begin 
-      @@attachment_names.each { |attachment| do_attachment(attachment) }
+      @@att_names.each { |attachment| do_attachment(attachment) }
       save!
     rescue 
       add_errors(@attachment)
@@ -39,7 +39,7 @@ module AttachmentUpload
     # begin
       self.transaction do
         update_attributes(params)
-        @@attachment_names.each { |attachment| do_attachment(attachment) }
+        @@att_names.each { |attachment| do_attachment(attachment) }
         save!
       end 
     # rescue 
@@ -51,9 +51,9 @@ module AttachmentUpload
   def do_attachment(attachment_name)
     @attachment = Attachment.new
      # Remove the attachemnt if the checkbox is checked and there is a attachment
-     eval("self.attachments.#{attachment_name}.destroy rescue false") if eval("remove_#{attachment_name} == '1' && self.attachments.#{attachment_name} rescue false") 
+     eval("self.attachments.#{attachment_name}.destroy") if eval("remove_#{attachment_name} == '1' && self.attachments.#{attachment_name}") 
      
-    if eval("uploaded_data_#{attachment_name} && uploaded_data_#{attachment_name}.size > 0 rescue false")   
+    if eval("uploaded_data_#{attachment_name} && uploaded_data_#{attachment_name}.size > 0")   
       eval("self.attachments.#{attachment_name}.destroy if self.attachments.#{attachment_name}")
       @attachment.uploaded_data = eval("uploaded_data_#{attachment_name}")
       @attachment.attachment_type = attachment_name.to_s
