@@ -36,15 +36,15 @@ module AttachmentUpload
 
   # for update
   def update_with_attachments(params) 
-    begin
+    # begin
       self.transaction do
         update_attributes(params)
         @@attachment_names.each { |attachment| do_attachment(attachment) }
         save!
       end 
-    rescue 
-      add_errors(@attachment)
-    end 
+    # rescue 
+    #   add_errors(@attachment)
+    # end 
   end
 
   # popuplates the Attachment.new
