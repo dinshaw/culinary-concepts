@@ -41,7 +41,6 @@ module AttachmentUpload
         update_attributes(params)
         @@attachment_names.each { |attachment| do_attachment(attachment) }
         save!
-        @@attachment_names
       end 
     # rescue 
     #   add_errors(@attachment)
@@ -52,7 +51,7 @@ module AttachmentUpload
   def do_attachment(attachment_name)
     @attachment = Attachment.new
      # Remove the attachemnt if the checkbox is checked and there is a attachment
-     eval("self.attachments.#{attachment_name}.destroy") if eval("remove_#{attachment_name} == '1' && self.attachments.#{attachment_name}")
+     eval("self.attachments.#{attachment_name}.destroy") if eval("remove_#{attachment_name} == '1' && self.attachments.#{attachment_name}") rescue ""
      
     if eval("uploaded_data_#{attachment_name} && uploaded_data_#{attachment_name}.size > 0")   
       eval("self.attachments.#{attachment_name}.destroy if self.attachments.#{attachment_name}")

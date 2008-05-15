@@ -65,7 +65,7 @@
 </p>
 
 <% if !@article.attachments.content_file.nil? %>
-<%= image_tag @article.attachments.content_file.public_filename(:thumb) %>
+<p><%= link_to "Download PDF", @article.attachments.content_file.public_filename if !@article.attachments.content_file.nil? %></p>
 <p>
 	<%= label :article, :remove_content_file, "Remove Article Download", :class => "left" %>
 	<%= f.check_box :remove_content_file %>

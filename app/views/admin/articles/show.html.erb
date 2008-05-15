@@ -7,7 +7,7 @@
 <%= image_tag @article.attachments.img_article.public_filename(:sidebar), :class => :left if !@article.attachments.img_article.nil? %>
 <%= @article.body %>
 
-<%= link_to "Content File", @article.attachments.content_file.public_filename if !@article.attachments.content_file.nil? %>
+<p><%= link_to "Download PDF", @article.attachments.content_file.public_filename if !@article.attachments.content_file.nil? %></p>
 <br class="clear" /> 
 
 
