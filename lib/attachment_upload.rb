@@ -28,7 +28,7 @@ module AttachmentUpload
   def save_with_attachments
     begin 
       @@attachment_names.each { |attachment| do_attachment(attachment) }
-      save! 
+      save!
     rescue 
       add_errors(@attachment)
     end 
@@ -41,6 +41,7 @@ module AttachmentUpload
         update_attributes(params)
         @@attachment_names.each { |attachment| do_attachment(attachment) }
         save!
+        @@attachment_names
       end 
     # rescue 
     #   add_errors(@attachment)
