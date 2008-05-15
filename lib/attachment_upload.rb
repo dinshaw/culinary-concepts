@@ -9,7 +9,7 @@ module AttachmentUpload
   # List the different named attacments
   # add the attr_accessor for each one
   # add the named association through the has_many :attachments
-  def attachment_names(names=[])
+  def attachment_names(*names)
     @@att_names = names
     has_many :attachments, :as => :attachee, :dependent => :destroy do
       names.each do |name|        
