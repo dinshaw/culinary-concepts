@@ -1,4 +1,4 @@
-<h1>Concept: <strong><%= link_to @menu_section.concept.title, admin_concept_path(@menu_section.concept) %></strong> Menu: <strong><%= @menu_section.title %></strong></h1>
+<h1><%= link_to "Concepts", admin_concepts_path %> > <strong><%= link_to @menu_section.concept.title, admin_concept_path(@menu_section.concept) %></strong> > <%= link_to "Menu Sections", admin_concept_menu_sections_path(@menu_section.concept) %> > <strong><%= @menu_section.title %></strong></h1>
 <p><%= link_to 'New menu item', new_admin_concept_menu_section_menu_item_path(@menu_section.concept, @menu_section) %></p>
 <table>
 <thead> 

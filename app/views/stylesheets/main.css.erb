@@ -99,8 +99,6 @@ ul.locations_list li li li{
 	font-size:12px;	
 }
 ul.locations_list li a{
-	text-decoration:none;
-	color:<%= @brown %>;
 }
 
 ul.locations_list li a:hover{
@@ -215,6 +213,13 @@ ul.locations_list li.child{
 
 #scroll_box_sm {	
 	margin-top:20px;
+	height: 300px; 
+	width: 580px;
+	overflow: auto; 
+}
+
+#scroll_box_sm_no_top {	
+	margin-top:0;
 	height: 300px; 
 	width: 580px;
 	overflow: auto; 
