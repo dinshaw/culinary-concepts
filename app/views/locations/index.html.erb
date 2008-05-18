@@ -6,11 +6,11 @@
 		<li class="parent">UNITED STATES		
 			<ul>
 				<% @united_states.children.each do |c| %>
-					<li class="child"><%= !c.url.blank? ? link_to([c.title,c.phone].join(" "), c.url, :class => "popup full") : c.title %>
+					<li class="child"><%= !c.url.blank? ? link_to(c.title, c.url, :target => "_blank") : c.title %> <%= c.phone %>
 						<% if c.children.length > 0 %>
 							<ul>
 								<% c.children.each do |cc| %>
-									<li class="sub_child"><%= !cc.url.blank? ? link_to([cc.title,cc.phone].join(" "), cc.url, :class => "popup full") : cc.title %>
+									<li class="sub_child"><%= !cc.url.blank? ? link_to(cc.title, cc.url, :target => "_blank") : cc.title %> <%= cc.phone %>
 								<% end %>
 							</ul>	
 						<% end %>
@@ -27,15 +27,15 @@
 		<li class="parent">INTERNATIONAL		
 			<ul>
 				<% @international.children.each do |c| %>
-					<li class="child"><%= !c.url.blank? ? link_to([c.title,c.phone].join(" "), c.url, :class => "popup full") : c.title %>
-						<% if c.children.length > 0 %>
-							<ul>
-								<% c.children.each do |cc| %>
-									<li class="sub_child"><%= !cc.url.blank? ? link_to([cc.title,cc.phone].join(" "), cc.url, :class => "popup full") : cc.title %>
-								<% end %>
-							</ul>	
-						<% end %>
-					</li>
+						<li class="child"><%= !c.url.blank? ? link_to(c.title, c.url, :target => "_blank") : c.title %> <%= c.phone %>
+							<% if c.children.length > 0 %>
+								<ul>
+									<% c.children.each do |cc| %>
+										<li class="sub_child"><%= !cc.url.blank? ? link_to(cc.title, cc.url, :target => "_blank") : cc.title %> <%= cc.phone %>
+									<% end %>
+								</ul>	
+							<% end %>
+						</li>
 				<% end %>
 			</ul>	
 		</li>

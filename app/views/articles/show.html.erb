@@ -3,7 +3,7 @@
 <div id="outer_scroll">
 	
 	<h1><%= @article.title %><span id="back"><%= link_to "Back", articles_path %></span></h1>
-	<h2><%= link_to("Download PDF", @article.attachments.content_file.public_filename) if !@article.attachments.content_file.nil? %></h2>
+	<h2><%= link_to("Download PDF", @article.attachments.content_file.public_filename, :target => "_blank") if !@article.attachments.content_file.nil? %></h2>
 
 	<div id="scroll_box_sm" class="noheight">
 		<p><%=h @article.publication_name %> <%=h @article.date_published.strftime("%B %d, %Y") %></p>
