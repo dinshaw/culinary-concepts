@@ -2,27 +2,9 @@ module AttachmentUpload
 
   # Add the attachment_names to the including model
   def self.included(base)        #:nodoc:
-    base.extend AttachmentUpload
-    @@class = base
+    base.extend AttachmentUpload::ClassMethods
   end
 
-  # List the different named attacments
-  # add the attr_accessor for each one
-  # add the named association through the has_many :attachments
-  def attachment_names(*names)
-    @@att_names = names
-    has_many :attachments, :as => :attachee, :dependent => :destroy do
-      names.each do |name|        
-        class_eval <<-EOS
-        #{@@class}.send(:attr_accessor, :uploaded_data_#{name}, :remove_#{name})
-        def #{name}(reload=false)
-          @#{name} = nil if reload
-          @#{name} ||= find(:first, :conditions => ["attachment_type = ?",'#{name}'])
-        end
-        EOS
-      end
-    end
-  end
 
   # for create
   def save_with_attachments
@@ -39,7 +21,7 @@ module AttachmentUpload
     # begin
       self.transaction do
         update_attributes(params)
-        @@att_names.each { |attachment| do_attachment(attachment) }
+        self.class.att_names.each { |attachment| do_attachment(attachment) }
         save!
       end 
     # rescue 
