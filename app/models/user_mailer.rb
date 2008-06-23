@@ -17,7 +17,7 @@ class UserMailer < ActionMailer::Base
   def forgot_password(user)
     setup_email(user)
     @subject    += 'You have requested to change your password'
-    @body[:url]  = PRIMARY_DOMAIN+"reset_password/#{user.password_reset_code}"
+    @body[:url]  = "http://www." + PRIMARY_DOMAIN + "/reset_password/#{user.password_reset_code}"
   end
  
   def reset_password(user)
