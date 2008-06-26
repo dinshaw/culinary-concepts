@@ -16,8 +16,8 @@ test:
   timeout: 5000
 
 production:
-    adapter: mysql
-    database: culinary_concepts
-    username: root
-    password: mysqlroot
-    host: localhost
+  adapter: mysql
+  database: culinar_ccprod
+  username: culinar_ccprod
+  password: ccProdWebUser08
+
