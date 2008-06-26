@@ -5,14 +5,14 @@ module AttachmentUpload
     base.extend AttachmentUpload::ClassMethods
   end
 
-
   # for create
   def save_with_attachments
     begin 
       self.class.att_names.each { |attachment| do_attachment(attachment) }
       save!
-    rescue 
-      add_errors(@attachment)
+    rescue => e
+      logger.error(e)
+      self.errors.add_to_base(e)
     end 
   end
 
@@ -24,8 +24,9 @@ module AttachmentUpload
         self.class.att_names.each { |attachment| do_attachment(attachment) }
         save!
       end 
-    rescue 
-      add_errors(@attachment)
+    rescue => e
+      logger.error(e)
+      add_errors(e)
     end 
   end
 
@@ -35,29 +36,35 @@ module AttachmentUpload
      # Remove the attachemnt if the checkbox is checked and there is a attachment
      eval("self.attachments.#{attachment_name}.destroy") if eval("remove_#{attachment_name} == '1' && self.attachments.#{attachment_name}") 
      
-    #  If the file was submitied for upload
     if eval("uploaded_data_#{attachment_name} && uploaded_data_#{attachment_name}.size > 0")   
-      # Delete the atachment if it exists
       eval("self.attachments.#{attachment_name}.destroy if self.attachments.#{attachment_name}")
       @attachment.uploaded_data = eval("uploaded_data_#{attachment_name}")
       @attachment.attachment_type = attachment_name.to_s
-      # dont kow if i need this anymore
       @attachment.thumbnails.clear 
-      # need to catch this exception and add it to errors
-      @attachment.save!
+      @attachment.save! 
       self.attachments << @attachment
     end
     @attachment
+  end  
+
+  
+  def validate
+    e = 0
+    self.class.att_names.all?{ |an| 
+                                  if eval("!uploaded_data_#{an}.blank?")
+                                    a = Attachment.new(:uploaded_data => eval("uploaded_data_#{an}") )
+                                    if !a.valid? 
+                                      logger.error(a.content_type)
+                                      e = 1
+                                    end
+                                  end
+                              }
+    errors.add_to_base("Error with Attachment, please check the content type and size. ") if e == 1
   end
   
   # Assigns Attachment errors to base
-  def add_errors(attachment)
-    if attachment.errors.on(:size) 
-      errors.add_to_base("#{attachment.filename} file (#{attachment.size}) is too big (1MB max).") 
-    end 
-    if attachment.errors.on(:content_type) 
-      errors.add_to_base("#{attachment.filename} content-type (#{attachment.content_type}) is not valid.") 
-    end 
+  def add_errors(error)
+    errors.add_to_base("Error with Attachment, please check the content type and size.")
     false
   end
 end

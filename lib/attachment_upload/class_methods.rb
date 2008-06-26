@@ -7,7 +7,15 @@ module AttachmentUpload::ClassMethods
     # @@att_names = names
 
     names.each do |name|
+      # define the attribute accessors
       class_eval("attr_accessor :uploaded_data_#{name}, :remove_#{name}")
+      
+      # conveinece methods
+      class_eval <<-EOS
+      def #{name}
+        attachments.#{name}
+      end
+      EOS
     end
     
     has_many :attachments, :as => :attachee, :dependent => :destroy do
