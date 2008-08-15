@@ -1,1 +1,1 @@
-<h2><%= link_to "#{concept.title}:", quote_concept_path(concept) %><%= link_to "Concept", concept_path(concept) %><%= concept.menu_sections.length > 0 ? link_to("Menu", concept_menu_section_path(concept, concept.menu_sections.first)) : "Menu" %></h2>
+<h2><%= link_to "#{concept.title}:", quote_concept_path(concept) %><%= link_to "Concept", concept_path(concept) %><%= concept.menu_sections.length > 0 ? link_to("Sample Menu", concept_menu_section_path(concept, concept.menu_sections.first)) : "Sample Menu" %></h2>

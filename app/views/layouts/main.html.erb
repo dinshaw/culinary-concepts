@@ -82,11 +82,11 @@
 				<div id="tag"><span></span>Local in content. Global in reach.</div>
 				
 				<div id="nav_home_concepts">
-				<ul>
-					<li><%= Concept.find(:all).collect{|concept| link_to(concept.title.upcase,concept) }.join("</li>
-					<li>") %></li>
-				</ul>
-				<br class="clear" />
+							<!-- <ul>
+								<li><%= Concept.find(:all).collect{|concept| link_to(concept.title.upcase,concept) }.join("</li>
+								<li>") %></li>
+							</ul>
+							<br class="clear" /> -->
 				<%= yield  %>
 				</div>
 				
@@ -115,7 +115,7 @@
 		<% end %>
 
 		<div id="footer">
-			<p id="site_info"><span id="footer_links"><%= Concept.find(:all).collect{|concept| link_to(concept.title.upcase,concept) }.join(" | ") %></span>&copy; <%= Date.today.year %> Culinary Concepts by Jean-Georges</p>
+			<p id="site_info"><!-- <span id="footer_links"><%= Concept.find(:all).collect{|concept| link_to(concept.title.upcase,concept) }.join(" | ") %></span> -->&copy; <%= Date.today.year %> Culinary Concepts by Jean-Georges</p>
 		</div> <!-- footer -->
 	</div>
 </body>
