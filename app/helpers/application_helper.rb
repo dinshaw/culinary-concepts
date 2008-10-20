@@ -6,13 +6,13 @@ module ApplicationHelper
   end
 
   def nav_img_suffix(page)
-    page = @controller.action_name == page || @controller.controller_name == page ? "on" : "off"  
+    (@controller.action_name == page || @controller.controller_name == page) ? "on" : "off"  
   end
 
   def nav_image_for(nav,page)
-    image_path_string = image_tag nav_image_path(nav,page), :alt => ""
+    image_path_string = image_tag(nav_image_path(nav,page), :alt => "")
     # concepts is actaully not a link, jsut the sub nav is links
-    link_to_unless( (nav_img_suffix(page) == "on" || page == "concepts"), image_path_string, eval("#{page.tableize}_path") ) rescue image_path_string
+    link_to_unless( (nav_img_suffix(page) == "on" || page == "concepts"), image_path_string, eval("#{page}_path") ) rescue image_path_string
   end
 
   def do_colors
