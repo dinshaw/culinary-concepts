@@ -1,5 +1,5 @@
 class StylesheetsController < ApplicationController
-  #caches_page :layout, :main
+  caches_page :layout, :main, :admin
   skip_before_filter :login_required
   
   layout false

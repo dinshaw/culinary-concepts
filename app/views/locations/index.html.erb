@@ -1,4 +1,5 @@
-<%= render :partial => "shared/html_head_tags", :locals => {:page_item => Page.find_by_title("locations")} %>
+<%= render :partial => "shared/html_head_tags", :locals => {:page_item => @page } %>
+<h1><%=h @page.title %></h1>
 
 <div id="united_states">
 	
@@ -43,4 +44,5 @@
 </div>
 
 <br class="clear" />
-<p>Other Jean-Georges restaurants:  <%= link_to "www.jean-georges.com", "http://www.jean-georges.com" %></p>
+
+<%= @page.description %>

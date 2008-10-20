@@ -23,5 +23,8 @@ class ApplicationController < ActionController::Base
      @light_red = "#CD5C5C"
      @pink = "#fdca90"
    end
-   
+
+   def find_page(title)
+       @page = Page.find_by_title(title) || Page.new
+   end   
 end

@@ -29,8 +29,4 @@ class PublicController < ApplicationController
     find_page("Gift Cards") 
   end
   
-  private
-  def find_page(title)
-      @page = Page.find_by_title(title) || Page.new
-  end
 end

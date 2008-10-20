@@ -3,6 +3,7 @@ class LocationsController < ApplicationController
   # GET /locations
   # GET /locations.xml
   def index
+    find_page("Restaurants") 
     @locations = Location.find(:all, :conditions => "parent_id is null", :order => :position)
     @united_states = Location.find(5)
     @international = Location.find(16)
