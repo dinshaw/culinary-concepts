@@ -45,6 +45,7 @@ ActionController::Routing::Routes.draw do |map|
   map.contact_us "contact", :controller => "public", :action => "contact_us"
   map.jean_georges "jean-georges", :controller => "public", :action => "jean_georges"
   map.careers "careers", :controller => "public", :action => "careers"
+  map.gift_cards "gift-cards", :controller => "public", :action => "gift_cards"  
   map.management_team "management-team", :controller => "managers", :action => "index"
 
   map.admin "admin", :controller => "admin/pages", :action => "index"

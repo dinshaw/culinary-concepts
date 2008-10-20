@@ -24,6 +24,10 @@ class PublicController < ApplicationController
   def careers
     find_page("Careers") 
   end
+
+  def gift_cards
+    find_page("Gift Cards") 
+  end
   
   private
   def find_page(title)
