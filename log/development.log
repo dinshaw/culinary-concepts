@@ -7818,3 +7818,38 @@ aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--8bf32a7982cb54911d
   Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
 Rendering stylesheets/main
 Completed in 0.00360 (277 reqs/sec) | Rendering: 0.00059 (16%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
+
+
+Processing PublicController#jean_georges (for 127.0.0.1 at 2008-10-20 18:34:34) [GET]
+  Session ID: BAh7CToMdXNlcl9pZDA6DnJldHVybl90byILL2FkbWluOgxjc3JmX2lkIiU1
+MDNjMjQzMWYwZGFhMzIxY2U2MGZhYTI4MWFhYmU3NCIKZmxhc2hJQzonQWN0
+aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--8bf32a7982cb54911de266913084ae822d6a1f91
+  Parameters: {"action"=>"jean_georges", "controller"=>"public"}
+  [4;36;1mPage Columns (0.012202)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.000951)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`title` = 'Jean-Georges') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering public/jean_georges
+Rendered shared/_html_head_tags (0.00118)
+  [4;36;1mConcept Load (0.001311)[0m   [0;1mSELECT * FROM `concepts` ORDER BY position[0m
+  [4;35;1mConcept Columns (0.002952)[0m   [0mSHOW FIELDS FROM `concepts`[0m
+Rendered public/_slideshow (0.00005)
+  [4;36;1mConcept Load (0.002109)[0m   [0;1mSELECT * FROM `concepts` [0m
+Completed in 0.03687 (27 reqs/sec) | Rendering: 0.00950 (25%) | DB: 0.01953 (52%) | 200 OK [http://127.0.0.1/jean-georges]
+
+
+Processing StylesheetsController#layout (for 127.0.0.1 at 2008-10-20 18:34:35) [GET]
+  Session ID: BAh7CToMdXNlcl9pZDA6DnJldHVybl90byILL2FkbWluOgxjc3JmX2lkIiU1
+MDNjMjQzMWYwZGFhMzIxY2U2MGZhYTI4MWFhYmU3NCIKZmxhc2hJQzonQWN0
+aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--8bf32a7982cb54911de266913084ae822d6a1f91
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+Rendering stylesheets/layout
+Completed in 0.00371 (269 reqs/sec) | Rendering: 0.00040 (10%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2008-10-20 18:34:35) [GET]
+  Session ID: BAh7CToMdXNlcl9pZDA6DnJldHVybl90byILL2FkbWluOgxjc3JmX2lkIiU1
+MDNjMjQzMWYwZGFhMzIxY2U2MGZhYTI4MWFhYmU3NCIKZmxhc2hJQzonQWN0
+aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--8bf32a7982cb54911de266913084ae822d6a1f91
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.00417 (239 reqs/sec) | Rendering: 0.00115 (27%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
