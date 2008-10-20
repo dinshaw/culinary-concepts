@@ -6,7 +6,7 @@ module ApplicationHelper
   end
 
   def nav_img_suffix(page)
-    (@controller.action_name == page || @controller.controller_name == page) ? "on" : "off"  
+    (@controller.action_name == page.gsub("-","_") || @controller.controller_name == page) ? "on" : "off"  
   end
 
   def nav_image_for(nav,page)
