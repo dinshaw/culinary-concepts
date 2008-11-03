@@ -7853,3 +7853,834 @@ aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--8bf32a7982cb54911d
   Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
 Rendering stylesheets/main
 Completed in 0.00417 (239 reqs/sec) | Rendering: 0.00115 (27%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
+
+
+Processing PublicController#home (for 127.0.0.1 at 2008-11-03 13:18:38) [GET]
+  Session ID: a596eec2c351fd3c6d5f7a5ccb0f8763
+  Parameters: {"action"=>"home", "controller"=>"public"}
+  [4;36;1mSQL (0.000186)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPage Columns (0.040782)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.000613)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`title` = 'Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering public/home
+Rendered shared/_html_head_tags (0.00252)
+  [4;35;1mConcept Load (0.022091)[0m   [0mSELECT * FROM `concepts` ORDER BY position[0m
+  [4;36;1mConcept Columns (0.002969)[0m   [0;1mSHOW FIELDS FROM `concepts`[0m
+Rendered public/_slideshow (0.00004)
+  [4;35;1mConcept Load (0.000419)[0m   [0mSELECT * FROM `concepts` [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `concepts` [0m
+Completed in 0.24079 (4 reqs/sec) | Rendering: 0.08627 (35%) | DB: 0.06706 (27%) | 200 OK [http://127.0.0.1/]
+
+
+Processing StylesheetsController#layout (for 127.0.0.1 at 2008-11-03 13:18:38) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+Rendering stylesheets/layout
+Completed in 0.01023 (97 reqs/sec) | Rendering: 0.00570 (55%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2008-11-03 13:18:39) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.03946 (25 reqs/sec) | Rendering: 0.03652 (92%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
+
+
+Processing PublicController#gift_cards (for 127.0.0.1 at 2008-11-03 13:18:48) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"action"=>"gift_cards", "controller"=>"public"}
+  [4;35;1mPage Columns (0.011303)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.000482)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`title` = 'Gift Cards') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering public/gift_cards
+Rendered shared/_html_head_tags (0.00142)
+Rendered public/_page (0.00227)
+  [4;35;1mConcept Load (0.000548)[0m   [0mSELECT * FROM `concepts` ORDER BY position[0m
+  [4;36;1mConcept Columns (0.002628)[0m   [0;1mSHOW FIELDS FROM `concepts`[0m
+Rendered public/_slideshow (0.00005)
+  [4;35;1mConcept Load (0.000400)[0m   [0mSELECT * FROM `concepts` [0m
+Completed in 0.06137 (16 reqs/sec) | Rendering: 0.03880 (63%) | DB: 0.01536 (25%) | 200 OK [http://127.0.0.1/gift-cards]
+
+
+Processing StylesheetsController#layout (for 127.0.0.1 at 2008-11-03 13:18:48) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+Rendering stylesheets/layout
+Completed in 0.00339 (295 reqs/sec) | Rendering: 0.00067 (19%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2008-11-03 13:18:48) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.00327 (305 reqs/sec) | Rendering: 0.00058 (17%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
+
+
+Processing PublicController#home (for 127.0.0.1 at 2008-11-03 13:18:55) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"action"=>"home", "controller"=>"public"}
+  [4;36;1mPage Columns (0.011932)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.001467)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`title` = 'Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering public/home
+Rendered shared/_html_head_tags (0.00108)
+  [4;36;1mConcept Load (0.000461)[0m   [0;1mSELECT * FROM `concepts` ORDER BY position[0m
+  [4;35;1mConcept Columns (0.002347)[0m   [0mSHOW FIELDS FROM `concepts`[0m
+Rendered public/_slideshow (0.00005)
+  [4;36;1mConcept Load (0.000368)[0m   [0;1mSELECT * FROM `concepts` [0m
+  [4;35;1mCACHE (0.000000)[0m   [0mSELECT * FROM `concepts` [0m
+Completed in 0.03357 (29 reqs/sec) | Rendering: 0.00960 (28%) | DB: 0.01658 (49%) | 200 OK [http://127.0.0.1/]
+
+
+Processing StylesheetsController#layout (for 127.0.0.1 at 2008-11-03 13:18:56) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+Rendering stylesheets/layout
+Completed in 0.00383 (261 reqs/sec) | Rendering: 0.00066 (17%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2008-11-03 13:18:56) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.00331 (302 reqs/sec) | Rendering: 0.00056 (16%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2008-11-03 13:18:58) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+  [4;36;1mUser Columns (0.031503)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000480)[0m   [0mSELECT * FROM `users` WHERE (`users`.`remember_token` = '') LIMIT 1[0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`remember_token` = '') LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 0.03507 (28 reqs/sec) | DB: 0.03198 (91%) | 302 Found [http://127.0.0.1/admin]
+
+
+Processing SessionsController#new (for 127.0.0.1 at 2008-11-03 13:18:58) [GET]
+  Session ID: BAh7BzoOcmV0dXJuX3RvIgsvYWRtaW4iCmZsYXNoSUM6J0FjdGlvbkNvbnRy
+b2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA=--4befd8fdd164c51a52ec66a32f3807ed08a76302
+  Parameters: {"action"=>"new", "controller"=>"sessions"}
+Rendering template within layouts/main
+Rendering sessions/new
+  [4;35;1mConcept Load (0.000553)[0m   [0mSELECT * FROM `concepts` ORDER BY position[0m
+  [4;36;1mConcept Columns (0.002504)[0m   [0;1mSHOW FIELDS FROM `concepts`[0m
+Rendered public/_slideshow (0.00005)
+  [4;35;1mConcept Load (0.000396)[0m   [0mSELECT * FROM `concepts` [0m
+Completed in 0.02968 (33 reqs/sec) | Rendering: 0.02312 (77%) | DB: 0.00345 (11%) | 200 OK [http://127.0.0.1/session/new]
+
+
+Processing StylesheetsController#layout (for 127.0.0.1 at 2008-11-03 13:18:58) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvIgsvYWRtaW4iCmZsYXNoSUM6J0FjdGlvbkNvbnRy
+b2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA6DGNzcmZfaWQi
+JWFhMDRhYzI4MmJkMzlhOWQ5YTE0Yjk0Y2RmOTFlZDhl--58e639132ee960823b343807d0457d714ebfed22
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+Rendering stylesheets/layout
+Completed in 0.00354 (282 reqs/sec) | Rendering: 0.00085 (24%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2008-11-03 13:18:59) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvIgsvYWRtaW4iCmZsYXNoSUM6J0FjdGlvbkNvbnRy
+b2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA6DGNzcmZfaWQi
+JWFhMDRhYzI4MmJkMzlhOWQ5YTE0Yjk0Y2RmOTFlZDhl--58e639132ee960823b343807d0457d714ebfed22
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.00407 (245 reqs/sec) | Rendering: 0.00059 (14%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-11-03 13:18:59) [GET]
+  Session ID: BAh7CDoOcmV0dXJuX3RvIgsvYWRtaW4iCmZsYXNoSUM6J0FjdGlvbkNvbnRy
+b2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA6DGNzcmZfaWQi
+JWFhMDRhYzI4MmJkMzlhOWQ5YTE0Yjk0Y2RmOTFlZDhl--58e639132ee960823b343807d0457d714ebfed22
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/xml/new.xml" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:510:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:510:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-11-03 13:19:06) [POST]
+  Session ID: BAh7CDoOcmV0dXJuX3RvIgsvYWRtaW4iCmZsYXNoSUM6J0FjdGlvbkNvbnRy
+b2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2VkewA6DGNzcmZfaWQi
+JWFhMDRhYzI4MmJkMzlhOWQ5YTE0Yjk0Y2RmOTFlZDhl--58e639132ee960823b343807d0457d714ebfed22
+  Parameters: {"commit"=>"Log in", "action"=>"create", "authenticity_token"=>"c8f78f2c3538caa2b608647a7b3f03ed618ffa2d", "controller"=>"sessions", "login"=>"info@dinshaw.us", "password"=>"[FILTERED]"}
+  [4;36;1mUser Load (0.000422)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'info@dinshaw.us') AND (users.state = 'active') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering sessions/new
+  [4;35;1mConcept Load (0.000368)[0m   [0mSELECT * FROM `concepts` ORDER BY position[0m
+  [4;36;1mConcept Columns (0.011836)[0m   [0;1mSHOW FIELDS FROM `concepts`[0m
+Rendered public/_slideshow (0.00005)
+  [4;35;1mConcept Load (0.000424)[0m   [0mSELECT * FROM `concepts` [0m
+Completed in 0.02495 (40 reqs/sec) | Rendering: 0.00868 (34%) | DB: 0.01305 (52%) | 200 OK [http://127.0.0.1/session]
+
+
+Processing StylesheetsController#layout (for 127.0.0.1 at 2008-11-03 13:19:06) [GET]
+  Session ID: BAh7CToMdXNlcl9pZDA6DnJldHVybl90byILL2FkbWluIgpmbGFzaElDOidB
+Y3Rpb25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA
+Ogxjc3JmX2lkIiVhYTA0YWMyODJiZDM5YTlkOWExNGI5NGNkZjkxZWQ4ZQ==--7166a5e3649d7124c175548252d10ad6ad70ed21
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+Rendering stylesheets/layout
+Completed in 0.00364 (274 reqs/sec) | Rendering: 0.00075 (20%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2008-11-03 13:19:06) [GET]
+  Session ID: BAh7CToMdXNlcl9pZDA6DnJldHVybl90byILL2FkbWluIgpmbGFzaElDOidB
+Y3Rpb25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA
+Ogxjc3JmX2lkIiVhYTA0YWMyODJiZDM5YTlkOWExNGI5NGNkZjkxZWQ4ZQ==--7166a5e3649d7124c175548252d10ad6ad70ed21
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.00324 (308 reqs/sec) | Rendering: 0.00055 (16%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-11-03 13:19:06) [GET]
+  Session ID: BAh7CToMdXNlcl9pZDA6DnJldHVybl90byILL2FkbWluIgpmbGFzaElDOidB
+Y3Rpb25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA
+Ogxjc3JmX2lkIiVhYTA0YWMyODJiZDM5YTlkOWExNGI5NGNkZjkxZWQ4ZQ==--7166a5e3649d7124c175548252d10ad6ad70ed21
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/xml/create.xml" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:510:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:510:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-11-03 13:19:12) [POST]
+  Session ID: BAh7CToMdXNlcl9pZDA6DnJldHVybl90byILL2FkbWluIgpmbGFzaElDOidB
+Y3Rpb25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA
+Ogxjc3JmX2lkIiVhYTA0YWMyODJiZDM5YTlkOWExNGI5NGNkZjkxZWQ4ZQ==--7166a5e3649d7124c175548252d10ad6ad70ed21
+  Parameters: {"commit"=>"Log in", "action"=>"create", "authenticity_token"=>"c8f78f2c3538caa2b608647a7b3f03ed618ffa2d", "controller"=>"sessions", "login"=>"info@dinshawdesign.com", "password"=>"[FILTERED]"}
+  [4;36;1mUser Load (0.000426)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'info@dinshawdesign.com') AND (users.state = 'active') LIMIT 1[0m
+  [4;35;1mUser Columns (0.001444)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/main
+Rendering sessions/new
+  [4;36;1mConcept Load (0.007465)[0m   [0;1mSELECT * FROM `concepts` ORDER BY position[0m
+  [4;35;1mConcept Columns (0.002712)[0m   [0mSHOW FIELDS FROM `concepts`[0m
+Rendered public/_slideshow (0.00005)
+  [4;36;1mConcept Load (0.000383)[0m   [0;1mSELECT * FROM `concepts` [0m
+Completed in 0.02595 (38 reqs/sec) | Rendering: 0.00784 (30%) | DB: 0.01243 (47%) | 200 OK [http://127.0.0.1/session]
+
+
+Processing StylesheetsController#layout (for 127.0.0.1 at 2008-11-03 13:19:12) [GET]
+  Session ID: BAh7CToMdXNlcl9pZDA6DnJldHVybl90byILL2FkbWluIgpmbGFzaElDOidB
+Y3Rpb25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA
+Ogxjc3JmX2lkIiVhYTA0YWMyODJiZDM5YTlkOWExNGI5NGNkZjkxZWQ4ZQ==--7166a5e3649d7124c175548252d10ad6ad70ed21
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+Rendering stylesheets/layout
+Completed in 0.00371 (269 reqs/sec) | Rendering: 0.00068 (18%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2008-11-03 13:19:12) [GET]
+  Session ID: BAh7CToMdXNlcl9pZDA6DnJldHVybl90byILL2FkbWluIgpmbGFzaElDOidB
+Y3Rpb25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA
+Ogxjc3JmX2lkIiVhYTA0YWMyODJiZDM5YTlkOWExNGI5NGNkZjkxZWQ4ZQ==--7166a5e3649d7124c175548252d10ad6ad70ed21
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.00325 (307 reqs/sec) | Rendering: 0.00055 (16%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-11-03 13:19:13) [GET]
+  Session ID: BAh7CToMdXNlcl9pZDA6DnJldHVybl90byILL2FkbWluIgpmbGFzaElDOidB
+Y3Rpb25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA
+Ogxjc3JmX2lkIiVhYTA0YWMyODJiZDM5YTlkOWExNGI5NGNkZjkxZWQ4ZQ==--7166a5e3649d7124c175548252d10ad6ad70ed21
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/xml/create.xml" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:510:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:510:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing SessionsController#create (for 127.0.0.1 at 2008-11-03 13:19:21) [POST]
+  Session ID: BAh7CToMdXNlcl9pZDA6DnJldHVybl90byILL2FkbWluIgpmbGFzaElDOidB
+Y3Rpb25Db250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA
+Ogxjc3JmX2lkIiVhYTA0YWMyODJiZDM5YTlkOWExNGI5NGNkZjkxZWQ4ZQ==--7166a5e3649d7124c175548252d10ad6ad70ed21
+  Parameters: {"commit"=>"Log in", "action"=>"create", "authenticity_token"=>"c8f78f2c3538caa2b608647a7b3f03ed618ffa2d", "controller"=>"sessions", "login"=>"info@dinshawdesign.com", "password"=>"[FILTERED]"}
+  [4;35;1mUser Load (0.000407)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'info@dinshawdesign.com') AND (users.state = 'active') LIMIT 1[0m
+  [4;36;1mUser Columns (0.011725)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Redirected to http://127.0.0.1:3000/admin
+Completed in 0.01864 (53 reqs/sec) | DB: 0.01213 (65%) | 302 Found [http://127.0.0.1/session]
+
+
+Processing Admin::PagesController#index (for 127.0.0.1 at 2008-11-03 13:19:21) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewY6C25vdGljZSIbTG9nZ2Vk
+IGluIHN1Y2Nlc3NmdWxseQY6CkB1c2VkewY7CEY6DGNzcmZfaWQiJWFhMDRh
+YzI4MmJkMzlhOWQ5YTE0Yjk0Y2RmOTFlZDhl--fda03b9faa0ca76c3ebcb7831c7618f41fa3339a
+  Parameters: {"action"=>"index", "controller"=>"admin/pages"}
+  [4;35;1mUser Columns (0.002633)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000462)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mPage Load (0.000429)[0m   [0mSELECT * FROM `pages` [0m
+Rendering template within layouts/admin
+Rendering admin/pages/index
+  [4;36;1mPage Columns (0.003095)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+Completed in 0.06033 (16 reqs/sec) | Rendering: 0.04249 (70%) | DB: 0.00662 (10%) | 200 OK [http://127.0.0.1/admin]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2008-11-03 13:19:22) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewY6C25vdGljZSIbTG9nZ2Vk
+IGluIHN1Y2Nlc3NmdWxseQY6CkB1c2VkewY7CFQ6DGNzcmZfaWQiJWFhMDRh
+YzI4MmJkMzlhOWQ5YTE0Yjk0Y2RmOTFlZDhl--87e01eedfbb4765febd1f5871619e6a150eadd01
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.00364 (274 reqs/sec) | Rendering: 0.00087 (24%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
+
+
+Processing StylesheetsController#admin (for 127.0.0.1 at 2008-11-03 13:19:22) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewY6C25vdGljZSIbTG9nZ2Vk
+IGluIHN1Y2Nlc3NmdWxseQY6CkB1c2VkewY7CFQ6DGNzcmZfaWQiJWFhMDRh
+YzI4MmJkMzlhOWQ5YTE0Yjk0Y2RmOTFlZDhl--87e01eedfbb4765febd1f5871619e6a150eadd01
+  Parameters: {"format"=>"css", "action"=>"admin", "controller"=>"stylesheets"}
+Rendering stylesheets/admin
+Completed in 0.01740 (57 reqs/sec) | Rendering: 0.01447 (83%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/admin.css]
+
+
+Processing Admin::PagesController#edit (for 127.0.0.1 at 2008-11-03 13:19:26) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVhYTA0YWMyODJiZDM5YTlkOWExNGI5NGNkZjkxZWQ4ZQ==--3f0a03c49b251f23ee9b58e5bfc8cdd068ee9ef6
+  Parameters: {"action"=>"edit", "id"=>"8", "controller"=>"admin/pages"}
+  [4;35;1mUser Columns (0.002864)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000558)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mPage Columns (0.002260)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.000827)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`id` = 8) [0m
+Rendering template within layouts/admin
+Rendering admin/pages/edit
+Completed in 0.04577 (21 reqs/sec) | Rendering: 0.02813 (61%) | DB: 0.00651 (14%) | 200 OK [http://127.0.0.1/admin/pages/8/edit]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2008-11-03 13:19:26) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVhYTA0YWMyODJiZDM5YTlkOWExNGI5NGNkZjkxZWQ4ZQ==--3f0a03c49b251f23ee9b58e5bfc8cdd068ee9ef6
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.00371 (269 reqs/sec) | Rendering: 0.00089 (23%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
+
+
+Processing StylesheetsController#admin (for 127.0.0.1 at 2008-11-03 13:19:26) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVhYTA0YWMyODJiZDM5YTlkOWExNGI5NGNkZjkxZWQ4ZQ==--3f0a03c49b251f23ee9b58e5bfc8cdd068ee9ef6
+  Parameters: {"format"=>"css", "action"=>"admin", "controller"=>"stylesheets"}
+Rendering stylesheets/admin
+Completed in 0.00348 (287 reqs/sec) | Rendering: 0.00070 (20%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/admin.css]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2008-11-03 13:19:27) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVhYTA0YWMyODJiZDM5YTlkOWExNGI5NGNkZjkxZWQ4ZQ==--3f0a03c49b251f23ee9b58e5bfc8cdd068ee9ef6
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.07806 (12 reqs/sec) | Rendering: 0.00062 (0%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
+
+
+Processing Admin::PagesController#update (for 127.0.0.1 at 2008-11-03 13:19:41) [PUT]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVhYTA0YWMyODJiZDM5YTlkOWExNGI5NGNkZjkxZWQ4ZQ==--3f0a03c49b251f23ee9b58e5bfc8cdd068ee9ef6
+  Parameters: {"commit"=>"Update", "action"=>"update", "_method"=>"put", "authenticity_token"=>"c8f78f2c3538caa2b608647a7b3f03ed618ffa2d", "id"=>"8", "controller"=>"admin/pages", "page"=>{"title"=>"Gift Cards", "meta_keywords"=>"", "meta_description"=>"", "description"=>"<p>Ordering Gift Cards from our Restaurants is easy.&nbsp; Click on the restaurant name to begin.</p>"}}
+  [4;35;1mUser Columns (0.012124)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000403)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mPage Columns (0.002232)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.000830)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`id` = 8) [0m
+  [4;35;1mSQL (0.000106)[0m   [0mBEGIN[0m
+  [4;36;1mPage Update (0.000306)[0m   [0;1mUPDATE `pages` SET `description` = '<p>Ordering Gift Cards from our Restaurants is easy.&nbsp; Click on the restaurant name to begin.</p>', `updated_at` = '2008-11-03 13:19:41' WHERE `id` = 8[0m
+  [4;35;1mSQL (0.000861)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/admin/pages/8
+Completed in 0.03208 (31 reqs/sec) | DB: 0.01686 (52%) | 302 Found [http://127.0.0.1/admin/pages/8]
+
+
+Processing Admin::PagesController#show (for 127.0.0.1 at 2008-11-03 13:19:41) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewY6C25vdGljZSIjUGFnZSB3
+YXMgc3VjY2Vzc2Z1bGx5IHVwZGF0ZWQuBjoKQHVzZWR7BjsIRjoMY3NyZl9p
+ZCIlYWEwNGFjMjgyYmQzOWE5ZDlhMTRiOTRjZGY5MWVkOGU=--86873722839b5e309d6dedbc731e3c93d8e7d965
+  Parameters: {"action"=>"show", "id"=>"8", "controller"=>"admin/pages"}
+  [4;36;1mUser Columns (0.002656)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001056)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mPage Columns (0.002210)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.000464)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`id` = 8) [0m
+Rendering template within layouts/admin
+Rendering admin/pages/show
+Rendered shared/_html_head_tags (0.00126)
+Completed in 0.03743 (26 reqs/sec) | Rendering: 0.01849 (49%) | DB: 0.00639 (17%) | 200 OK [http://127.0.0.1/admin/pages/8]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2008-11-03 13:19:41) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewY6C25vdGljZSIjUGFnZSB3
+YXMgc3VjY2Vzc2Z1bGx5IHVwZGF0ZWQuBjoKQHVzZWR7BjsIVDoMY3NyZl9p
+ZCIlYWEwNGFjMjgyYmQzOWE5ZDlhMTRiOTRjZGY5MWVkOGU=--530bb23611b78e6dd813e8f60f8c75ab19a53bef
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.00384 (260 reqs/sec) | Rendering: 0.00112 (29%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
+
+
+Processing StylesheetsController#admin (for 127.0.0.1 at 2008-11-03 13:19:41) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewY6C25vdGljZSIjUGFnZSB3
+YXMgc3VjY2Vzc2Z1bGx5IHVwZGF0ZWQuBjoKQHVzZWR7BjsIVDoMY3NyZl9p
+ZCIlYWEwNGFjMjgyYmQzOWE5ZDlhMTRiOTRjZGY5MWVkOGU=--530bb23611b78e6dd813e8f60f8c75ab19a53bef
+  Parameters: {"format"=>"css", "action"=>"admin", "controller"=>"stylesheets"}
+Rendering stylesheets/admin
+Completed in 0.00354 (282 reqs/sec) | Rendering: 0.00078 (22%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/admin.css]
+
+
+Processing PublicController#gift_cards (for 127.0.0.1 at 2008-11-03 13:19:50) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVhYTA0YWMyODJiZDM5YTlkOWExNGI5NGNkZjkxZWQ4ZQ==--3f0a03c49b251f23ee9b58e5bfc8cdd068ee9ef6
+  Parameters: {"action"=>"gift_cards", "controller"=>"public"}
+  [4;36;1mPage Columns (0.011274)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.000747)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`title` = 'Gift Cards') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering public/gift_cards
+Rendered shared/_html_head_tags (0.00124)
+Rendered public/_page (0.00151)
+  [4;36;1mConcept Load (0.000453)[0m   [0;1mSELECT * FROM `concepts` ORDER BY position[0m
+  [4;35;1mConcept Columns (0.002098)[0m   [0mSHOW FIELDS FROM `concepts`[0m
+Rendered public/_slideshow (0.00005)
+  [4;36;1mConcept Load (0.000358)[0m   [0;1mSELECT * FROM `concepts` [0m
+Completed in 0.03115 (32 reqs/sec) | Rendering: 0.00891 (28%) | DB: 0.01493 (47%) | 200 OK [http://127.0.0.1/gift-cards]
+
+
+Processing StylesheetsController#layout (for 127.0.0.1 at 2008-11-03 13:19:50) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVhYTA0YWMyODJiZDM5YTlkOWExNGI5NGNkZjkxZWQ4ZQ==--3f0a03c49b251f23ee9b58e5bfc8cdd068ee9ef6
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+Rendering stylesheets/layout
+Completed in 0.00381 (262 reqs/sec) | Rendering: 0.00069 (18%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2008-11-03 13:19:50) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVhYTA0YWMyODJiZDM5YTlkOWExNGI5NGNkZjkxZWQ4ZQ==--3f0a03c49b251f23ee9b58e5bfc8cdd068ee9ef6
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.00327 (305 reqs/sec) | Rendering: 0.00055 (16%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
+
+
+Processing PublicController#gift_cards (for 127.0.0.1 at 2008-11-03 13:21:22) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVhYTA0YWMyODJiZDM5YTlkOWExNGI5NGNkZjkxZWQ4ZQ==--3f0a03c49b251f23ee9b58e5bfc8cdd068ee9ef6
+  Parameters: {"action"=>"gift_cards", "controller"=>"public"}
+  [4;35;1mPage Columns (0.011518)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.000632)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`title` = 'Gift Cards') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering public/gift_cards
+Rendered shared/_html_head_tags (0.00561)
+Rendered public/_page (0.00594)
+  [4;35;1mConcept Load (0.000508)[0m   [0mSELECT * FROM `concepts` ORDER BY position[0m
+  [4;36;1mConcept Columns (0.002471)[0m   [0;1mSHOW FIELDS FROM `concepts`[0m
+Rendered public/_slideshow (0.00005)
+  [4;35;1mConcept Load (0.000382)[0m   [0mSELECT * FROM `concepts` [0m
+Completed in 0.03650 (27 reqs/sec) | Rendering: 0.01371 (37%) | DB: 0.01551 (42%) | 200 OK [http://127.0.0.1/gift-cards]
+
+
+Processing StylesheetsController#layout (for 127.0.0.1 at 2008-11-03 13:21:22) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVhYTA0YWMyODJiZDM5YTlkOWExNGI5NGNkZjkxZWQ4ZQ==--3f0a03c49b251f23ee9b58e5bfc8cdd068ee9ef6
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+Rendering stylesheets/layout
+Completed in 0.00355 (281 reqs/sec) | Rendering: 0.00068 (19%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2008-11-03 13:21:22) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVhYTA0YWMyODJiZDM5YTlkOWExNGI5NGNkZjkxZWQ4ZQ==--3f0a03c49b251f23ee9b58e5bfc8cdd068ee9ef6
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.01521 (65 reqs/sec) | Rendering: 0.01238 (81%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
+
+
+Processing PublicController#gift_cards (for 127.0.0.1 at 2008-11-03 13:21:46) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVhYTA0YWMyODJiZDM5YTlkOWExNGI5NGNkZjkxZWQ4ZQ==--3f0a03c49b251f23ee9b58e5bfc8cdd068ee9ef6
+  Parameters: {"action"=>"gift_cards", "controller"=>"public"}
+  [4;36;1mPage Columns (0.011646)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.000458)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`title` = 'Gift Cards') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering public/gift_cards
+Rendered shared/_html_head_tags (0.00116)
+Rendered public/_page (0.00180)
+  [4;36;1mConcept Load (0.001207)[0m   [0;1mSELECT * FROM `concepts` ORDER BY position[0m
+  [4;35;1mConcept Columns (0.002720)[0m   [0mSHOW FIELDS FROM `concepts`[0m
+Rendered public/_slideshow (0.00005)
+  [4;36;1mConcept Load (0.000364)[0m   [0;1mSELECT * FROM `concepts` [0m
+Completed in 0.03627 (27 reqs/sec) | Rendering: 0.01192 (32%) | DB: 0.01640 (45%) | 200 OK [http://127.0.0.1/gift-cards]
+
+
+Processing StylesheetsController#layout (for 127.0.0.1 at 2008-11-03 13:21:46) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVhYTA0YWMyODJiZDM5YTlkOWExNGI5NGNkZjkxZWQ4ZQ==--3f0a03c49b251f23ee9b58e5bfc8cdd068ee9ef6
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+Rendering stylesheets/layout
+Completed in 0.00360 (277 reqs/sec) | Rendering: 0.00073 (20%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2008-11-03 13:21:46) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVhYTA0YWMyODJiZDM5YTlkOWExNGI5NGNkZjkxZWQ4ZQ==--3f0a03c49b251f23ee9b58e5bfc8cdd068ee9ef6
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.01606 (62 reqs/sec) | Rendering: 0.01332 (82%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
+
+
+Processing PublicController#gift_cards (for 127.0.0.1 at 2008-11-03 13:22:02) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVhYTA0YWMyODJiZDM5YTlkOWExNGI5NGNkZjkxZWQ4ZQ==--3f0a03c49b251f23ee9b58e5bfc8cdd068ee9ef6
+  Parameters: {"action"=>"gift_cards", "controller"=>"public"}
+  [4;35;1mPage Columns (0.011326)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.000539)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`title` = 'Gift Cards') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering public/gift_cards
+Rendered shared/_html_head_tags (0.00119)
+Rendered public/_page (0.00146)
+  [4;35;1mConcept Load (0.000457)[0m   [0mSELECT * FROM `concepts` ORDER BY position[0m
+  [4;36;1mConcept Columns (0.002650)[0m   [0;1mSHOW FIELDS FROM `concepts`[0m
+Rendered public/_slideshow (0.00005)
+  [4;35;1mConcept Load (0.000384)[0m   [0mSELECT * FROM `concepts` [0m
+Completed in 0.03166 (31 reqs/sec) | Rendering: 0.00909 (28%) | DB: 0.01536 (48%) | 200 OK [http://127.0.0.1/gift-cards]
+
+
+Processing StylesheetsController#layout (for 127.0.0.1 at 2008-11-03 13:22:02) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVhYTA0YWMyODJiZDM5YTlkOWExNGI5NGNkZjkxZWQ4ZQ==--3f0a03c49b251f23ee9b58e5bfc8cdd068ee9ef6
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+Rendering stylesheets/layout
+Completed in 0.00363 (275 reqs/sec) | Rendering: 0.00070 (19%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2008-11-03 13:22:02) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVhYTA0YWMyODJiZDM5YTlkOWExNGI5NGNkZjkxZWQ4ZQ==--3f0a03c49b251f23ee9b58e5bfc8cdd068ee9ef6
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.01570 (63 reqs/sec) | Rendering: 0.01290 (82%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
+
+
+Processing PublicController#gift_cards (for 127.0.0.1 at 2008-11-03 13:22:09) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVhYTA0YWMyODJiZDM5YTlkOWExNGI5NGNkZjkxZWQ4ZQ==--3f0a03c49b251f23ee9b58e5bfc8cdd068ee9ef6
+  Parameters: {"action"=>"gift_cards", "controller"=>"public"}
+  [4;36;1mPage Columns (0.011326)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.000431)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`title` = 'Gift Cards') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering public/gift_cards
+Rendered shared/_html_head_tags (0.00124)
+Rendered public/_page (0.00151)
+  [4;36;1mConcept Load (0.000460)[0m   [0;1mSELECT * FROM `concepts` ORDER BY position[0m
+  [4;35;1mConcept Columns (0.002587)[0m   [0mSHOW FIELDS FROM `concepts`[0m
+Rendered public/_slideshow (0.00005)
+  [4;36;1mConcept Load (0.000409)[0m   [0;1mSELECT * FROM `concepts` [0m
+Completed in 0.03183 (31 reqs/sec) | Rendering: 0.00927 (29%) | DB: 0.01521 (47%) | 200 OK [http://127.0.0.1/gift-cards]
+
+
+Processing StylesheetsController#layout (for 127.0.0.1 at 2008-11-03 13:22:09) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVhYTA0YWMyODJiZDM5YTlkOWExNGI5NGNkZjkxZWQ4ZQ==--3f0a03c49b251f23ee9b58e5bfc8cdd068ee9ef6
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+Rendering stylesheets/layout
+Completed in 0.00351 (284 reqs/sec) | Rendering: 0.00068 (19%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2008-11-03 13:22:10) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVhYTA0YWMyODJiZDM5YTlkOWExNGI5NGNkZjkxZWQ4ZQ==--3f0a03c49b251f23ee9b58e5bfc8cdd068ee9ef6
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.01485 (67 reqs/sec) | Rendering: 0.01185 (79%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
+
+
+Processing PublicController#gift_cards (for 127.0.0.1 at 2008-11-03 13:22:28) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVhYTA0YWMyODJiZDM5YTlkOWExNGI5NGNkZjkxZWQ4ZQ==--3f0a03c49b251f23ee9b58e5bfc8cdd068ee9ef6
+  Parameters: {"action"=>"gift_cards", "controller"=>"public"}
+  [4;35;1mPage Columns (0.001789)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.001592)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`title` = 'Gift Cards') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering public/gift_cards
+Rendered shared/_html_head_tags (0.00104)
+Rendered public/_page (0.00127)
+  [4;35;1mConcept Load (0.000422)[0m   [0mSELECT * FROM `concepts` ORDER BY position[0m
+  [4;36;1mConcept Columns (0.001312)[0m   [0;1mSHOW FIELDS FROM `concepts`[0m
+Rendered public/_slideshow (0.00004)
+  [4;35;1mConcept Load (0.000334)[0m   [0mSELECT * FROM `concepts` [0m
+Completed in 0.02014 (49 reqs/sec) | Rendering: 0.00758 (37%) | DB: 0.00545 (27%) | 200 OK [http://127.0.0.1/gift-cards]
+
+
+Processing StylesheetsController#layout (for 127.0.0.1 at 2008-11-03 13:22:29) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVhYTA0YWMyODJiZDM5YTlkOWExNGI5NGNkZjkxZWQ4ZQ==--3f0a03c49b251f23ee9b58e5bfc8cdd068ee9ef6
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+Rendering stylesheets/layout
+Completed in 0.00349 (286 reqs/sec) | Rendering: 0.00068 (19%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2008-11-03 13:22:29) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVhYTA0YWMyODJiZDM5YTlkOWExNGI5NGNkZjkxZWQ4ZQ==--3f0a03c49b251f23ee9b58e5bfc8cdd068ee9ef6
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.01500 (66 reqs/sec) | Rendering: 0.01216 (81%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
+
+
+Processing PublicController#gift_cards (for 127.0.0.1 at 2008-11-03 13:22:36) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVhYTA0YWMyODJiZDM5YTlkOWExNGI5NGNkZjkxZWQ4ZQ==--3f0a03c49b251f23ee9b58e5bfc8cdd068ee9ef6
+  Parameters: {"action"=>"gift_cards", "controller"=>"public"}
+  [4;36;1mPage Columns (0.011312)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.000522)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`title` = 'Gift Cards') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering public/gift_cards
+Rendered shared/_html_head_tags (0.00126)
+Rendered public/_page (0.00154)
+  [4;36;1mConcept Load (0.000511)[0m   [0;1mSELECT * FROM `concepts` ORDER BY position[0m
+  [4;35;1mConcept Columns (0.002605)[0m   [0mSHOW FIELDS FROM `concepts`[0m
+Rendered public/_slideshow (0.00005)
+  [4;36;1mConcept Load (0.000384)[0m   [0;1mSELECT * FROM `concepts` [0m
+Completed in 0.03223 (31 reqs/sec) | Rendering: 0.00968 (30%) | DB: 0.01533 (47%) | 200 OK [http://127.0.0.1/gift-cards]
+
+
+Processing StylesheetsController#layout (for 127.0.0.1 at 2008-11-03 13:22:37) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVhYTA0YWMyODJiZDM5YTlkOWExNGI5NGNkZjkxZWQ4ZQ==--3f0a03c49b251f23ee9b58e5bfc8cdd068ee9ef6
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+Rendering stylesheets/layout
+Completed in 0.00386 (259 reqs/sec) | Rendering: 0.00078 (20%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2008-11-03 13:22:37) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVhYTA0YWMyODJiZDM5YTlkOWExNGI5NGNkZjkxZWQ4ZQ==--3f0a03c49b251f23ee9b58e5bfc8cdd068ee9ef6
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.01460 (68 reqs/sec) | Rendering: 0.01184 (81%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
+
+
+Processing PublicController#gift_cards (for 127.0.0.1 at 2008-11-03 13:22:52) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVhYTA0YWMyODJiZDM5YTlkOWExNGI5NGNkZjkxZWQ4ZQ==--3f0a03c49b251f23ee9b58e5bfc8cdd068ee9ef6
+  Parameters: {"action"=>"gift_cards", "controller"=>"public"}
+  [4;35;1mPage Columns (0.001470)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.000812)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`title` = 'Gift Cards') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering public/gift_cards
+Rendered shared/_html_head_tags (0.00097)
+Rendered public/_page (0.00118)
+  [4;35;1mConcept Load (0.000390)[0m   [0mSELECT * FROM `concepts` ORDER BY position[0m
+  [4;36;1mConcept Columns (0.002444)[0m   [0;1mSHOW FIELDS FROM `concepts`[0m
+Rendered public/_slideshow (0.00005)
+  [4;35;1mConcept Load (0.000380)[0m   [0mSELECT * FROM `concepts` [0m
+Completed in 0.02070 (48 reqs/sec) | Rendering: 0.00826 (39%) | DB: 0.00550 (26%) | 200 OK [http://127.0.0.1/gift-cards]
+
+
+Processing StylesheetsController#layout (for 127.0.0.1 at 2008-11-03 13:22:52) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVhYTA0YWMyODJiZDM5YTlkOWExNGI5NGNkZjkxZWQ4ZQ==--3f0a03c49b251f23ee9b58e5bfc8cdd068ee9ef6
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+Rendering stylesheets/layout
+Completed in 0.00379 (264 reqs/sec) | Rendering: 0.00097 (25%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2008-11-03 13:22:53) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVhYTA0YWMyODJiZDM5YTlkOWExNGI5NGNkZjkxZWQ4ZQ==--3f0a03c49b251f23ee9b58e5bfc8cdd068ee9ef6
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.01561 (64 reqs/sec) | Rendering: 0.01287 (82%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
+
+
+Processing PublicController#contact_us (for 127.0.0.1 at 2008-11-03 13:23:13) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVhYTA0YWMyODJiZDM5YTlkOWExNGI5NGNkZjkxZWQ4ZQ==--3f0a03c49b251f23ee9b58e5bfc8cdd068ee9ef6
+  Parameters: {"action"=>"contact_us", "controller"=>"public"}
+  [4;36;1mPage Columns (0.011347)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.000405)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`title` = 'Contact Us') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering public/contact_us
+Rendered shared/_html_head_tags (0.00142)
+Rendered public/_page (0.00176)
+  [4;36;1mConcept Load (0.000526)[0m   [0;1mSELECT * FROM `concepts` ORDER BY position[0m
+  [4;35;1mConcept Columns (0.002652)[0m   [0mSHOW FIELDS FROM `concepts`[0m
+Rendered public/_slideshow (0.00005)
+  [4;36;1mConcept Load (0.000402)[0m   [0;1mSELECT * FROM `concepts` [0m
+Completed in 0.06218 (16 reqs/sec) | Rendering: 0.03894 (62%) | DB: 0.01533 (24%) | 200 OK [http://127.0.0.1/contact]
+
+
+Processing StylesheetsController#layout (for 127.0.0.1 at 2008-11-03 13:23:14) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVhYTA0YWMyODJiZDM5YTlkOWExNGI5NGNkZjkxZWQ4ZQ==--3f0a03c49b251f23ee9b58e5bfc8cdd068ee9ef6
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+Rendering stylesheets/layout
+Completed in 0.00388 (257 reqs/sec) | Rendering: 0.00086 (22%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2008-11-03 13:23:14) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiVhYTA0YWMyODJiZDM5YTlkOWExNGI5NGNkZjkxZWQ4ZQ==--3f0a03c49b251f23ee9b58e5bfc8cdd068ee9ef6
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.01486 (67 reqs/sec) | Rendering: 0.01211 (81%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
