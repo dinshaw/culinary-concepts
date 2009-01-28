@@ -90,22 +90,22 @@ after "deploy:update_code", "make_sym_links_for_user_content"
 
 
 namespace :deploy do
-    task :start, :roles => :app do
-      run "rm -rf /home/#{user}/public_html;ln -s #{current_path}/public /home/#{user}/public_html"
-    end
-  
-    task :restart, :roles => :app do
-      run "#{current_path}/script/process/reaper --dispatcher=dispatch.fcgi"
-      run "cd #{current_path} && chmod 755 #{chmod755}"
-    end
+  task :start, :roles => :app do
+    run "rm -rf /home/#{user}/public_html;ln -s #{current_path}/public /home/#{user}/public_html"
+  end
+
+  task :restart, :roles => :app do
+    run "#{current_path}/script/process/reaper --dispatcher=dispatch.fcgi"
+    run "cd #{current_path} && chmod 755 #{chmod755}"
+  end
 
   desc "force production mode in env.rb after deployment"
   task :after_deploy, :roles => [:app, :db, :web] do
-   run "sed 's/# ENV\\[/ENV\\[/g' #{current_path}/config/environment.rb > #{current_path}/config/environment.temp"
-   run "mv #{current_path}/config/environment.temp #{current_path}/config/environment.rb"
+    run "sed 's/# ENV\\[/ENV\\[/g' #{current_path}/config/environment.rb > #{current_path}/config/environment.temp"
+    run "mv #{current_path}/config/environment.temp #{current_path}/config/environment.rb"
   end
-  
-  
+
+
   namespace :web do
     desc "Serve up a custom maintenance page."
 
