@@ -12842,3 +12842,1629 @@ X2lkIiUzM2RhYTVjMjM0YmE1YTkxYjg0MjNmNDlhMjcwYTNhZg==--6c5b5b451793af46ed4495a1a1
   Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
 Rendering stylesheets/main
 Completed in 0.00342 (292 reqs/sec) | Rendering: 0.00060 (17%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
+
+
+Processing Admin::ArticlesController#edit (for 127.0.0.1 at 2009-01-27 21:47:15) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiUzM2RhYTVjMjM0YmE1YTkxYjg0MjNmNDlhMjcwYTNhZg==--6c5b5b451793af46ed4495a1a1f834b6f8a7cfd5
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"admin/articles"}
+  [4;36;1mSQL (0.000173)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mUser Columns (0.003002)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.001020)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mArticle Columns (0.002427)[0m   [0mSHOW FIELDS FROM `articles`[0m
+  [4;36;1mArticle Load (0.000775)[0m   [0;1mSELECT * FROM `articles` WHERE (`articles`.`id` = 2) [0m
+Rendering template within layouts/admin
+Rendering admin/articles/edit
+  [4;35;1mAttachment Load (0.000739)[0m   [0mSELECT * FROM `attachments` WHERE (`attachments`.attachee_id = 2 AND `attachments`.attachee_type = 'Article' AND (attachment_type = 'img_publication')) LIMIT 1[0m
+  [4;36;1mAttachment Columns (0.002801)[0m   [0;1mSHOW FIELDS FROM `attachments`[0m
+  [4;35;1mAttachment Load (0.000648)[0m   [0mSELECT * FROM `attachments` WHERE (`attachments`.attachee_id = 2 AND `attachments`.attachee_type = 'Article' AND (attachment_type = 'img_article')) LIMIT 1[0m
+  [4;36;1mAttachment Load (0.000749)[0m   [0;1mSELECT * FROM `attachments` WHERE (`attachments`.attachee_id = 2 AND `attachments`.attachee_type = 'Article' AND (attachment_type = 'content_file')) LIMIT 1[0m
+Completed in 0.23006 (4 reqs/sec) | Rendering: 0.20364 (88%) | DB: 0.01233 (5%) | 200 OK [http://127.0.0.1/admin/articles/2/edit]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2009-01-27 21:47:16) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiUzM2RhYTVjMjM0YmE1YTkxYjg0MjNmNDlhMjcwYTNhZg==--6c5b5b451793af46ed4495a1a1f834b6f8a7cfd5
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.01759 (56 reqs/sec) | Rendering: 0.01284 (73%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
+
+
+Processing StylesheetsController#admin (for 127.0.0.1 at 2009-01-27 21:47:16) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiUzM2RhYTVjMjM0YmE1YTkxYjg0MjNmNDlhMjcwYTNhZg==--6c5b5b451793af46ed4495a1a1f834b6f8a7cfd5
+  Parameters: {"format"=>"css", "action"=>"admin", "controller"=>"stylesheets"}
+Rendering stylesheets/admin
+Completed in 0.00615 (162 reqs/sec) | Rendering: 0.00343 (55%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/admin.css]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-01-27 21:47:16) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiUzM2RhYTVjMjM0YmE1YTkxYjg0MjNmNDlhMjcwYTNhZg==--6c5b5b451793af46ed4495a1a1f834b6f8a7cfd5
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/attachments/0000/0672/DSC03351_thumb.jpg" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:510:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:510:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2009-01-27 21:47:16) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiUzM2RhYTVjMjM0YmE1YTkxYjg0MjNmNDlhMjcwYTNhZg==--6c5b5b451793af46ed4495a1a1f834b6f8a7cfd5
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.00386 (259 reqs/sec) | Rendering: 0.00076 (19%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
+
+
+Processing Admin::ArticlesController#update (for 127.0.0.1 at 2009-01-27 21:47:21) [PUT]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiUzM2RhYTVjMjM0YmE1YTkxYjg0MjNmNDlhMjcwYTNhZg==--6c5b5b451793af46ed4495a1a1f834b6f8a7cfd5
+  Parameters: {"article"=>{"date_published(2i)"=>"6", "date_published(3i)"=>"5", "publication_name"=>"", "body"=>"<p>asd asd as asd asdasdasd asd as&aring;&ccedil;&radic;&radic;&radic;&radic;&radic;&radic;&radic;</p>\r\n<p>asd asd as asd asdasdasd asd as&aring;&ccedil;&radic;&radic;&radic;&radic;&radic;&radic;&radic;</p>\r\n<p>asd asd as asd asdasdasd asd as&aring;&ccedil;&radic;&radic;&radic;&radic;&radic;&radic;&radic;</p>\r\n<p>asd asd as asd asdasdasd asd as&aring;&ccedil;&radic;&radic;&radic;&radic;&radic;&radic;&radic;</p>\r\n<p>asd asd as asd asdasdasd asd as&aring;&ccedil;&radic;&radic;&radic;&radic;&radic;&radic;&radic;</p>\r\n<p>asd asd as asd asdasdasd asd as&aring;&ccedil;&radic;&radic;&radic;&radic;&radic;&radic;&radic;</p>\r\n<p>asd asd as asd asdasdasd asd as&aring;&ccedil;&radic;&radic;&radic;&radic;&radic;&radic;&radic;</p>\r\n<p>asd asd as asd asdasdasd asd as&aring;&ccedil;&radic;&radic;&radic;&radic;&radic;&radic;&radic;</p>\r\n<p>asd asd as asd asdasdasd asd as&aring;&ccedil;&radic;&radic;&radic;&radic;&radic;&radic;&radic;</p>\r\n<p>asd asd as asd asdasdasd asd as&aring;&ccedil;&radic;&radic;&radic;&radic;&radic;&radic;&radic;</p>", "remove_img_article"=>"1", "title"=>"asasds", "uploaded_data_content_file"=>"", "uploaded_data_img_article"=>"", "uploaded_data_img_publication"=>#<ActionController::UploadedStringIO:0x2eec7ec>, "date_published(1i)"=>"2008", "state"=>"active", "remove_img_publication"=>"1"}, "commit"=>"Update", "action"=>"update", "_method"=>"put", "authenticity_token"=>"41711175ecc3193870ccfd08b50c902a85fc75f2", "id"=>"2", "controller"=>"admin/articles"}
+  [4;35;1mUser Columns (0.002826)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000441)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mArticle Columns (0.002544)[0m   [0mSHOW FIELDS FROM `articles`[0m
+  [4;36;1mArticle Load (0.000836)[0m   [0;1mSELECT * FROM `articles` WHERE (`articles`.`id` = 2) [0m
+  [4;35;1mSQL (0.000110)[0m   [0mBEGIN[0m
+  [4;36;1mAttachment Columns (0.003070)[0m   [0;1mSHOW FIELDS FROM `attachments`[0m
+  [4;35;1mAttachment Load (0.000893)[0m   [0mSELECT * FROM `attachments` WHERE (`attachments`.attachee_id = 2 AND `attachments`.attachee_type = 'Article' AND (attachment_type = 'img_publication')) LIMIT 1[0m
+  [4;36;1mAttachment Update (0.000631)[0m   [0;1mUPDATE `attachments` SET position = (position - 1) WHERE (attachee_id='2' AND attachee_type='Article' AND position > 1) [0m
+  [4;35;1mAttachment Update (0.000254)[0m   [0mUPDATE `attachments` SET `position` = NULL, `updated_at` = '2009-01-27 21:47:21' WHERE `id` = 732[0m
+  [4;36;1mAttachment Load (0.000729)[0m   [0;1mSELECT * FROM `attachments` WHERE (`attachments`.parent_id = 732) [0m
+  [4;35;1mAttachment Update (0.001563)[0m   [0mUPDATE `attachments` SET position = (position - 1) WHERE (attachee_id='' AND attachee_type='' AND position > 1) [0m
+  [4;36;1mAttachment Update (0.000266)[0m   [0;1mUPDATE `attachments` SET `position` = NULL, `updated_at` = '2009-01-27 21:47:21' WHERE `id` = 733[0m
+  [4;35;1mAttachment Destroy (0.000176)[0m   [0m DELETE FROM `attachments`
+ WHERE `id` = 733
+[0m
+  [4;36;1mAttachment Update (0.000632)[0m   [0;1mUPDATE `attachments` SET position = (position - 1) WHERE (attachee_id='' AND attachee_type='' AND position > 1) [0m
+  [4;35;1mAttachment Update (0.000226)[0m   [0mUPDATE `attachments` SET `position` = NULL, `updated_at` = '2009-01-27 21:47:21' WHERE `id` = 734[0m
+  [4;36;1mAttachment Destroy (0.000169)[0m   [0;1m DELETE FROM `attachments`
+ WHERE `id` = 734
+[0m
+  [4;35;1mAttachment Update (0.000602)[0m   [0mUPDATE `attachments` SET position = (position - 1) WHERE (attachee_id='' AND attachee_type='' AND position > 1) [0m
+  [4;36;1mAttachment Update (0.000335)[0m   [0;1mUPDATE `attachments` SET `position` = NULL, `updated_at` = '2009-01-27 21:47:21' WHERE `id` = 735[0m
+  [4;35;1mAttachment Destroy (0.000781)[0m   [0m DELETE FROM `attachments`
+ WHERE `id` = 735
+[0m
+  [4;36;1mAttachment Update (0.000590)[0m   [0;1mUPDATE `attachments` SET position = (position - 1) WHERE (attachee_id='' AND attachee_type='' AND position > 1) [0m
+  [4;35;1mAttachment Update (0.000224)[0m   [0mUPDATE `attachments` SET `position` = NULL, `updated_at` = '2009-01-27 21:47:21' WHERE `id` = 736[0m
+  [4;36;1mAttachment Destroy (0.000207)[0m   [0;1m DELETE FROM `attachments`
+ WHERE `id` = 736
+[0m
+  [4;35;1mAttachment Destroy (0.000190)[0m   [0m DELETE FROM `attachments`
+ WHERE `id` = 732
+[0m
+  [4;36;1mAttachment Destroy (0.000162)[0m   [0;1m DELETE FROM `attachments`
+ WHERE `id` = 733
+[0m
+Exception destroying  "/Users/dinshaw/sites/webflow/culinaryconcepts.com/master/public/attachments/0000/0732/Picture_2_concept.png": [Errno::ENOENT] 
+ > /usr/local/lib/ruby/1.8/fileutils.rb:1297:in `unlink'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:1297:in `remove_file'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:1302:in `platform_support'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:1296:in `remove_file'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:771:in `remove_file'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:549:in `rm'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:548:in `each'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:548:in `rm'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu/backends/file_system_backend.rb:59:in `destroy_file'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:173:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:173:in `evaluate_method'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu.rb:447:in `call'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:93:in `run'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `each'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `run'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:272:in `run_callbacks'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/callbacks.rb:298:in `callback'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/callbacks.rb:290:in `destroy_without_transactions'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:102:in `destroy'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:66:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:79:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:98:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:102:in `destroy'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu.rb:456:in `destroy_thumbnails'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_collection.rb:277:in `method_missing_without_paginate'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_proxy.rb:171:in `method_missing'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_proxy.rb:171:in `each'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_proxy.rb:171:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_proxy.rb:171:in `method_missing'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_collection.rb:277:in `method_missing_without_paginate'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/will_paginate/lib/will_paginate/finder.rb:139:in `method_missing'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu.rb:456:in `destroy_thumbnails'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:173:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:173:in `evaluate_method'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu.rb:447:in `call'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:93:in `run'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `each'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `run'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:272:in `run_callbacks'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/callbacks.rb:298:in `callback'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/callbacks.rb:288:in `destroy_without_transactions'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:102:in `destroy'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:66:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:79:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:98:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:102:in `destroy'
+ > (eval):1:in `do_attachment'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:24:in `eval'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:40:in `do_attachment'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:24:in `update_with_attachments'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:24:in `each'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:24:in `update_with_attachments'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:66:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:79:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:98:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:22:in `update_with_attachments'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/app/controllers/admin/articles_controller.rb:64:in `update'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:106:in `call'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:106:in `respond_to'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/app/controllers/admin/articles_controller.rb:63:in `update'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:1166:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:1166:in `perform_action_without_filters'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/filters.rb:579:in `call_filters'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/filters.rb:572:in `perform_action_without_benchmark'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+ > /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/filters.rb:568:in `process_without_session_management_support'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:355:in `new_constants_in'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+ > /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+ > /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:510:in `require'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:355:in `new_constants_in'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:510:in `require'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/railties/lib/commands/server.rb:39
+ > /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+ > /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+ > script/server:3
+  [4;35;1mAttachment Destroy (0.000185)[0m   [0m DELETE FROM `attachments`
+ WHERE `id` = 734
+[0m
+Exception destroying  "/Users/dinshaw/sites/webflow/culinaryconcepts.com/master/public/attachments/0000/0732/Picture_2_square.png": [Errno::ENOENT] 
+ > /usr/local/lib/ruby/1.8/fileutils.rb:1297:in `unlink'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:1297:in `remove_file'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:1302:in `platform_support'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:1296:in `remove_file'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:771:in `remove_file'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:549:in `rm'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:548:in `each'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:548:in `rm'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu/backends/file_system_backend.rb:59:in `destroy_file'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:173:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:173:in `evaluate_method'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu.rb:447:in `call'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:93:in `run'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `each'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `run'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:272:in `run_callbacks'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/callbacks.rb:298:in `callback'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/callbacks.rb:290:in `destroy_without_transactions'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:102:in `destroy'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:66:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:79:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:98:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:102:in `destroy'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu.rb:456:in `destroy_thumbnails'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_collection.rb:277:in `method_missing_without_paginate'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_proxy.rb:171:in `method_missing'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_proxy.rb:171:in `each'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_proxy.rb:171:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_proxy.rb:171:in `method_missing'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_collection.rb:277:in `method_missing_without_paginate'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/will_paginate/lib/will_paginate/finder.rb:139:in `method_missing'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu.rb:456:in `destroy_thumbnails'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:173:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:173:in `evaluate_method'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu.rb:447:in `call'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:93:in `run'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `each'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `run'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:272:in `run_callbacks'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/callbacks.rb:298:in `callback'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/callbacks.rb:288:in `destroy_without_transactions'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:102:in `destroy'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:66:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:79:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:98:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:102:in `destroy'
+ > (eval):1:in `do_attachment'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:24:in `eval'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:40:in `do_attachment'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:24:in `update_with_attachments'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:24:in `each'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:24:in `update_with_attachments'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:66:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:79:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:98:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:22:in `update_with_attachments'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/app/controllers/admin/articles_controller.rb:64:in `update'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:106:in `call'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:106:in `respond_to'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/app/controllers/admin/articles_controller.rb:63:in `update'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:1166:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:1166:in `perform_action_without_filters'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/filters.rb:579:in `call_filters'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/filters.rb:572:in `perform_action_without_benchmark'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+ > /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/filters.rb:568:in `process_without_session_management_support'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:355:in `new_constants_in'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+ > /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+ > /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:510:in `require'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:355:in `new_constants_in'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:510:in `require'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/railties/lib/commands/server.rb:39
+ > /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+ > /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+ > script/server:3
+  [4;36;1mAttachment Destroy (0.000205)[0m   [0;1m DELETE FROM `attachments`
+ WHERE `id` = 735
+[0m
+Exception destroying  "/Users/dinshaw/sites/webflow/culinaryconcepts.com/master/public/attachments/0000/0732/Picture_2_sidebar.png": [Errno::ENOENT] 
+ > /usr/local/lib/ruby/1.8/fileutils.rb:1297:in `unlink'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:1297:in `remove_file'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:1302:in `platform_support'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:1296:in `remove_file'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:771:in `remove_file'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:549:in `rm'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:548:in `each'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:548:in `rm'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu/backends/file_system_backend.rb:59:in `destroy_file'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:173:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:173:in `evaluate_method'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu.rb:447:in `call'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:93:in `run'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `each'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `run'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:272:in `run_callbacks'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/callbacks.rb:298:in `callback'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/callbacks.rb:290:in `destroy_without_transactions'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:102:in `destroy'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:66:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:79:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:98:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:102:in `destroy'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu.rb:456:in `destroy_thumbnails'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_collection.rb:277:in `method_missing_without_paginate'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_proxy.rb:171:in `method_missing'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_proxy.rb:171:in `each'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_proxy.rb:171:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_proxy.rb:171:in `method_missing'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_collection.rb:277:in `method_missing_without_paginate'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/will_paginate/lib/will_paginate/finder.rb:139:in `method_missing'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu.rb:456:in `destroy_thumbnails'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:173:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:173:in `evaluate_method'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu.rb:447:in `call'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:93:in `run'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `each'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `run'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:272:in `run_callbacks'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/callbacks.rb:298:in `callback'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/callbacks.rb:288:in `destroy_without_transactions'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:102:in `destroy'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:66:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:79:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:98:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:102:in `destroy'
+ > (eval):1:in `do_attachment'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:24:in `eval'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:40:in `do_attachment'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:24:in `update_with_attachments'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:24:in `each'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:24:in `update_with_attachments'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:66:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:79:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:98:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:22:in `update_with_attachments'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/app/controllers/admin/articles_controller.rb:64:in `update'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:106:in `call'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:106:in `respond_to'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/app/controllers/admin/articles_controller.rb:63:in `update'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:1166:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:1166:in `perform_action_without_filters'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/filters.rb:579:in `call_filters'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/filters.rb:572:in `perform_action_without_benchmark'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+ > /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/filters.rb:568:in `process_without_session_management_support'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:355:in `new_constants_in'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+ > /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+ > /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:510:in `require'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:355:in `new_constants_in'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:510:in `require'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/railties/lib/commands/server.rb:39
+ > /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+ > /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+ > script/server:3
+  [4;35;1mAttachment Destroy (0.000151)[0m   [0m DELETE FROM `attachments`
+ WHERE `id` = 736
+[0m
+Exception destroying  "/Users/dinshaw/sites/webflow/culinaryconcepts.com/master/public/attachments/0000/0732/Picture_2_thumb.png": [Errno::ENOENT] 
+ > /usr/local/lib/ruby/1.8/fileutils.rb:1297:in `unlink'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:1297:in `remove_file'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:1302:in `platform_support'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:1296:in `remove_file'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:771:in `remove_file'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:549:in `rm'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:548:in `each'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:548:in `rm'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu/backends/file_system_backend.rb:59:in `destroy_file'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:173:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:173:in `evaluate_method'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu.rb:447:in `call'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:93:in `run'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `each'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `run'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:272:in `run_callbacks'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/callbacks.rb:298:in `callback'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/callbacks.rb:290:in `destroy_without_transactions'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:102:in `destroy'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:66:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:79:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:98:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:102:in `destroy'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu.rb:456:in `destroy_thumbnails'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_collection.rb:277:in `method_missing_without_paginate'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_proxy.rb:171:in `method_missing'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_proxy.rb:171:in `each'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_proxy.rb:171:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_proxy.rb:171:in `method_missing'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_collection.rb:277:in `method_missing_without_paginate'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/will_paginate/lib/will_paginate/finder.rb:139:in `method_missing'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu.rb:456:in `destroy_thumbnails'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:173:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:173:in `evaluate_method'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu.rb:447:in `call'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:93:in `run'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `each'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `run'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:272:in `run_callbacks'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/callbacks.rb:298:in `callback'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/callbacks.rb:288:in `destroy_without_transactions'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:102:in `destroy'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:66:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:79:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:98:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:102:in `destroy'
+ > (eval):1:in `do_attachment'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:24:in `eval'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:40:in `do_attachment'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:24:in `update_with_attachments'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:24:in `each'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:24:in `update_with_attachments'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:66:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:79:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:98:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:22:in `update_with_attachments'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/app/controllers/admin/articles_controller.rb:64:in `update'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:106:in `call'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:106:in `respond_to'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/app/controllers/admin/articles_controller.rb:63:in `update'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:1166:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:1166:in `perform_action_without_filters'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/filters.rb:579:in `call_filters'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/filters.rb:572:in `perform_action_without_benchmark'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+ > /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/filters.rb:568:in `process_without_session_management_support'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:355:in `new_constants_in'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+ > /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+ > /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:510:in `require'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:355:in `new_constants_in'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:510:in `require'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/railties/lib/commands/server.rb:39
+ > /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+ > /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+ > script/server:3
+  [4;36;1mAttachment Destroy (0.000144)[0m   [0;1m DELETE FROM `attachments`
+ WHERE `id` = 732
+[0m
+Exception destroying  "/Users/dinshaw/sites/webflow/culinaryconcepts.com/master/public/attachments/0000/0732/Picture_2.png": [Errno::ENOENT] 
+ > /usr/local/lib/ruby/1.8/fileutils.rb:1297:in `unlink'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:1297:in `remove_file'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:1302:in `platform_support'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:1296:in `remove_file'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:771:in `remove_file'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:549:in `rm'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:548:in `each'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:548:in `rm'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu/backends/file_system_backend.rb:59:in `destroy_file'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:173:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:173:in `evaluate_method'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu.rb:447:in `call'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:93:in `run'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `each'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `run'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:272:in `run_callbacks'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/callbacks.rb:298:in `callback'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/callbacks.rb:290:in `destroy_without_transactions'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:102:in `destroy'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:66:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:79:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:98:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:102:in `destroy'
+ > (eval):1:in `do_attachment'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:24:in `eval'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:40:in `do_attachment'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:24:in `update_with_attachments'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:24:in `each'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:24:in `update_with_attachments'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:66:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:79:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:98:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:22:in `update_with_attachments'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/app/controllers/admin/articles_controller.rb:64:in `update'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:106:in `call'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:106:in `respond_to'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/app/controllers/admin/articles_controller.rb:63:in `update'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:1166:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:1166:in `perform_action_without_filters'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/filters.rb:579:in `call_filters'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/filters.rb:572:in `perform_action_without_benchmark'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+ > /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/filters.rb:568:in `process_without_session_management_support'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:355:in `new_constants_in'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+ > /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+ > /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:510:in `require'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:355:in `new_constants_in'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:510:in `require'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/railties/lib/commands/server.rb:39
+ > /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+ > /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+ > script/server:3
+  [4;35;1mAttachment Load (0.000927)[0m   [0mSELECT * FROM `attachments` WHERE (attachee_id='' AND attachee_type='') ORDER BY position DESC LIMIT 1[0m
+  [4;36;1mAttachment Create (0.000271)[0m   [0;1mINSERT INTO `attachments` (`content_type`, `size`, `thumbnail`, `updated_at`, `title`, `body`, `attachee_type`, `attachee_id`, `attachment_type`, `filename`, `height`, `position`, `parent_id`, `width`, `created_at`) VALUES('image/png', 11265, NULL, '2009-01-27 21:47:21', NULL, NULL, NULL, NULL, 'img_publication', 'Picture_1.png', 95, 1, NULL, 351, '2009-01-27 21:47:21')[0m
+  [4;35;1mAttachment Load (0.000736)[0m   [0mSELECT * FROM `attachments` WHERE (`attachments`.`parent_id` = 737 AND `attachments`.`thumbnail` = 'concept') LIMIT 1[0m
+  [4;36;1mAttachment Load (0.000945)[0m   [0;1mSELECT * FROM `attachments` WHERE (attachee_id='' AND attachee_type='') ORDER BY position DESC LIMIT 1[0m
+  [4;35;1mAttachment Create (0.000260)[0m   [0mINSERT INTO `attachments` (`content_type`, `size`, `thumbnail`, `updated_at`, `title`, `body`, `attachee_type`, `attachee_id`, `attachment_type`, `filename`, `height`, `position`, `parent_id`, `width`, `created_at`) VALUES('image/png', 11265, 'concept', '2009-01-27 21:47:21', NULL, NULL, NULL, NULL, NULL, 'Picture_1_concept.png', 95, 1, 737, 351, '2009-01-27 21:47:21')[0m
+  [4;36;1mAttachment Load (0.001056)[0m   [0;1mSELECT * FROM `attachments` WHERE (`attachments`.`parent_id` = 737 AND `attachments`.`thumbnail` = 'sidebar') LIMIT 1[0m
+  [4;35;1mAttachment Load (0.000988)[0m   [0mSELECT * FROM `attachments` WHERE (attachee_id='' AND attachee_type='') ORDER BY position DESC LIMIT 1[0m
+  [4;36;1mAttachment Create (0.000271)[0m   [0;1mINSERT INTO `attachments` (`content_type`, `size`, `thumbnail`, `updated_at`, `title`, `body`, `attachee_type`, `attachee_id`, `attachment_type`, `filename`, `height`, `position`, `parent_id`, `width`, `created_at`) VALUES('image/png', 8072, 'sidebar', '2009-01-27 21:47:21', NULL, NULL, NULL, NULL, NULL, 'Picture_1_sidebar.png', 64, 1, 737, 236, '2009-01-27 21:47:21')[0m
+  [4;35;1mAttachment Load (0.029441)[0m   [0mSELECT * FROM `attachments` WHERE (`attachments`.`parent_id` = 737 AND `attachments`.`thumbnail` = 'square') LIMIT 1[0m
+  [4;36;1mAttachment Load (0.001523)[0m   [0;1mSELECT * FROM `attachments` WHERE (attachee_id='' AND attachee_type='') ORDER BY position DESC LIMIT 1[0m
+  [4;35;1mAttachment Create (0.000689)[0m   [0mINSERT INTO `attachments` (`content_type`, `size`, `thumbnail`, `updated_at`, `title`, `body`, `attachee_type`, `attachee_id`, `attachment_type`, `filename`, `height`, `position`, `parent_id`, `width`, `created_at`) VALUES('image/png', 8291, 'square', '2009-01-27 21:47:21', NULL, NULL, NULL, NULL, NULL, 'Picture_1_square.png', 65, 1, 737, 241, '2009-01-27 21:47:21')[0m
+  [4;36;1mAttachment Load (0.003179)[0m   [0;1mSELECT * FROM `attachments` WHERE (`attachments`.`parent_id` = 737 AND `attachments`.`thumbnail` = 'thumb') LIMIT 1[0m
+  [4;35;1mAttachment Load (0.002083)[0m   [0mSELECT * FROM `attachments` WHERE (attachee_id='' AND attachee_type='') ORDER BY position DESC LIMIT 1[0m
+  [4;36;1mAttachment Create (0.000561)[0m   [0;1mINSERT INTO `attachments` (`content_type`, `size`, `thumbnail`, `updated_at`, `title`, `body`, `attachee_type`, `attachee_id`, `attachment_type`, `filename`, `height`, `position`, `parent_id`, `width`, `created_at`) VALUES('image/png', 11265, 'thumb', '2009-01-27 21:47:21', NULL, NULL, NULL, NULL, NULL, 'Picture_1_thumb.png', 95, 1, 737, 351, '2009-01-27 21:47:21')[0m
+  [4;35;1mAttachment Update (0.001293)[0m   [0mUPDATE `attachments` SET `attachee_id` = 2, `attachee_type` = 'Article', `updated_at` = '2009-01-27 21:47:21' WHERE `id` = 737[0m
+  [4;36;1mAttachment Load (0.001743)[0m   [0;1mSELECT * FROM `attachments` WHERE (`attachments`.attachee_id = 2 AND `attachments`.attachee_type = 'Article' AND (attachment_type = 'img_article')) LIMIT 1[0m
+  [4;35;1mAttachment Update (0.002405)[0m   [0mUPDATE `attachments` SET position = (position - 1) WHERE (attachee_id='2' AND attachee_type='Article' AND position > 1) [0m
+  [4;36;1mAttachment Update (0.001018)[0m   [0;1mUPDATE `attachments` SET `position` = NULL, `updated_at` = '2009-01-27 21:47:21' WHERE `id` = 672[0m
+  [4;35;1mAttachment Load (0.001270)[0m   [0mSELECT * FROM `attachments` WHERE (`attachments`.parent_id = 672) [0m
+  [4;36;1mAttachment Update (0.000678)[0m   [0;1mUPDATE `attachments` SET position = (position - 1) WHERE (attachee_id='' AND attachee_type='' AND position > 1) [0m
+  [4;35;1mAttachment Update (0.000361)[0m   [0mUPDATE `attachments` SET `position` = NULL, `updated_at` = '2009-01-27 21:47:21' WHERE `id` = 673[0m
+  [4;36;1mAttachment Destroy (0.000144)[0m   [0;1m DELETE FROM `attachments`
+ WHERE `id` = 673
+[0m
+Exception destroying  "/Users/dinshaw/sites/webflow/culinaryconcepts.com/master/public/attachments/0000/0672/DSC03351_thumb.jpg": [Errno::ENOENT] 
+ > /usr/local/lib/ruby/1.8/fileutils.rb:1297:in `unlink'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:1297:in `remove_file'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:1302:in `platform_support'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:1296:in `remove_file'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:771:in `remove_file'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:549:in `rm'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:548:in `each'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:548:in `rm'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu/backends/file_system_backend.rb:59:in `destroy_file'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:173:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:173:in `evaluate_method'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu.rb:447:in `call'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:93:in `run'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `each'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `run'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:272:in `run_callbacks'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/callbacks.rb:298:in `callback'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/callbacks.rb:290:in `destroy_without_transactions'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:102:in `destroy'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:66:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:79:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:98:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:102:in `destroy'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu.rb:456:in `destroy_thumbnails'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_collection.rb:277:in `method_missing_without_paginate'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_proxy.rb:171:in `method_missing'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_proxy.rb:171:in `each'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_proxy.rb:171:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_proxy.rb:171:in `method_missing'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_collection.rb:277:in `method_missing_without_paginate'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/will_paginate/lib/will_paginate/finder.rb:139:in `method_missing'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu.rb:456:in `destroy_thumbnails'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:173:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:173:in `evaluate_method'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu.rb:447:in `call'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:93:in `run'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `each'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `run'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:272:in `run_callbacks'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/callbacks.rb:298:in `callback'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/callbacks.rb:288:in `destroy_without_transactions'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:102:in `destroy'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:66:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:79:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:98:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:102:in `destroy'
+ > (eval):1:in `do_attachment'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:24:in `eval'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:37:in `do_attachment'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:24:in `update_with_attachments'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:24:in `each'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:24:in `update_with_attachments'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:66:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:79:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:98:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:22:in `update_with_attachments'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/app/controllers/admin/articles_controller.rb:64:in `update'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:106:in `call'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:106:in `respond_to'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/app/controllers/admin/articles_controller.rb:63:in `update'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:1166:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:1166:in `perform_action_without_filters'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/filters.rb:579:in `call_filters'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/filters.rb:572:in `perform_action_without_benchmark'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+ > /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/filters.rb:568:in `process_without_session_management_support'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:355:in `new_constants_in'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+ > /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+ > /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:510:in `require'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:355:in `new_constants_in'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:510:in `require'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/railties/lib/commands/server.rb:39
+ > /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+ > /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+ > script/server:3
+  [4;35;1mAttachment Update (0.000612)[0m   [0mUPDATE `attachments` SET position = (position - 1) WHERE (attachee_id='' AND attachee_type='' AND position > 1) [0m
+  [4;36;1mAttachment Update (0.000229)[0m   [0;1mUPDATE `attachments` SET `position` = NULL, `updated_at` = '2009-01-27 21:47:21' WHERE `id` = 674[0m
+  [4;35;1mAttachment Destroy (0.000185)[0m   [0m DELETE FROM `attachments`
+ WHERE `id` = 674
+[0m
+Exception destroying  "/Users/dinshaw/sites/webflow/culinaryconcepts.com/master/public/attachments/0000/0672/DSC03351_sidebar.jpg": [Errno::ENOENT] 
+ > /usr/local/lib/ruby/1.8/fileutils.rb:1297:in `unlink'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:1297:in `remove_file'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:1302:in `platform_support'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:1296:in `remove_file'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:771:in `remove_file'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:549:in `rm'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:548:in `each'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:548:in `rm'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu/backends/file_system_backend.rb:59:in `destroy_file'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:173:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:173:in `evaluate_method'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu.rb:447:in `call'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:93:in `run'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `each'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `run'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:272:in `run_callbacks'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/callbacks.rb:298:in `callback'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/callbacks.rb:290:in `destroy_without_transactions'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:102:in `destroy'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:66:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:79:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:98:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:102:in `destroy'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu.rb:456:in `destroy_thumbnails'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_collection.rb:277:in `method_missing_without_paginate'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_proxy.rb:171:in `method_missing'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_proxy.rb:171:in `each'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_proxy.rb:171:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_proxy.rb:171:in `method_missing'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_collection.rb:277:in `method_missing_without_paginate'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/will_paginate/lib/will_paginate/finder.rb:139:in `method_missing'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu.rb:456:in `destroy_thumbnails'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:173:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:173:in `evaluate_method'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu.rb:447:in `call'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:93:in `run'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `each'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `run'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:272:in `run_callbacks'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/callbacks.rb:298:in `callback'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/callbacks.rb:288:in `destroy_without_transactions'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:102:in `destroy'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:66:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:79:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:98:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:102:in `destroy'
+ > (eval):1:in `do_attachment'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:24:in `eval'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:37:in `do_attachment'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:24:in `update_with_attachments'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:24:in `each'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:24:in `update_with_attachments'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:66:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:79:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:98:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:22:in `update_with_attachments'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/app/controllers/admin/articles_controller.rb:64:in `update'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:106:in `call'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:106:in `respond_to'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/app/controllers/admin/articles_controller.rb:63:in `update'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:1166:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:1166:in `perform_action_without_filters'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/filters.rb:579:in `call_filters'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/filters.rb:572:in `perform_action_without_benchmark'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+ > /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/filters.rb:568:in `process_without_session_management_support'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:355:in `new_constants_in'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+ > /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+ > /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:510:in `require'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:355:in `new_constants_in'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:510:in `require'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/railties/lib/commands/server.rb:39
+ > /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+ > /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+ > script/server:3
+  [4;36;1mAttachment Update (0.000605)[0m   [0;1mUPDATE `attachments` SET position = (position - 1) WHERE (attachee_id='' AND attachee_type='' AND position > 1) [0m
+  [4;35;1mAttachment Update (0.000210)[0m   [0mUPDATE `attachments` SET `position` = NULL, `updated_at` = '2009-01-27 21:47:21' WHERE `id` = 675[0m
+  [4;36;1mAttachment Destroy (0.000147)[0m   [0;1m DELETE FROM `attachments`
+ WHERE `id` = 675
+[0m
+Exception destroying  "/Users/dinshaw/sites/webflow/culinaryconcepts.com/master/public/attachments/0000/0672/DSC03351_square.jpg": [Errno::ENOENT] 
+ > /usr/local/lib/ruby/1.8/fileutils.rb:1297:in `unlink'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:1297:in `remove_file'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:1302:in `platform_support'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:1296:in `remove_file'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:771:in `remove_file'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:549:in `rm'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:548:in `each'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:548:in `rm'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu/backends/file_system_backend.rb:59:in `destroy_file'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:173:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:173:in `evaluate_method'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu.rb:447:in `call'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:93:in `run'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `each'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `run'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:272:in `run_callbacks'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/callbacks.rb:298:in `callback'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/callbacks.rb:290:in `destroy_without_transactions'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:102:in `destroy'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:66:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:79:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:98:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:102:in `destroy'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu.rb:456:in `destroy_thumbnails'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_collection.rb:277:in `method_missing_without_paginate'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_proxy.rb:171:in `method_missing'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_proxy.rb:171:in `each'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_proxy.rb:171:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_proxy.rb:171:in `method_missing'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_collection.rb:277:in `method_missing_without_paginate'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/will_paginate/lib/will_paginate/finder.rb:139:in `method_missing'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu.rb:456:in `destroy_thumbnails'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:173:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:173:in `evaluate_method'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu.rb:447:in `call'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:93:in `run'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `each'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `run'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:272:in `run_callbacks'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/callbacks.rb:298:in `callback'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/callbacks.rb:288:in `destroy_without_transactions'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:102:in `destroy'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:66:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:79:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:98:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:102:in `destroy'
+ > (eval):1:in `do_attachment'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:24:in `eval'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:37:in `do_attachment'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:24:in `update_with_attachments'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:24:in `each'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:24:in `update_with_attachments'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:66:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:79:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:98:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:22:in `update_with_attachments'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/app/controllers/admin/articles_controller.rb:64:in `update'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:106:in `call'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:106:in `respond_to'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/app/controllers/admin/articles_controller.rb:63:in `update'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:1166:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:1166:in `perform_action_without_filters'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/filters.rb:579:in `call_filters'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/filters.rb:572:in `perform_action_without_benchmark'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+ > /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/filters.rb:568:in `process_without_session_management_support'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:355:in `new_constants_in'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+ > /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+ > /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:510:in `require'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:355:in `new_constants_in'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:510:in `require'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/railties/lib/commands/server.rb:39
+ > /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+ > /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+ > script/server:3
+  [4;35;1mAttachment Update (0.000626)[0m   [0mUPDATE `attachments` SET position = (position - 1) WHERE (attachee_id='' AND attachee_type='' AND position > 1) [0m
+  [4;36;1mAttachment Update (0.000335)[0m   [0;1mUPDATE `attachments` SET `position` = NULL, `updated_at` = '2009-01-27 21:47:21' WHERE `id` = 676[0m
+  [4;35;1mAttachment Destroy (0.000160)[0m   [0m DELETE FROM `attachments`
+ WHERE `id` = 676
+[0m
+Exception destroying  "/Users/dinshaw/sites/webflow/culinaryconcepts.com/master/public/attachments/0000/0672/DSC03351_concept.jpg": [Errno::ENOENT] 
+ > /usr/local/lib/ruby/1.8/fileutils.rb:1297:in `unlink'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:1297:in `remove_file'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:1302:in `platform_support'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:1296:in `remove_file'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:771:in `remove_file'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:549:in `rm'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:548:in `each'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:548:in `rm'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu/backends/file_system_backend.rb:59:in `destroy_file'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:173:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:173:in `evaluate_method'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu.rb:447:in `call'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:93:in `run'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `each'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `run'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:272:in `run_callbacks'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/callbacks.rb:298:in `callback'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/callbacks.rb:290:in `destroy_without_transactions'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:102:in `destroy'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:66:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:79:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:98:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:102:in `destroy'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu.rb:456:in `destroy_thumbnails'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_collection.rb:277:in `method_missing_without_paginate'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_proxy.rb:171:in `method_missing'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_proxy.rb:171:in `each'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_proxy.rb:171:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_proxy.rb:171:in `method_missing'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/associations/association_collection.rb:277:in `method_missing_without_paginate'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/will_paginate/lib/will_paginate/finder.rb:139:in `method_missing'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu.rb:456:in `destroy_thumbnails'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:173:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:173:in `evaluate_method'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu.rb:447:in `call'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:93:in `run'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `each'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `run'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:272:in `run_callbacks'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/callbacks.rb:298:in `callback'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/callbacks.rb:288:in `destroy_without_transactions'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:102:in `destroy'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:66:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:79:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:98:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:102:in `destroy'
+ > (eval):1:in `do_attachment'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:24:in `eval'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:37:in `do_attachment'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:24:in `update_with_attachments'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:24:in `each'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:24:in `update_with_attachments'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:66:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:79:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:98:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:22:in `update_with_attachments'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/app/controllers/admin/articles_controller.rb:64:in `update'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:106:in `call'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:106:in `respond_to'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/app/controllers/admin/articles_controller.rb:63:in `update'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:1166:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:1166:in `perform_action_without_filters'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/filters.rb:579:in `call_filters'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/filters.rb:572:in `perform_action_without_benchmark'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+ > /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/filters.rb:568:in `process_without_session_management_support'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:355:in `new_constants_in'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+ > /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+ > /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:510:in `require'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:355:in `new_constants_in'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:510:in `require'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/railties/lib/commands/server.rb:39
+ > /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+ > /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+ > script/server:3
+  [4;36;1mAttachment Destroy (0.000165)[0m   [0;1m DELETE FROM `attachments`
+ WHERE `id` = 672
+[0m
+Exception destroying  "/Users/dinshaw/sites/webflow/culinaryconcepts.com/master/public/attachments/0000/0672/DSC03351.jpg": [Errno::ENOENT] 
+ > /usr/local/lib/ruby/1.8/fileutils.rb:1297:in `unlink'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:1297:in `remove_file'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:1302:in `platform_support'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:1296:in `remove_file'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:771:in `remove_file'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:549:in `rm'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:548:in `each'
+ > /usr/local/lib/ruby/1.8/fileutils.rb:548:in `rm'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu/backends/file_system_backend.rb:59:in `destroy_file'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:173:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:173:in `evaluate_method'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/plugins/attachment_fu/lib/technoweenie/attachment_fu.rb:447:in `call'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:93:in `run'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `each'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:92:in `run'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/callbacks.rb:272:in `run_callbacks'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/callbacks.rb:298:in `callback'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/callbacks.rb:290:in `destroy_without_transactions'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:102:in `destroy'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:66:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:79:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:98:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:102:in `destroy'
+ > (eval):1:in `do_attachment'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:24:in `eval'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:37:in `do_attachment'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:24:in `update_with_attachments'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:24:in `each'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:24:in `update_with_attachments'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/database_statements.rb:66:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:79:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/transactions.rb:98:in `transaction'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/lib/attachment_upload.rb:22:in `update_with_attachments'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/app/controllers/admin/articles_controller.rb:64:in `update'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:106:in `call'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/mime_responds.rb:106:in `respond_to'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/app/controllers/admin/articles_controller.rb:63:in `update'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:1166:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:1166:in `perform_action_without_filters'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/filters.rb:579:in `call_filters'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/filters.rb:572:in `perform_action_without_benchmark'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+ > /usr/local/lib/ruby/1.8/benchmark.rb:293:in `measure'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activerecord/lib/active_record/query_cache.rb:8:in `cache'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:529:in `send'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:529:in `process_without_filters'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/filters.rb:568:in `process_without_session_management_support'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+ > /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:355:in `new_constants_in'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+ > /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+ > /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:510:in `require'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:355:in `new_constants_in'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/activesupport/lib/active_support/dependencies.rb:510:in `require'
+ > /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/railties/lib/commands/server.rb:39
+ > /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+ > /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+ > script/server:3
+  [4;35;1mSQL (0.040495)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/admin/articles/2
+Completed in 0.57820 (1 reqs/sec) | DB: 0.11475 (19%) | 302 Found [http://127.0.0.1/admin/articles/2]
+
+
+Processing Admin::ArticlesController#show (for 127.0.0.1 at 2009-01-27 21:47:21) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewY6C25vdGljZSImQXJ0aWNs
+ZSB3YXMgc3VjY2Vzc2Z1bGx5IHVwZGF0ZWQuBjoKQHVzZWR7BjsIRjoMY3Ny
+Zl9pZCIlMzNkYWE1YzIzNGJhNWE5MWI4NDIzZjQ5YTI3MGEzYWY=--4e90ede638ddde8141dc5dd1d71b238cefff1c3c
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"admin/articles"}
+  [4;36;1mUser Columns (0.026664)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.002519)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mArticle Columns (0.030606)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+  [4;35;1mArticle Load (0.002933)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.`id` = 2) [0m
+Rendering template within layouts/admin
+Rendering admin/articles/show
+  [4;36;1mAttachment Load (0.000852)[0m   [0;1mSELECT * FROM `attachments` WHERE (`attachments`.attachee_id = 2 AND `attachments`.attachee_type = 'Article' AND (attachment_type = 'img_publication')) LIMIT 1[0m
+  [4;35;1mAttachment Columns (0.004281)[0m   [0mSHOW FIELDS FROM `attachments`[0m
+  [4;36;1mAttachment Load (0.003796)[0m   [0;1mSELECT * FROM `attachments` WHERE (`attachments`.attachee_id = 2 AND `attachments`.attachee_type = 'Article' AND (attachment_type = 'img_article')) LIMIT 1[0m
+  [4;35;1mAttachment Load (0.000930)[0m   [0mSELECT * FROM `attachments` WHERE (`attachments`.attachee_id = 2 AND `attachments`.attachee_type = 'Article' AND (attachment_type = 'content_file')) LIMIT 1[0m
+Completed in 0.10462 (9 reqs/sec) | Rendering: 0.01793 (17%) | DB: 0.07258 (69%) | 200 OK [http://127.0.0.1/admin/articles/2]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2009-01-27 21:47:22) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewY6C25vdGljZSImQXJ0aWNs
+ZSB3YXMgc3VjY2Vzc2Z1bGx5IHVwZGF0ZWQuBjoKQHVzZWR7BjsIVDoMY3Ny
+Zl9pZCIlMzNkYWE1YzIzNGJhNWE5MWI4NDIzZjQ5YTI3MGEzYWY=--319e9ff7e9737c3782c0818591da37b3146af108
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.00620 (161 reqs/sec) | Rendering: 0.00087 (14%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
+
+
+Processing StylesheetsController#admin (for 127.0.0.1 at 2009-01-27 21:47:22) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewY6C25vdGljZSImQXJ0aWNs
+ZSB3YXMgc3VjY2Vzc2Z1bGx5IHVwZGF0ZWQuBjoKQHVzZWR7BjsIVDoMY3Ny
+Zl9pZCIlMzNkYWE1YzIzNGJhNWE5MWI4NDIzZjQ5YTI3MGEzYWY=--319e9ff7e9737c3782c0818591da37b3146af108
+  Parameters: {"format"=>"css", "action"=>"admin", "controller"=>"stylesheets"}
+Rendering stylesheets/admin
+Completed in 0.00395 (253 reqs/sec) | Rendering: 0.00091 (23%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/admin.css]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2009-01-27 21:47:24) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiUzM2RhYTVjMjM0YmE1YTkxYjg0MjNmNDlhMjcwYTNhZg==--6c5b5b451793af46ed4495a1a1f834b6f8a7cfd5
+  Parameters: {"action"=>"index", "controller"=>"articles"}
+  [4;36;1mArticle Load (0.000507)[0m   [0;1mSELECT * FROM `articles` ORDER BY date_published desc[0m
+Rendering template within layouts/main
+Rendering articles/index
+  [4;35;1mPage Columns (0.016014)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.004843)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`title` = 'Press') LIMIT 1[0m
+Rendered shared/_html_head_tags (0.00128)
+  [4;35;1mArticle Columns (0.187087)[0m   [0mSHOW FIELDS FROM `articles`[0m
+  [4;36;1mAttachment Load (0.006224)[0m   [0;1mSELECT * FROM `attachments` WHERE (`attachments`.attachee_id = 2 AND `attachments`.attachee_type = 'Article' AND (attachment_type = 'img_publication')) LIMIT 1[0m
+  [4;35;1mAttachment Columns (0.016589)[0m   [0mSHOW FIELDS FROM `attachments`[0m
+  [4;36;1mAttachment Load (0.013292)[0m   [0;1mSELECT * FROM `attachments` WHERE (`attachments`.attachee_id = 1 AND `attachments`.attachee_type = 'Article' AND (attachment_type = 'img_publication')) LIMIT 1[0m
+  [4;35;1mConcept Load (0.000456)[0m   [0mSELECT * FROM `concepts` ORDER BY position[0m
+  [4;36;1mConcept Columns (0.003949)[0m   [0;1mSHOW FIELDS FROM `concepts`[0m
+Rendered public/_slideshow (0.00004)
+  [4;35;1mConcept Load (0.166809)[0m   [0mSELECT * FROM `concepts` [0m
+Completed in 0.47641 (2 reqs/sec) | Rendering: 0.05150 (10%) | DB: 0.41577 (87%) | 200 OK [http://127.0.0.1/articles]
+
+
+Processing StylesheetsController#layout (for 127.0.0.1 at 2009-01-27 21:47:25) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiUzM2RhYTVjMjM0YmE1YTkxYjg0MjNmNDlhMjcwYTNhZg==--6c5b5b451793af46ed4495a1a1f834b6f8a7cfd5
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+Rendering stylesheets/layout
+Completed in 0.00683 (146 reqs/sec) | Rendering: 0.00223 (32%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2009-01-27 21:47:25) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiUzM2RhYTVjMjM0YmE1YTkxYjg0MjNmNDlhMjcwYTNhZg==--6c5b5b451793af46ed4495a1a1f834b6f8a7cfd5
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.00368 (271 reqs/sec) | Rendering: 0.00068 (18%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
+
+
+Processing Admin::ArticlesController#edit (for 127.0.0.1 at 2009-01-27 21:47:33) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiUzM2RhYTVjMjM0YmE1YTkxYjg0MjNmNDlhMjcwYTNhZg==--6c5b5b451793af46ed4495a1a1f834b6f8a7cfd5
+  Parameters: {"action"=>"edit", "id"=>"2", "controller"=>"admin/articles"}
+  [4;36;1mUser Columns (0.002889)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000400)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mArticle Columns (0.002936)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+  [4;35;1mArticle Load (0.000841)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.`id` = 2) [0m
+Rendering template within layouts/admin
+Rendering admin/articles/edit
+  [4;36;1mAttachment Load (0.000782)[0m   [0;1mSELECT * FROM `attachments` WHERE (`attachments`.attachee_id = 2 AND `attachments`.attachee_type = 'Article' AND (attachment_type = 'img_publication')) LIMIT 1[0m
+  [4;35;1mAttachment Columns (0.003364)[0m   [0mSHOW FIELDS FROM `attachments`[0m
+  [4;36;1mAttachment Load (0.000875)[0m   [0;1mSELECT * FROM `attachments` WHERE (`attachments`.attachee_id = 2 AND `attachments`.attachee_type = 'Article' AND (attachment_type = 'img_article')) LIMIT 1[0m
+  [4;35;1mAttachment Load (0.000758)[0m   [0mSELECT * FROM `attachments` WHERE (`attachments`.attachee_id = 2 AND `attachments`.attachee_type = 'Article' AND (attachment_type = 'content_file')) LIMIT 1[0m
+Completed in 0.12556 (7 reqs/sec) | Rendering: 0.09820 (78%) | DB: 0.01285 (10%) | 200 OK [http://127.0.0.1/admin/articles/2/edit]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2009-01-27 21:47:33) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiUzM2RhYTVjMjM0YmE1YTkxYjg0MjNmNDlhMjcwYTNhZg==--6c5b5b451793af46ed4495a1a1f834b6f8a7cfd5
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.00427 (234 reqs/sec) | Rendering: 0.00097 (22%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
+
+
+Processing StylesheetsController#admin (for 127.0.0.1 at 2009-01-27 21:47:34) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiUzM2RhYTVjMjM0YmE1YTkxYjg0MjNmNDlhMjcwYTNhZg==--6c5b5b451793af46ed4495a1a1f834b6f8a7cfd5
+  Parameters: {"format"=>"css", "action"=>"admin", "controller"=>"stylesheets"}
+Rendering stylesheets/admin
+Completed in 0.00365 (273 reqs/sec) | Rendering: 0.00066 (17%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/admin.css]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2009-01-27 21:47:34) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiUzM2RhYTVjMjM0YmE1YTkxYjg0MjNmNDlhMjcwYTNhZg==--6c5b5b451793af46ed4495a1a1f834b6f8a7cfd5
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.00509 (196 reqs/sec) | Rendering: 0.00153 (30%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
+
+
+Processing Admin::ArticlesController#update (for 127.0.0.1 at 2009-01-27 21:47:37) [PUT]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiUzM2RhYTVjMjM0YmE1YTkxYjg0MjNmNDlhMjcwYTNhZg==--6c5b5b451793af46ed4495a1a1f834b6f8a7cfd5
+  Parameters: {"article"=>{"date_published(2i)"=>"6", "date_published(3i)"=>"5", "publication_name"=>"", "body"=>"<p>asd asd as asd asdasdasd asd as&aring;&ccedil;&radic;&radic;&radic;&radic;&radic;&radic;&radic;</p>\r\n<p>asd asd as asd asdasdasd asd as&aring;&ccedil;&radic;&radic;&radic;&radic;&radic;&radic;&radic;</p>\r\n<p>asd asd as asd asdasdasd asd as&aring;&ccedil;&radic;&radic;&radic;&radic;&radic;&radic;&radic;</p>\r\n<p>asd asd as asd asdasdasd asd as&aring;&ccedil;&radic;&radic;&radic;&radic;&radic;&radic;&radic;</p>\r\n<p>asd asd as asd asdasdasd asd as&aring;&ccedil;&radic;&radic;&radic;&radic;&radic;&radic;&radic;</p>\r\n<p>asd asd as asd asdasdasd asd as&aring;&ccedil;&radic;&radic;&radic;&radic;&radic;&radic;&radic;</p>\r\n<p>asd asd as asd asdasdasd asd as&aring;&ccedil;&radic;&radic;&radic;&radic;&radic;&radic;&radic;</p>\r\n<p>asd asd as asd asdasdasd asd as&aring;&ccedil;&radic;&radic;&radic;&radic;&radic;&radic;&radic;</p>\r\n<p>asd asd as asd asdasdasd asd as&aring;&ccedil;&radic;&radic;&radic;&radic;&radic;&radic;&radic;</p>\r\n<p>asd asd as asd asdasdasd asd as&aring;&ccedil;&radic;&radic;&radic;&radic;&radic;&radic;&radic;</p>", "title"=>"asasds", "uploaded_data_content_file"=>"", "uploaded_data_img_article"=>"", "uploaded_data_img_publication"=>"", "date_published(1i)"=>"2008", "state"=>"active", "remove_img_publication"=>"1"}, "commit"=>"Update", "action"=>"update", "_method"=>"put", "authenticity_token"=>"41711175ecc3193870ccfd08b50c902a85fc75f2", "id"=>"2", "controller"=>"admin/articles"}
+  [4;36;1mUser Columns (0.002704)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000465)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mArticle Columns (0.003101)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+  [4;35;1mArticle Load (0.000581)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.`id` = 2) [0m
+  [4;36;1mSQL (0.000118)[0m   [0;1mBEGIN[0m
+  [4;35;1mAttachment Columns (0.002987)[0m   [0mSHOW FIELDS FROM `attachments`[0m
+  [4;36;1mAttachment Load (0.000934)[0m   [0;1mSELECT * FROM `attachments` WHERE (`attachments`.attachee_id = 2 AND `attachments`.attachee_type = 'Article' AND (attachment_type = 'img_publication')) LIMIT 1[0m
+  [4;35;1mAttachment Update (0.001405)[0m   [0mUPDATE `attachments` SET position = (position - 1) WHERE (attachee_id='2' AND attachee_type='Article' AND position > 1) [0m
+  [4;36;1mAttachment Update (0.000351)[0m   [0;1mUPDATE `attachments` SET `position` = NULL, `updated_at` = '2009-01-27 21:47:37' WHERE `id` = 737[0m
+  [4;35;1mAttachment Load (0.000815)[0m   [0mSELECT * FROM `attachments` WHERE (`attachments`.parent_id = 737) [0m
+  [4;36;1mAttachment Update (0.000628)[0m   [0;1mUPDATE `attachments` SET position = (position - 1) WHERE (attachee_id='' AND attachee_type='' AND position > 1) [0m
+  [4;35;1mAttachment Update (0.000242)[0m   [0mUPDATE `attachments` SET `position` = NULL, `updated_at` = '2009-01-27 21:47:37' WHERE `id` = 738[0m
+  [4;36;1mAttachment Destroy (0.000208)[0m   [0;1m DELETE FROM `attachments`
+ WHERE `id` = 738
+[0m
+  [4;35;1mAttachment Update (0.000736)[0m   [0mUPDATE `attachments` SET position = (position - 1) WHERE (attachee_id='' AND attachee_type='' AND position > 1) [0m
+  [4;36;1mAttachment Update (0.000254)[0m   [0;1mUPDATE `attachments` SET `position` = NULL, `updated_at` = '2009-01-27 21:47:37' WHERE `id` = 739[0m
+  [4;35;1mAttachment Destroy (0.000183)[0m   [0m DELETE FROM `attachments`
+ WHERE `id` = 739
+[0m
+  [4;36;1mAttachment Update (0.000626)[0m   [0;1mUPDATE `attachments` SET position = (position - 1) WHERE (attachee_id='' AND attachee_type='' AND position > 1) [0m
+  [4;35;1mAttachment Update (0.000222)[0m   [0mUPDATE `attachments` SET `position` = NULL, `updated_at` = '2009-01-27 21:47:37' WHERE `id` = 740[0m
+  [4;36;1mAttachment Destroy (0.000179)[0m   [0;1m DELETE FROM `attachments`
+ WHERE `id` = 740
+[0m
+  [4;35;1mAttachment Update (0.000623)[0m   [0mUPDATE `attachments` SET position = (position - 1) WHERE (attachee_id='' AND attachee_type='' AND position > 1) [0m
+  [4;36;1mAttachment Update (0.000234)[0m   [0;1mUPDATE `attachments` SET `position` = NULL, `updated_at` = '2009-01-27 21:47:37' WHERE `id` = 741[0m
+  [4;35;1mAttachment Destroy (0.000222)[0m   [0m DELETE FROM `attachments`
+ WHERE `id` = 741
+[0m
+  [4;36;1mAttachment Destroy (0.001544)[0m   [0;1m DELETE FROM `attachments`
+ WHERE `id` = 737
+[0m
+  [4;35;1mSQL (0.026232)[0m   [0mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/admin/articles/2
+Completed in 0.09357 (10 reqs/sec) | DB: 0.04559 (48%) | 302 Found [http://127.0.0.1/admin/articles/2]
+
+
+Processing Admin::ArticlesController#show (for 127.0.0.1 at 2009-01-27 21:47:37) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewY6C25vdGljZSImQXJ0aWNs
+ZSB3YXMgc3VjY2Vzc2Z1bGx5IHVwZGF0ZWQuBjoKQHVzZWR7BjsIRjoMY3Ny
+Zl9pZCIlMzNkYWE1YzIzNGJhNWE5MWI4NDIzZjQ5YTI3MGEzYWY=--4e90ede638ddde8141dc5dd1d71b238cefff1c3c
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"admin/articles"}
+  [4;36;1mUser Columns (0.003480)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000427)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mArticle Columns (0.002558)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+  [4;35;1mArticle Load (0.000930)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.`id` = 2) [0m
+Rendering template within layouts/admin
+Rendering admin/articles/show
+  [4;36;1mAttachment Load (0.000882)[0m   [0;1mSELECT * FROM `attachments` WHERE (`attachments`.attachee_id = 2 AND `attachments`.attachee_type = 'Article' AND (attachment_type = 'img_publication')) LIMIT 1[0m
+  [4;35;1mAttachment Load (0.000716)[0m   [0mSELECT * FROM `attachments` WHERE (`attachments`.attachee_id = 2 AND `attachments`.attachee_type = 'Article' AND (attachment_type = 'img_article')) LIMIT 1[0m
+  [4;36;1mAttachment Load (0.000680)[0m   [0;1mSELECT * FROM `attachments` WHERE (`attachments`.attachee_id = 2 AND `attachments`.attachee_type = 'Article' AND (attachment_type = 'content_file')) LIMIT 1[0m
+Completed in 0.03853 (25 reqs/sec) | Rendering: 0.01484 (38%) | DB: 0.00967 (25%) | 200 OK [http://127.0.0.1/admin/articles/2]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2009-01-27 21:47:37) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewY6C25vdGljZSImQXJ0aWNs
+ZSB3YXMgc3VjY2Vzc2Z1bGx5IHVwZGF0ZWQuBjoKQHVzZWR7BjsIVDoMY3Ny
+Zl9pZCIlMzNkYWE1YzIzNGJhNWE5MWI4NDIzZjQ5YTI3MGEzYWY=--319e9ff7e9737c3782c0818591da37b3146af108
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.00560 (178 reqs/sec) | Rendering: 0.00105 (18%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
+
+
+Processing StylesheetsController#admin (for 127.0.0.1 at 2009-01-27 21:47:38) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewY6C25vdGljZSImQXJ0aWNs
+ZSB3YXMgc3VjY2Vzc2Z1bGx5IHVwZGF0ZWQuBjoKQHVzZWR7BjsIVDoMY3Ny
+Zl9pZCIlMzNkYWE1YzIzNGJhNWE5MWI4NDIzZjQ5YTI3MGEzYWY=--319e9ff7e9737c3782c0818591da37b3146af108
+  Parameters: {"format"=>"css", "action"=>"admin", "controller"=>"stylesheets"}
+Rendering stylesheets/admin
+Completed in 0.00358 (279 reqs/sec) | Rendering: 0.00065 (18%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/admin.css]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2009-01-27 21:47:41) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiUzM2RhYTVjMjM0YmE1YTkxYjg0MjNmNDlhMjcwYTNhZg==--6c5b5b451793af46ed4495a1a1f834b6f8a7cfd5
+  Parameters: {"action"=>"index", "controller"=>"articles"}
+  [4;35;1mArticle Load (0.000505)[0m   [0mSELECT * FROM `articles` ORDER BY date_published desc[0m
+Rendering template within layouts/main
+Rendering articles/index
+  [4;36;1mPage Columns (0.002312)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.000464)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`title` = 'Press') LIMIT 1[0m
+Rendered shared/_html_head_tags (0.00126)
+  [4;36;1mArticle Columns (0.002493)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+  [4;35;1mAttachment Load (0.002511)[0m   [0mSELECT * FROM `attachments` WHERE (`attachments`.attachee_id = 2 AND `attachments`.attachee_type = 'Article' AND (attachment_type = 'img_publication')) LIMIT 1[0m
+  [4;36;1mAttachment Load (0.000798)[0m   [0;1mSELECT * FROM `attachments` WHERE (`attachments`.attachee_id = 1 AND `attachments`.attachee_type = 'Article' AND (attachment_type = 'img_publication')) LIMIT 1[0m
+  [4;35;1mAttachment Columns (0.003017)[0m   [0mSHOW FIELDS FROM `attachments`[0m
+  [4;36;1mConcept Load (0.000534)[0m   [0;1mSELECT * FROM `concepts` ORDER BY position[0m
+  [4;35;1mConcept Columns (0.002618)[0m   [0mSHOW FIELDS FROM `concepts`[0m
+Rendered public/_slideshow (0.00005)
+  [4;36;1mConcept Load (0.000373)[0m   [0;1mSELECT * FROM `concepts` [0m
+Completed in 0.05594 (17 reqs/sec) | Rendering: 0.03215 (57%) | DB: 0.01563 (27%) | 200 OK [http://127.0.0.1/articles]
+
+
+Processing StylesheetsController#layout (for 127.0.0.1 at 2009-01-27 21:47:41) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiUzM2RhYTVjMjM0YmE1YTkxYjg0MjNmNDlhMjcwYTNhZg==--6c5b5b451793af46ed4495a1a1f834b6f8a7cfd5
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+Rendering stylesheets/layout
+Completed in 0.00687 (145 reqs/sec) | Rendering: 0.00092 (13%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2009-01-27 21:47:41) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiUzM2RhYTVjMjM0YmE1YTkxYjg0MjNmNDlhMjcwYTNhZg==--6c5b5b451793af46ed4495a1a1f834b6f8a7cfd5
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.00348 (287 reqs/sec) | Rendering: 0.00075 (21%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2009-01-27 21:47:56) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiUzM2RhYTVjMjM0YmE1YTkxYjg0MjNmNDlhMjcwYTNhZg==--6c5b5b451793af46ed4495a1a1f834b6f8a7cfd5
+  Parameters: {"action"=>"index", "controller"=>"articles"}
+  [4;35;1mArticle Load (0.000490)[0m   [0mSELECT * FROM `articles` ORDER BY date_published desc[0m
+Rendering template within layouts/main
+Rendering articles/index
+  [4;36;1mPage Columns (0.011388)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.000847)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`title` = 'Press') LIMIT 1[0m
+Rendered shared/_html_head_tags (0.00194)
+  [4;36;1mArticle Columns (0.002680)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+  [4;35;1mAttachment Load (0.001016)[0m   [0mSELECT * FROM `attachments` WHERE (`attachments`.attachee_id = 2 AND `attachments`.attachee_type = 'Article' AND (attachment_type = 'img_publication')) LIMIT 1[0m
+  [4;36;1mAttachment Load (0.000827)[0m   [0;1mSELECT * FROM `attachments` WHERE (`attachments`.attachee_id = 1 AND `attachments`.attachee_type = 'Article' AND (attachment_type = 'img_publication')) LIMIT 1[0m
+  [4;35;1mAttachment Columns (0.003215)[0m   [0mSHOW FIELDS FROM `attachments`[0m
+  [4;36;1mConcept Load (0.000514)[0m   [0;1mSELECT * FROM `concepts` ORDER BY position[0m
+  [4;35;1mConcept Columns (0.002473)[0m   [0mSHOW FIELDS FROM `concepts`[0m
+Rendered public/_slideshow (0.00005)
+  [4;36;1mConcept Load (0.000381)[0m   [0;1mSELECT * FROM `concepts` [0m
+Completed in 0.06478 (15 reqs/sec) | Rendering: 0.03262 (50%) | DB: 0.02383 (36%) | 200 OK [http://127.0.0.1/articles]
+
+
+Processing StylesheetsController#layout (for 127.0.0.1 at 2009-01-27 21:47:56) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiUzM2RhYTVjMjM0YmE1YTkxYjg0MjNmNDlhMjcwYTNhZg==--6c5b5b451793af46ed4495a1a1f834b6f8a7cfd5
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+Rendering stylesheets/layout
+Completed in 0.00589 (169 reqs/sec) | Rendering: 0.00081 (13%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2009-01-27 21:47:56) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wIgpmbGFzaElDOidBY3Rpb25D
+b250cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsAOgxjc3Jm
+X2lkIiUzM2RhYTVjMjM0YmE1YTkxYjg0MjNmNDlhMjcwYTNhZg==--6c5b5b451793af46ed4495a1a1f834b6f8a7cfd5
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.01471 (67 reqs/sec) | Rendering: 0.01189 (80%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
