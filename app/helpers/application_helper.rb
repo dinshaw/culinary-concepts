@@ -9,8 +9,8 @@ module ApplicationHelper
     (@controller.action_name == page.gsub("-","_") || @controller.controller_name == page) ? "on" : "off"  
   end
 
-  def nav_image_for(nav,page)
-    image_path_string = image_tag(nav_image_path(nav,page), :alt => "")
+  def nav_image_for(nav,page,alt)
+    image_path_string = image_tag(nav_image_path(nav,page), :alt => alt)
     # concepts is actaully not a link, jsut the sub nav is links
     link_to_unless( (nav_img_suffix(page) == "on" || page == "concepts"), image_path_string, eval("#{page}_path") ) rescue image_path_string
   end

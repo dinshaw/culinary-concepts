@@ -14468,3 +14468,215 @@ X2lkIiUzM2RhYTVjMjM0YmE1YTkxYjg0MjNmNDlhMjcwYTNhZg==--6c5b5b451793af46ed4495a1a1
   Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
 Rendering stylesheets/main
 Completed in 0.01471 (67 reqs/sec) | Rendering: 0.01189 (80%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
+
+
+Processing PublicController#home (for 127.0.0.1 at 2009-02-12 23:49:52) [GET]
+  Session ID: ca3b646fca4a73027ef1d84fb93b197d
+  Parameters: {"action"=>"home", "controller"=>"public"}
+
+
+CGI::Session::CookieStore::TamperedWithCookie (CGI::Session::CookieStore::TamperedWithCookie):
+    /vendor/rails/actionpack/lib/action_controller/session/cookie_store.rb:144:in `unmarshal'
+    /vendor/rails/actionpack/lib/action_controller/session/cookie_store.rb:101:in `restore'
+    /usr/local/lib/ruby/1.8/cgi/session.rb:304:in `[]'
+    /vendor/rails/actionpack/lib/action_controller/cgi_process.rb:136:in `session'
+    /vendor/rails/actionpack/lib/action_controller/cgi_process.rb:168:in `stale_session_check!'
+    /vendor/rails/actionpack/lib/action_controller/cgi_process.rb:116:in `session'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1139:in `assign_shortcuts_without_flash'
+    /vendor/rails/actionpack/lib/action_controller/flash.rb:166:in `assign_shortcuts'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:523:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:568:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:510:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:510:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /Users/dinshaw/Sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing PublicController#home (for 127.0.0.1 at 2009-02-12 23:49:55) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"action"=>"home", "controller"=>"public"}
+  [4;36;1mSQL (0.000117)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPage Columns (0.091295)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.000568)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`title` = 'Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering public/home
+Rendered shared/_html_head_tags (0.00247)
+  [4;35;1mConcept Load (0.020120)[0m   [0mSELECT * FROM `concepts` ORDER BY position[0m
+  [4;36;1mConcept Columns (0.002934)[0m   [0;1mSHOW FIELDS FROM `concepts`[0m
+Rendered public/_slideshow (0.00005)
+  [4;35;1mConcept Load (0.000414)[0m   [0mSELECT * FROM `concepts` [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `concepts` [0m
+Completed in 0.18224 (5 reqs/sec) | Rendering: 0.03746 (20%) | DB: 0.11545 (63%) | 200 OK [http://127.0.0.1/]
+
+
+Processing StylesheetsController#layout (for 127.0.0.1 at 2009-02-12 23:49:55) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+Rendering stylesheets/layout
+Completed in 0.00841 (118 reqs/sec) | Rendering: 0.00388 (46%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2009-02-12 23:49:55) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.11724 (8 reqs/sec) | Rendering: 0.11222 (95%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
+
+
+Processing PublicController#home (for 127.0.0.1 at 2009-02-12 23:50:11) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"action"=>"home", "controller"=>"public"}
+  [4;35;1mPage Columns (0.002341)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.001711)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`title` = 'Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering public/home
+Rendered shared/_html_head_tags (0.00088)
+  [4;35;1mConcept Load (0.000425)[0m   [0mSELECT * FROM `concepts` ORDER BY position[0m
+  [4;36;1mConcept Columns (0.002017)[0m   [0;1mSHOW FIELDS FROM `concepts`[0m
+Rendered public/_slideshow (0.00004)
+  [4;35;1mConcept Load (0.001897)[0m   [0mSELECT * FROM `concepts` [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `concepts` [0m
+Completed in 0.02326 (42 reqs/sec) | Rendering: 0.00756 (32%) | DB: 0.00839 (36%) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#home (for 127.0.0.1 at 2009-02-12 23:50:44) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"action"=>"home", "controller"=>"public"}
+  [4;35;1mPage Columns (0.012150)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.050117)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`title` = 'Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering public/home
+Rendered shared/_html_head_tags (0.00118)
+  [4;35;1mConcept Load (0.000546)[0m   [0mSELECT * FROM `concepts` ORDER BY position[0m
+  [4;36;1mConcept Columns (0.002527)[0m   [0;1mSHOW FIELDS FROM `concepts`[0m
+Rendered public/_slideshow (0.00005)
+  [4;35;1mConcept Load (0.000372)[0m   [0mSELECT * FROM `concepts` [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `concepts` [0m
+Completed in 0.08919 (11 reqs/sec) | Rendering: 0.01561 (17%) | DB: 0.06571 (73%) | 200 OK [http://127.0.0.1/]
+
+
+Processing StylesheetsController#layout (for 127.0.0.1 at 2009-02-12 23:50:45) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+Rendering stylesheets/layout
+Completed in 0.00514 (194 reqs/sec) | Rendering: 0.00088 (17%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2009-02-12 23:50:45) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.00338 (296 reqs/sec) | Rendering: 0.00060 (17%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
+
+
+Processing PublicController#home (for 127.0.0.1 at 2009-02-12 23:50:52) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"action"=>"home", "controller"=>"public"}
+  [4;35;1mPage Columns (0.011397)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.000601)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`title` = 'Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering public/home
+Rendered shared/_html_head_tags (0.00108)
+  [4;35;1mConcept Load (0.000459)[0m   [0mSELECT * FROM `concepts` ORDER BY position[0m
+  [4;36;1mConcept Columns (0.002617)[0m   [0;1mSHOW FIELDS FROM `concepts`[0m
+Rendered public/_slideshow (0.00005)
+  [4;35;1mConcept Load (0.000382)[0m   [0mSELECT * FROM `concepts` [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `concepts` [0m
+Completed in 0.03223 (31 reqs/sec) | Rendering: 0.00938 (29%) | DB: 0.01546 (47%) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#home (for 127.0.0.1 at 2009-02-12 23:51:44) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"action"=>"home", "controller"=>"public"}
+  [4;35;1mPage Columns (0.011338)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.000615)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`title` = 'Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering public/home
+Rendered shared/_html_head_tags (0.07339)
+  [4;35;1mConcept Load (0.000524)[0m   [0mSELECT * FROM `concepts` ORDER BY position[0m
+  [4;36;1mConcept Columns (0.002396)[0m   [0;1mSHOW FIELDS FROM `concepts`[0m
+Rendered public/_slideshow (0.00004)
+  [4;35;1mConcept Load (0.000396)[0m   [0mSELECT * FROM `concepts` [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `concepts` [0m
+Completed in 0.10375 (9 reqs/sec) | Rendering: 0.08134 (78%) | DB: 0.01527 (14%) | 200 OK [http://127.0.0.1/]
+
+
+Processing StylesheetsController#layout (for 127.0.0.1 at 2009-02-12 23:51:44) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+Rendering stylesheets/layout
+Completed in 0.00347 (288 reqs/sec) | Rendering: 0.00067 (19%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2009-02-12 23:51:44) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.00334 (299 reqs/sec) | Rendering: 0.00059 (17%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
+
+
+Processing PublicController#home (for 127.0.0.1 at 2009-02-12 23:51:46) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"action"=>"home", "controller"=>"public"}
+  [4;35;1mPage Columns (0.011426)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.001690)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`title` = 'Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering public/home
+Rendered shared/_html_head_tags (0.00102)
+  [4;35;1mConcept Load (0.000436)[0m   [0mSELECT * FROM `concepts` ORDER BY position[0m
+  [4;36;1mConcept Columns (0.002070)[0m   [0;1mSHOW FIELDS FROM `concepts`[0m
+Rendered public/_slideshow (0.00004)
+  [4;35;1mConcept Load (0.001688)[0m   [0mSELECT * FROM `concepts` [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `concepts` [0m
+Completed in 0.03288 (30 reqs/sec) | Rendering: 0.00779 (23%) | DB: 0.01731 (52%) | 200 OK [http://127.0.0.1/]

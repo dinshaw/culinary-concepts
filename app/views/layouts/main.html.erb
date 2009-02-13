@@ -54,21 +54,21 @@
 	<div id="canvas">
 		<div id="nav_main">
 			<ul>
-				<li><%= nav_image_for("main","home") %></li>
-				<li><%= nav_image_for("main","about_us") %></li>
-				<li><%= nav_image_for("main","jean_georges") %></li>
-				<li id="concepts" class="concepts"><%= nav_image_for("main","concepts")  %>
+				<li><%= nav_image_for("main","home", "Culinary Concepts") %></li>
+				<li><%= nav_image_for("main","about_us", "About Us") %></li>
+				<li><%= nav_image_for("main","jean_georges", "Jean Georges") %></li>
+				<li id="concepts" class="concepts"><%= nav_image_for("main","concepts", "Concepts")  %>
 					<ul id="nav_concept">
 						<% Concept.find(:all, :order => :position).each do |c| %>
-						<li><%= link_to image_tag("nav/concepts/#{c.slug.gsub("-","_")}-off.gif"), quote_concept_path(c) %></li>
+						<li><%= link_to image_tag("nav/concepts/#{c.slug.gsub("-","_")}-off.gif", :alt => c.title), quote_concept_path(c) %></li>
 						<% end %>
 					</ul>
 				</li>
-				<li><%= nav_image_for("main","articles") %></li>
-				<li><%= nav_image_for("main","locations") %></li>
-				<li><%= nav_image_for("main","gift_cards") %></li>				
-				<li><%= nav_image_for("main","contact_us")  %></li>
-				<li><%= nav_image_for("main","careers") %></li>
+				<li><%= nav_image_for("main","articles", "Press") %></li>
+				<li><%= nav_image_for("main","locations", "Locations") %></li>
+				<li><%= nav_image_for("main","gift_cards", "Gift Cards") %></li>				
+				<li><%= nav_image_for("main","contact_us", "Contact Us")  %></li>
+				<li><%= nav_image_for("main","careers", "Careers") %></li>
 			</ul>
 		</div><!-- nav_main -->
 				
