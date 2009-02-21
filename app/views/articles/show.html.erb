@@ -6,7 +6,9 @@
 	<h2><%= link_to("Download PDF", @article.attachments.content_file.public_filename, :target => "_blank") if !@article.attachments.content_file.nil? %></h2>
 
 	<div id="scroll_box_sm" class="noheight">
-		<p><%=h @article.publication_name %> <%=h @article.date_published.strftime("%B %d, %Y") %></p>
+		<p><strong><%=h @article.publication_name %></strong>
+		<br />
+		<%=h @article.date_published.strftime("%B %d, %Y") %></p>
 		<%= image_tag @article.attachments.img_article.public_filename(:sidebar), :class => :left if !@article.attachments.img_article.nil? %>
 		<%= @article.body %>
 	</div>

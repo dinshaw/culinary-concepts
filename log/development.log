@@ -14680,3 +14680,467 @@ Rendered public/_slideshow (0.00004)
   [4;35;1mConcept Load (0.001688)[0m   [0mSELECT * FROM `concepts` [0m
   [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `concepts` [0m
 Completed in 0.03288 (30 reqs/sec) | Rendering: 0.00779 (23%) | DB: 0.01731 (52%) | 200 OK [http://127.0.0.1/]
+
+
+Processing PublicController#home (for 127.0.0.1 at 2009-02-20 19:26:50) [GET]
+  Session ID: d858a11537665400a535dce1a62de658
+  Parameters: {"action"=>"home", "controller"=>"public"}
+
+
+CGI::Session::CookieStore::TamperedWithCookie (CGI::Session::CookieStore::TamperedWithCookie):
+    /vendor/rails/actionpack/lib/action_controller/session/cookie_store.rb:144:in `unmarshal'
+    /vendor/rails/actionpack/lib/action_controller/session/cookie_store.rb:101:in `restore'
+    /usr/local/lib/ruby/1.8/cgi/session.rb:304:in `[]'
+    /vendor/rails/actionpack/lib/action_controller/cgi_process.rb:136:in `session'
+    /vendor/rails/actionpack/lib/action_controller/cgi_process.rb:168:in `stale_session_check!'
+    /vendor/rails/actionpack/lib/action_controller/cgi_process.rb:116:in `session'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:1139:in `assign_shortcuts_without_flash'
+    /vendor/rails/actionpack/lib/action_controller/flash.rb:166:in `assign_shortcuts'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:523:in `process_without_filters'
+    /vendor/rails/actionpack/lib/action_controller/filters.rb:568:in `process_without_session_management_support'
+    /vendor/rails/actionpack/lib/action_controller/session_management.rb:130:in `process'
+    /vendor/rails/actionpack/lib/action_controller/base.rb:389:in `process'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:510:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:510:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing PublicController#home (for 127.0.0.1 at 2009-02-20 19:26:52) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"action"=>"home", "controller"=>"public"}
+  [4;36;1mSQL (0.000151)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+  [4;35;1mPage Columns (0.036208)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.001112)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`title` = 'Home') LIMIT 1[0m
+Rendering template within layouts/main
+Rendering public/home
+Rendered shared/_html_head_tags (0.00330)
+  [4;35;1mConcept Load (0.004354)[0m   [0mSELECT * FROM `concepts` ORDER BY position[0m
+  [4;36;1mConcept Columns (0.002562)[0m   [0;1mSHOW FIELDS FROM `concepts`[0m
+Rendered public/_slideshow (0.00004)
+  [4;35;1mConcept Load (0.001270)[0m   [0mSELECT * FROM `concepts` [0m
+  [4;36;1mCACHE (0.000000)[0m   [0;1mSELECT * FROM `concepts` [0m
+Completed in 0.14453 (6 reqs/sec) | Rendering: 0.06027 (41%) | DB: 0.04566 (31%) | 200 OK [http://127.0.0.1/]
+
+
+Processing StylesheetsController#layout (for 127.0.0.1 at 2009-02-20 19:26:53) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+Rendering stylesheets/layout
+Completed in 0.00689 (145 reqs/sec) | Rendering: 0.00343 (49%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2009-02-20 19:26:53) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.11975 (8 reqs/sec) | Rendering: 0.11704 (97%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2009-02-20 19:26:57) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"action"=>"index", "controller"=>"articles"}
+  [4;35;1mArticle Load (0.072981)[0m   [0mSELECT * FROM `articles` ORDER BY date_published desc[0m
+Rendering template within layouts/main
+Rendering articles/index
+  [4;36;1mPage Columns (0.002281)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.000590)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`title` = 'Press') LIMIT 1[0m
+Rendered shared/_html_head_tags (0.00113)
+  [4;36;1mArticle Columns (0.002342)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+  [4;35;1mAttachment Load (0.030524)[0m   [0mSELECT * FROM `attachments` WHERE (`attachments`.attachee_id = 2 AND `attachments`.attachee_type = 'Article' AND (attachment_type = 'img_publication')) LIMIT 1[0m
+  [4;36;1mAttachment Load (0.000796)[0m   [0;1mSELECT * FROM `attachments` WHERE (`attachments`.attachee_id = 1 AND `attachments`.attachee_type = 'Article' AND (attachment_type = 'img_publication')) LIMIT 1[0m
+  [4;35;1mAttachment Columns (0.003009)[0m   [0mSHOW FIELDS FROM `attachments`[0m
+  [4;36;1mConcept Load (0.000526)[0m   [0;1mSELECT * FROM `concepts` ORDER BY position[0m
+  [4;35;1mConcept Columns (0.002431)[0m   [0mSHOW FIELDS FROM `concepts`[0m
+Rendered public/_slideshow (0.00004)
+  [4;36;1mConcept Load (0.000388)[0m   [0;1mSELECT * FROM `concepts` [0m
+Completed in 0.46588 (2 reqs/sec) | Rendering: 0.32482 (69%) | DB: 0.11587 (24%) | 200 OK [http://127.0.0.1/articles]
+
+
+Processing StylesheetsController#layout (for 127.0.0.1 at 2009-02-20 19:26:57) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+Rendering stylesheets/layout
+Completed in 0.00370 (270 reqs/sec) | Rendering: 0.00093 (25%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2009-02-20 19:26:57) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.00332 (301 reqs/sec) | Rendering: 0.00061 (18%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2009-02-20 19:26:59) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"articles"}
+  [4;35;1mArticle Columns (0.011332)[0m   [0mSHOW FIELDS FROM `articles`[0m
+  [4;36;1mArticle Load (0.001080)[0m   [0;1mSELECT * FROM `articles` WHERE (`articles`.`id` = 1) [0m
+Rendering template within layouts/main
+Rendering articles/show
+Rendered shared/_html_head_tags (0.00192)
+  [4;35;1mAttachment Load (0.000709)[0m   [0mSELECT * FROM `attachments` WHERE (`attachments`.attachee_id = 1 AND `attachments`.attachee_type = 'Article' AND (attachment_type = 'content_file')) LIMIT 1[0m
+  [4;36;1mAttachment Columns (0.003208)[0m   [0;1mSHOW FIELDS FROM `attachments`[0m
+  [4;35;1mAttachment Load (0.000735)[0m   [0mSELECT * FROM `attachments` WHERE (`attachments`.attachee_id = 1 AND `attachments`.attachee_type = 'Article' AND (attachment_type = 'img_article')) LIMIT 1[0m
+  [4;36;1mConcept Load (0.000600)[0m   [0;1mSELECT * FROM `concepts` ORDER BY position[0m
+  [4;35;1mConcept Columns (0.003146)[0m   [0mSHOW FIELDS FROM `concepts`[0m
+Rendered public/_slideshow (0.00009)
+  [4;36;1mConcept Load (0.001141)[0m   [0;1mSELECT * FROM `concepts` [0m
+Completed in 0.12691 (7 reqs/sec) | Rendering: 0.02495 (19%) | DB: 0.02195 (17%) | 200 OK [http://127.0.0.1/articles/1]
+
+
+Processing StylesheetsController#layout (for 127.0.0.1 at 2009-02-20 19:27:00) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+Rendering stylesheets/layout
+Completed in 0.00350 (285 reqs/sec) | Rendering: 0.00063 (18%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2009-02-20 19:27:00) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.00333 (299 reqs/sec) | Rendering: 0.00060 (17%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-02-20 19:27:00) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/attachments/0000/0702/silvia_bbong_shirt_sidebar.jpg" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:510:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:510:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2009-02-20 19:27:12) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"action"=>"show", "id"=>"2", "controller"=>"articles"}
+  [4;35;1mArticle Columns (0.011585)[0m   [0mSHOW FIELDS FROM `articles`[0m
+  [4;36;1mArticle Load (0.001742)[0m   [0;1mSELECT * FROM `articles` WHERE (`articles`.`id` = 2) [0m
+Rendering template within layouts/main
+Rendering articles/show
+Rendered shared/_html_head_tags (0.00235)
+  [4;35;1mAttachment Load (0.000746)[0m   [0mSELECT * FROM `attachments` WHERE (`attachments`.attachee_id = 2 AND `attachments`.attachee_type = 'Article' AND (attachment_type = 'content_file')) LIMIT 1[0m
+  [4;36;1mAttachment Load (0.000602)[0m   [0;1mSELECT * FROM `attachments` WHERE (`attachments`.attachee_id = 2 AND `attachments`.attachee_type = 'Article' AND (attachment_type = 'img_article')) LIMIT 1[0m
+  [4;35;1mConcept Load (0.000375)[0m   [0mSELECT * FROM `concepts` ORDER BY position[0m
+  [4;36;1mConcept Columns (0.002860)[0m   [0;1mSHOW FIELDS FROM `concepts`[0m
+Rendered public/_slideshow (0.00004)
+  [4;35;1mConcept Load (0.000410)[0m   [0mSELECT * FROM `concepts` [0m
+Completed in 0.04566 (21 reqs/sec) | Rendering: 0.01801 (39%) | DB: 0.01832 (40%) | 200 OK [http://127.0.0.1/articles/2]
+
+
+Processing StylesheetsController#layout (for 127.0.0.1 at 2009-02-20 19:27:12) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+Rendering stylesheets/layout
+Completed in 0.00519 (192 reqs/sec) | Rendering: 0.00081 (15%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2009-02-20 19:27:12) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.00342 (292 reqs/sec) | Rendering: 0.00066 (19%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
+
+
+Processing ArticlesController#index (for 127.0.0.1 at 2009-02-20 19:27:17) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"action"=>"index", "controller"=>"articles"}
+  [4;36;1mArticle Load (0.000501)[0m   [0;1mSELECT * FROM `articles` ORDER BY date_published desc[0m
+Rendering template within layouts/main
+Rendering articles/index
+  [4;35;1mPage Columns (0.011429)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.001531)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`title` = 'Press') LIMIT 1[0m
+Rendered shared/_html_head_tags (0.00136)
+  [4;35;1mArticle Columns (0.002502)[0m   [0mSHOW FIELDS FROM `articles`[0m
+  [4;36;1mAttachment Load (0.002598)[0m   [0;1mSELECT * FROM `attachments` WHERE (`attachments`.attachee_id = 2 AND `attachments`.attachee_type = 'Article' AND (attachment_type = 'img_publication')) LIMIT 1[0m
+  [4;35;1mAttachment Load (0.000774)[0m   [0mSELECT * FROM `attachments` WHERE (`attachments`.attachee_id = 1 AND `attachments`.attachee_type = 'Article' AND (attachment_type = 'img_publication')) LIMIT 1[0m
+  [4;36;1mAttachment Columns (0.002898)[0m   [0;1mSHOW FIELDS FROM `attachments`[0m
+  [4;35;1mConcept Load (0.000499)[0m   [0mSELECT * FROM `concepts` ORDER BY position[0m
+  [4;36;1mConcept Columns (0.002666)[0m   [0;1mSHOW FIELDS FROM `concepts`[0m
+Rendered public/_slideshow (0.00004)
+  [4;35;1mConcept Load (0.000379)[0m   [0mSELECT * FROM `concepts` [0m
+Completed in 0.06626 (15 reqs/sec) | Rendering: 0.03254 (49%) | DB: 0.02578 (38%) | 200 OK [http://127.0.0.1/articles]
+
+
+Processing StylesheetsController#layout (for 127.0.0.1 at 2009-02-20 19:27:17) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+Rendering stylesheets/layout
+Completed in 0.00443 (225 reqs/sec) | Rendering: 0.00068 (15%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2009-02-20 19:27:17) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.00327 (306 reqs/sec) | Rendering: 0.00058 (17%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2009-02-20 19:27:23) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"articles"}
+  [4;36;1mArticle Columns (0.001840)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+  [4;35;1mArticle Load (0.001539)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.`id` = 1) [0m
+Rendering template within layouts/main
+Rendering articles/show
+Rendered shared/_html_head_tags (0.00189)
+  [4;36;1mAttachment Load (0.000660)[0m   [0;1mSELECT * FROM `attachments` WHERE (`attachments`.attachee_id = 1 AND `attachments`.attachee_type = 'Article' AND (attachment_type = 'content_file')) LIMIT 1[0m
+  [4;35;1mAttachment Columns (0.002804)[0m   [0mSHOW FIELDS FROM `attachments`[0m
+  [4;36;1mAttachment Load (0.000692)[0m   [0;1mSELECT * FROM `attachments` WHERE (`attachments`.attachee_id = 1 AND `attachments`.attachee_type = 'Article' AND (attachment_type = 'img_article')) LIMIT 1[0m
+  [4;35;1mConcept Load (0.000409)[0m   [0mSELECT * FROM `concepts` ORDER BY position[0m
+  [4;36;1mConcept Columns (0.002536)[0m   [0;1mSHOW FIELDS FROM `concepts`[0m
+Rendered public/_slideshow (0.00005)
+  [4;35;1mConcept Load (0.000415)[0m   [0mSELECT * FROM `concepts` [0m
+Completed in 0.04056 (24 reqs/sec) | Rendering: 0.02134 (52%) | DB: 0.01090 (26%) | 200 OK [http://127.0.0.1/articles/1]
+
+
+Processing StylesheetsController#layout (for 127.0.0.1 at 2009-02-20 19:27:23) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+Rendering stylesheets/layout
+Completed in 0.00645 (155 reqs/sec) | Rendering: 0.00077 (11%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2009-02-20 19:27:23) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.00342 (292 reqs/sec) | Rendering: 0.00060 (17%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-02-20 19:27:24) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/attachments/0000/0702/silvia_bbong_shirt_sidebar.jpg" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:510:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:510:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ArticlesController#show (for 127.0.0.1 at 2009-02-20 19:27:47) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"articles"}
+  [4;36;1mArticle Columns (0.011537)[0m   [0;1mSHOW FIELDS FROM `articles`[0m
+  [4;35;1mArticle Load (0.001878)[0m   [0mSELECT * FROM `articles` WHERE (`articles`.`id` = 1) [0m
+Rendering template within layouts/main
+Rendering articles/show
+Rendered shared/_html_head_tags (0.00239)
+  [4;36;1mAttachment Load (0.000773)[0m   [0;1mSELECT * FROM `attachments` WHERE (`attachments`.attachee_id = 1 AND `attachments`.attachee_type = 'Article' AND (attachment_type = 'content_file')) LIMIT 1[0m
+  [4;35;1mAttachment Columns (0.002272)[0m   [0mSHOW FIELDS FROM `attachments`[0m
+  [4;36;1mAttachment Load (0.000946)[0m   [0;1mSELECT * FROM `attachments` WHERE (`attachments`.attachee_id = 1 AND `attachments`.attachee_type = 'Article' AND (attachment_type = 'img_article')) LIMIT 1[0m
+  [4;35;1mConcept Load (0.000388)[0m   [0mSELECT * FROM `concepts` ORDER BY position[0m
+  [4;36;1mConcept Columns (0.001990)[0m   [0;1mSHOW FIELDS FROM `concepts`[0m
+Rendered public/_slideshow (0.00004)
+  [4;35;1mConcept Load (0.000321)[0m   [0mSELECT * FROM `concepts` [0m
+Completed in 0.12561 (7 reqs/sec) | Rendering: 0.09645 (76%) | DB: 0.02011 (16%) | 200 OK [http://127.0.0.1/articles/1]
+
+
+Processing StylesheetsController#layout (for 127.0.0.1 at 2009-02-20 19:27:47) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+Rendering stylesheets/layout
+Completed in 0.00357 (280 reqs/sec) | Rendering: 0.00064 (17%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/layout.css]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2009-02-20 19:27:47) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.00486 (205 reqs/sec) | Rendering: 0.00094 (19%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/stylesheets/main.css]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-02-20 19:27:48) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--6f2365c50a659cfd8efab471aa33c9f70541f45a
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/attachments/0000/0702/silvia_bbong_shirt_sidebar.jpg" with {:method=>:get}):
+    /vendor/rails/actionpack/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    /vendor/rails/actionpack/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /vendor/rails/actionpack/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:503:in `load'
+    /vendor/rails/railties/lib/commands/servers/mongrel.rb:64
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:510:in `require'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    /vendor/rails/activesupport/lib/active_support/dependencies.rb:510:in `require'
+    /vendor/rails/railties/lib/commands/server.rb:39
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+    /usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+    script/server:3
+
+Rendering /Users/dinshaw/sites/webflow/culinaryconcepts.com/master/vendor/rails/actionpack/lib/action_controller/templates/rescues/layout.erb (not_found)
