@@ -1469,3 +1469,946 @@ dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13
   Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
 Rendering stylesheets/main
 Completed in 0.00279 (357 reqs/sec) | Rendering: 0.00048 (17%) | DB: 0.00000 (0%) | 200 OK [http://dinshaw-gobhais-computer-2.local/stylesheets/main.css]
+
+
+Processing Admin::LocationsController#edit (for 127.0.0.1 at 2009-12-06 12:11:19) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"action"=>"edit", "id"=>"50", "controller"=>"admin/locations"}
+  [4;36;1mUser Columns (0.011250)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.001538)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mLocation Columns (0.001702)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mLocation Load (0.001404)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.`id` = 50) [0m
+Rendering template within layouts/admin
+Rendering admin/locations/edit
+  [4;36;1mLocation Load (0.000406)[0m   [0;1mSELECT * FROM `locations` [0m
+Completed in 0.12988 (7 reqs/sec) | Rendering: 0.00850 (6%) | DB: 0.01630 (12%) | 200 OK [http://dinshaw-gobhais-computer-2.local/admin/locations/50/edit]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2009-12-06 12:11:19) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.00260 (384 reqs/sec) | Rendering: 0.00046 (17%) | DB: 0.00000 (0%) | 200 OK [http://dinshaw-gobhais-computer-2.local/stylesheets/main.css]
+
+
+Processing StylesheetsController#admin (for 127.0.0.1 at 2009-12-06 12:11:20) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"format"=>"css", "action"=>"admin", "controller"=>"stylesheets"}
+Rendering stylesheets/admin
+Completed in 0.00305 (328 reqs/sec) | Rendering: 0.00049 (16%) | DB: 0.00000 (0%) | 200 OK [http://dinshaw-gobhais-computer-2.local/stylesheets/admin.css]
+
+
+Processing Admin::LocationsController#update (for 127.0.0.1 at 2009-12-06 12:11:33) [PUT]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"location"=>{"title"=>"Somewhere", "url"=>"asd", "phone"=>"123", "parent_id"=>"5"}, "commit"=>"Update", "action"=>"update", "_method"=>"put", "authenticity_token"=>"815f7b539dea719b6eb2baa6c5831146a33c890a", "id"=>"50", "controller"=>"admin/locations"}
+  [4;35;1mUser Columns (0.011257)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000760)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mLocation Columns (0.001633)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mLocation Load (0.000672)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.`id` = 50) [0m
+  [4;35;1mSQL (0.000239)[0m   [0mBEGIN[0m
+  [4;36;1mLocation Update (0.000466)[0m   [0;1mUPDATE `locations` SET `phone` = '123', `updated_at` = '2009-12-06 12:11:33', `title` = 'Somewhere', `url` = 'asd' WHERE `id` = 50[0m
+  [4;35;1mSQL (0.001316)[0m   [0mCOMMIT[0m
+Redirected to http://dinshaw-gobhais-computer-2.local:3000/admin/locations
+Completed in 0.03262 (30 reqs/sec) | DB: 0.01634 (50%) | 302 Found [http://dinshaw-gobhais-computer-2.local/admin/locations/50]
+
+
+Processing Admin::LocationsController#index (for 127.0.0.1 at 2009-12-06 12:11:33) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiJ0xvY2F0aW9u
+IHdhcyBzdWNjZXNzZnVsbHkgdXBkYXRlZC4GOgpAdXNlZHsGOwlG--4da9f8c2214d093639d504bf58d22888beecfca7
+  Parameters: {"action"=>"index", "controller"=>"admin/locations"}
+  [4;36;1mUser Columns (0.001802)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000569)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mLocation Load (0.000391)[0m   [0;1mSELECT * FROM `locations` WHERE (parent_id is null) ORDER BY position[0m
+  [4;35;1mLocation Columns (0.001454)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mLocation Load (0.001132)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.`id` = 5) [0m
+  [4;35;1mLocation Load (0.000153)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.`id` = 16) [0m
+Rendering template within layouts/admin
+Rendering admin/locations/index
+  [4;36;1mLocation Load (0.000325)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 5) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000315)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 29) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000246)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 46) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000278)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 1) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000234)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 36) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000224)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 44) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000247)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 50) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000210)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 51) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000208)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 52) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000203)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 53) ORDER BY position[0m
+Rendered admin/locations/_ul_list (0.01321)
+  [4;36;1mLocation Load (0.000233)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 16) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000239)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 27) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000281)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 31) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000235)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 34) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000232)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 38) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000240)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 40) ORDER BY position[0m
+Rendered admin/locations/_ul_list (0.00814)
+Completed in 0.03959 (25 reqs/sec) | Rendering: 0.01937 (48%) | DB: 0.00945 (23%) | 200 OK [http://dinshaw-gobhais-computer-2.local/admin/locations]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2009-12-06 12:11:34) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiJ0xvY2F0aW9u
+IHdhcyBzdWNjZXNzZnVsbHkgdXBkYXRlZC4GOgpAdXNlZHsGOwlU--f540a1df50e9f7e603321147df32b85c9203604a
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.00291 (344 reqs/sec) | Rendering: 0.00053 (18%) | DB: 0.00000 (0%) | 200 OK [http://dinshaw-gobhais-computer-2.local/stylesheets/main.css]
+
+
+Processing StylesheetsController#admin (for 127.0.0.1 at 2009-12-06 12:11:34) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiJ0xvY2F0aW9u
+IHdhcyBzdWNjZXNzZnVsbHkgdXBkYXRlZC4GOgpAdXNlZHsGOwlU--f540a1df50e9f7e603321147df32b85c9203604a
+  Parameters: {"format"=>"css", "action"=>"admin", "controller"=>"stylesheets"}
+Rendering stylesheets/admin
+Completed in 0.00272 (367 reqs/sec) | Rendering: 0.00054 (19%) | DB: 0.00000 (0%) | 200 OK [http://dinshaw-gobhais-computer-2.local/stylesheets/admin.css]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-12-06 12:11:39) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"action"=>"index", "controller"=>"locations"}
+  [4;36;1mPage Columns (0.010896)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.000951)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`title` = 'Restaurants') LIMIT 1[0m
+  [4;36;1mLocation Load (0.000464)[0m   [0;1mSELECT * FROM `locations` WHERE (parent_id is null) ORDER BY position[0m
+  [4;35;1mLocation Columns (0.001481)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mLocation Load (0.000282)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.`id` = 5) [0m
+  [4;35;1mLocation Load (0.000256)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.`id` = 16) [0m
+Rendering template within layouts/main
+Rendering locations/index
+Rendered shared/_html_head_tags (0.00108)
+  [4;36;1mLocation Load (0.000364)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 5) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000282)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 29) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000208)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 46) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000194)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 1) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000194)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 36) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000216)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 44) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000275)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 50) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000219)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 51) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000199)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 52) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000211)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 53) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000255)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 16) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000235)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 27) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000225)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 31) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000631)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 34) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000293)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 38) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000241)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 40) ORDER BY position[0m
+  [4;36;1mConcept Load (0.000547)[0m   [0;1mSELECT * FROM `concepts` ORDER BY position[0m
+  [4;35;1mConcept Columns (0.001507)[0m   [0mSHOW FIELDS FROM `concepts`[0m
+Rendered public/_slideshow (0.00003)
+  [4;36;1mConcept Load (0.000363)[0m   [0;1mSELECT * FROM `concepts` [0m
+Completed in 0.05096 (19 reqs/sec) | Rendering: 0.01771 (34%) | DB: 0.02099 (41%) | 200 OK [http://dinshaw-gobhais-computer-2.local/locations]
+
+
+Processing StylesheetsController#layout (for 127.0.0.1 at 2009-12-06 12:11:39) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+Rendering stylesheets/layout
+Completed in 0.00347 (288 reqs/sec) | Rendering: 0.00072 (20%) | DB: 0.00000 (0%) | 200 OK [http://dinshaw-gobhais-computer-2.local/stylesheets/layout.css]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2009-12-06 12:11:40) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.00316 (316 reqs/sec) | Rendering: 0.00051 (15%) | DB: 0.00000 (0%) | 200 OK [http://dinshaw-gobhais-computer-2.local/stylesheets/main.css]
+
+
+Processing Admin::LocationsController#edit (for 127.0.0.1 at 2009-12-06 12:11:45) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"action"=>"edit", "id"=>"50", "controller"=>"admin/locations"}
+  [4;35;1mUser Columns (0.001693)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000359)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mLocation Columns (0.002134)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mLocation Load (0.000936)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.`id` = 50) [0m
+Rendering template within layouts/admin
+Rendering admin/locations/edit
+  [4;35;1mLocation Load (0.000321)[0m   [0mSELECT * FROM `locations` [0m
+Completed in 0.02029 (49 reqs/sec) | Rendering: 0.00569 (28%) | DB: 0.00544 (26%) | 200 OK [http://dinshaw-gobhais-computer-2.local/admin/locations/50/edit]
+
+
+Processing StylesheetsController#admin (for 127.0.0.1 at 2009-12-06 12:11:45) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"format"=>"css", "action"=>"admin", "controller"=>"stylesheets"}
+Rendering stylesheets/admin
+Completed in 0.00307 (325 reqs/sec) | Rendering: 0.00054 (17%) | DB: 0.00000 (0%) | 200 OK [http://dinshaw-gobhais-computer-2.local/stylesheets/admin.css]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2009-12-06 12:11:45) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.00257 (389 reqs/sec) | Rendering: 0.00045 (17%) | DB: 0.00000 (0%) | 200 OK [http://dinshaw-gobhais-computer-2.local/stylesheets/main.css]
+
+
+Processing Admin::LocationsController#update (for 127.0.0.1 at 2009-12-06 12:11:47) [PUT]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"location"=>{"title"=>"Somewhere", "url"=>"asd", "phone"=>"", "parent_id"=>"5"}, "commit"=>"Update", "action"=>"update", "_method"=>"put", "authenticity_token"=>"815f7b539dea719b6eb2baa6c5831146a33c890a", "id"=>"50", "controller"=>"admin/locations"}
+  [4;36;1mUser Columns (0.011095)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000425)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mLocation Columns (0.001678)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mLocation Load (0.000806)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.`id` = 50) [0m
+  [4;36;1mSQL (0.000101)[0m   [0;1mBEGIN[0m
+  [4;35;1mLocation Update (0.000290)[0m   [0mUPDATE `locations` SET `phone` = '', `updated_at` = '2009-12-06 12:11:47' WHERE `id` = 50[0m
+  [4;36;1mSQL (0.001423)[0m   [0;1mCOMMIT[0m
+Redirected to http://dinshaw-gobhais-computer-2.local:3000/admin/locations
+Completed in 0.02946 (33 reqs/sec) | DB: 0.01582 (53%) | 302 Found [http://dinshaw-gobhais-computer-2.local/admin/locations/50]
+
+
+Processing Admin::LocationsController#index (for 127.0.0.1 at 2009-12-06 12:11:47) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiJ0xvY2F0aW9u
+IHdhcyBzdWNjZXNzZnVsbHkgdXBkYXRlZC4GOgpAdXNlZHsGOwlG--4da9f8c2214d093639d504bf58d22888beecfca7
+  Parameters: {"action"=>"index", "controller"=>"admin/locations"}
+  [4;35;1mUser Columns (0.001677)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000296)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mLocation Load (0.000376)[0m   [0mSELECT * FROM `locations` WHERE (parent_id is null) ORDER BY position[0m
+  [4;36;1mLocation Columns (0.001443)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mLocation Load (0.000894)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.`id` = 5) [0m
+  [4;36;1mLocation Load (0.000189)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.`id` = 16) [0m
+Rendering template within layouts/admin
+Rendering admin/locations/index
+  [4;35;1mLocation Load (0.000370)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 5) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000291)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 29) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000226)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 46) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000360)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 1) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000279)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 36) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000259)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 44) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000211)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 50) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000236)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 51) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000252)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 52) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000205)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 53) ORDER BY position[0m
+Rendered admin/locations/_ul_list (0.01407)
+  [4;35;1mLocation Load (0.000230)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 16) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000219)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 27) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000269)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 31) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000230)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 34) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000245)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 38) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000261)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 40) ORDER BY position[0m
+Rendered admin/locations/_ul_list (0.00774)
+Completed in 0.03829 (26 reqs/sec) | Rendering: 0.01966 (51%) | DB: 0.00902 (23%) | 200 OK [http://dinshaw-gobhais-computer-2.local/admin/locations]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2009-12-06 12:11:47) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiJ0xvY2F0aW9u
+IHdhcyBzdWNjZXNzZnVsbHkgdXBkYXRlZC4GOgpAdXNlZHsGOwlU--f540a1df50e9f7e603321147df32b85c9203604a
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.00291 (343 reqs/sec) | Rendering: 0.00052 (17%) | DB: 0.00000 (0%) | 200 OK [http://dinshaw-gobhais-computer-2.local/stylesheets/main.css]
+
+
+Processing StylesheetsController#admin (for 127.0.0.1 at 2009-12-06 12:11:48) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsGOgtub3RpY2UiJ0xvY2F0aW9u
+IHdhcyBzdWNjZXNzZnVsbHkgdXBkYXRlZC4GOgpAdXNlZHsGOwlU--f540a1df50e9f7e603321147df32b85c9203604a
+  Parameters: {"format"=>"css", "action"=>"admin", "controller"=>"stylesheets"}
+Rendering stylesheets/admin
+Completed in 0.00273 (365 reqs/sec) | Rendering: 0.00047 (17%) | DB: 0.00000 (0%) | 200 OK [http://dinshaw-gobhais-computer-2.local/stylesheets/admin.css]
+
+
+Processing Admin::LocationsController#new (for 127.0.0.1 at 2009-12-06 12:11:49) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"action"=>"new", "controller"=>"admin/locations"}
+  [4;35;1mUser Columns (0.011416)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000669)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mLocation Columns (0.001605)[0m   [0mSHOW FIELDS FROM `locations`[0m
+Rendering template within layouts/admin
+Rendering admin/locations/new
+  [4;36;1mLocation Load (0.000394)[0m   [0;1mSELECT * FROM `locations` [0m
+Completed in 0.02880 (34 reqs/sec) | Rendering: 0.00515 (17%) | DB: 0.01408 (48%) | 200 OK [http://dinshaw-gobhais-computer-2.local/admin/locations/new]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2009-12-06 12:11:50) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.00262 (382 reqs/sec) | Rendering: 0.00045 (17%) | DB: 0.00000 (0%) | 200 OK [http://dinshaw-gobhais-computer-2.local/stylesheets/main.css]
+
+
+Processing StylesheetsController#admin (for 127.0.0.1 at 2009-12-06 12:11:50) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"format"=>"css", "action"=>"admin", "controller"=>"stylesheets"}
+Rendering stylesheets/admin
+Completed in 0.00275 (363 reqs/sec) | Rendering: 0.00044 (15%) | DB: 0.00000 (0%) | 200 OK [http://dinshaw-gobhais-computer-2.local/stylesheets/admin.css]
+
+
+Processing Admin::LocationsController#index (for 127.0.0.1 at 2009-12-06 12:11:50) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"action"=>"index", "controller"=>"admin/locations"}
+  [4;35;1mUser Columns (0.001902)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000482)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mLocation Load (0.000483)[0m   [0mSELECT * FROM `locations` WHERE (parent_id is null) ORDER BY position[0m
+  [4;36;1mLocation Columns (0.003047)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mLocation Load (0.000842)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.`id` = 5) [0m
+  [4;36;1mLocation Load (0.000189)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.`id` = 16) [0m
+Rendering template within layouts/admin
+Rendering admin/locations/index
+  [4;35;1mLocation Load (0.000326)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 5) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000378)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 29) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000310)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 46) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000244)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 1) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000241)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 36) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000249)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 44) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000216)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 50) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000288)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 51) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000279)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 52) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000239)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 53) ORDER BY position[0m
+Rendered admin/locations/_ul_list (0.01536)
+  [4;35;1mLocation Load (0.000236)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 16) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000249)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 27) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000221)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 31) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000213)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 34) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000214)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 38) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000278)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 40) ORDER BY position[0m
+Rendered admin/locations/_ul_list (0.00773)
+Completed in 0.04369 (22 reqs/sec) | Rendering: 0.02089 (47%) | DB: 0.01113 (25%) | 200 OK [http://dinshaw-gobhais-computer-2.local/admin/locations]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2009-12-06 12:11:51) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.00357 (280 reqs/sec) | Rendering: 0.00083 (23%) | DB: 0.00000 (0%) | 200 OK [http://dinshaw-gobhais-computer-2.local/stylesheets/main.css]
+
+
+Processing StylesheetsController#admin (for 127.0.0.1 at 2009-12-06 12:11:51) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"format"=>"css", "action"=>"admin", "controller"=>"stylesheets"}
+Rendering stylesheets/admin
+Completed in 0.00342 (292 reqs/sec) | Rendering: 0.00092 (26%) | DB: 0.00000 (0%) | 200 OK [http://dinshaw-gobhais-computer-2.local/stylesheets/admin.css]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-12-06 12:27:09) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"action"=>"index", "controller"=>"locations"}
+  [4;35;1mPage Columns (0.001623)[0m   [0mSHOW FIELDS FROM `pages`[0m
+  [4;36;1mPage Load (0.000852)[0m   [0;1mSELECT * FROM `pages` WHERE (`pages`.`title` = 'Restaurants') LIMIT 1[0m
+  [4;35;1mLocation Load (0.000426)[0m   [0mSELECT * FROM `locations` WHERE (parent_id is null) ORDER BY position[0m
+  [4;36;1mLocation Columns (0.001524)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mLocation Load (0.001161)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.`id` = 5) [0m
+  [4;36;1mLocation Load (0.000175)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.`id` = 16) [0m
+Rendering template within layouts/main
+Rendering locations/index
+Rendered shared/_html_head_tags (0.00113)
+  [4;35;1mLocation Load (0.000424)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 5) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000280)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 29) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000209)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 46) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000201)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 1) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000311)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 36) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000221)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 44) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000196)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 50) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000187)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 51) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000190)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 52) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000184)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 53) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000230)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 16) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000196)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 27) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000197)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 31) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000192)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 34) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000197)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 38) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000234)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 40) ORDER BY position[0m
+  [4;35;1mConcept Load (0.000394)[0m   [0mSELECT * FROM `concepts` ORDER BY position[0m
+  [4;36;1mConcept Columns (0.001490)[0m   [0;1mSHOW FIELDS FROM `concepts`[0m
+Rendered public/_slideshow (0.00003)
+  [4;35;1mConcept Load (0.000382)[0m   [0mSELECT * FROM `concepts` [0m
+Completed in 0.04320 (23 reqs/sec) | Rendering: 0.01905 (44%) | DB: 0.01168 (27%) | 200 OK [http://dinshaw-gobhais-computer-2.local/locations]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2009-12-06 12:27:09) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.00435 (229 reqs/sec) | Rendering: 0.00069 (15%) | DB: 0.00000 (0%) | 200 OK [http://dinshaw-gobhais-computer-2.local/stylesheets/main.css]
+
+
+Processing StylesheetsController#layout (for 127.0.0.1 at 2009-12-06 12:27:10) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+Rendering stylesheets/layout
+Completed in 0.00262 (382 reqs/sec) | Rendering: 0.00043 (16%) | DB: 0.00000 (0%) | 200 OK [http://dinshaw-gobhais-computer-2.local/stylesheets/layout.css]
+
+
+Processing Admin::LocationsController#destroy (for 127.0.0.1 at 2009-12-06 12:27:15) [DELETE]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"815f7b539dea719b6eb2baa6c5831146a33c890a", "id"=>"53", "controller"=>"admin/locations"}
+  [4;36;1mUser Columns (0.001594)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000930)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mLocation Columns (0.001589)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mLocation Load (0.000706)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.`id` = 53) [0m
+  [4;36;1mSQL (0.000077)[0m   [0;1mBEGIN[0m
+  [4;35;1mLocation Update (0.000236)[0m   [0mUPDATE `locations` SET position = (position - 1) WHERE (parent_id = 5 AND position > 9) [0m
+  [4;36;1mLocation Update (0.000208)[0m   [0;1mUPDATE `locations` SET `updated_at` = '2009-12-06 12:27:15', `position` = NULL WHERE `id` = 53[0m
+  [4;35;1mLocation Load (0.000492)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 53) ORDER BY position[0m
+  [4;36;1mLocation Destroy (0.000165)[0m   [0;1m DELETE FROM `locations`
+ WHERE `id` = 53
+[0m
+  [4;35;1mSQL (0.001941)[0m   [0mCOMMIT[0m
+Redirected to http://dinshaw-gobhais-computer-2.local:3000/admin/locations
+Completed in 0.10597 (9 reqs/sec) | DB: 0.00794 (7%) | 302 Found [http://dinshaw-gobhais-computer-2.local/admin/locations/53]
+
+
+Processing Admin::LocationsController#index (for 127.0.0.1 at 2009-12-06 12:27:16) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"action"=>"index", "controller"=>"admin/locations"}
+  [4;36;1mUser Columns (0.001643)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000697)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mLocation Load (0.000528)[0m   [0;1mSELECT * FROM `locations` WHERE (parent_id is null) ORDER BY position[0m
+  [4;35;1mLocation Columns (0.001730)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mLocation Load (0.000814)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.`id` = 5) [0m
+  [4;35;1mLocation Load (0.000158)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.`id` = 16) [0m
+Rendering template within layouts/admin
+Rendering admin/locations/index
+  [4;36;1mLocation Load (0.000334)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 5) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000316)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 29) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000264)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 46) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000507)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 1) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000345)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 36) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000283)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 44) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000289)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 50) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000309)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 51) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000226)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 52) ORDER BY position[0m
+Rendered admin/locations/_ul_list (0.10189)
+  [4;35;1mLocation Load (0.000242)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 16) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000210)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 27) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000252)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 31) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000238)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 34) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000278)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 38) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000245)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 40) ORDER BY position[0m
+Rendered admin/locations/_ul_list (0.00820)
+Completed in 0.12814 (7 reqs/sec) | Rendering: 0.10794 (84%) | DB: 0.00991 (7%) | 200 OK [http://dinshaw-gobhais-computer-2.local/admin/locations]
+
+
+Processing StylesheetsController#admin (for 127.0.0.1 at 2009-12-06 12:27:16) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"format"=>"css", "action"=>"admin", "controller"=>"stylesheets"}
+Rendering stylesheets/admin
+Completed in 0.09218 (10 reqs/sec) | Rendering: 0.00064 (0%) | DB: 0.00000 (0%) | 200 OK [http://dinshaw-gobhais-computer-2.local/stylesheets/admin.css]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2009-12-06 12:27:16) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.00255 (392 reqs/sec) | Rendering: 0.00047 (18%) | DB: 0.00000 (0%) | 200 OK [http://dinshaw-gobhais-computer-2.local/stylesheets/main.css]
+
+
+Processing Admin::LocationsController#destroy (for 127.0.0.1 at 2009-12-06 12:27:20) [DELETE]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"815f7b539dea719b6eb2baa6c5831146a33c890a", "id"=>"52", "controller"=>"admin/locations"}
+  [4;35;1mUser Columns (0.011098)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000726)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mLocation Columns (0.001528)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mLocation Load (0.000732)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.`id` = 52) [0m
+  [4;35;1mSQL (0.000077)[0m   [0mBEGIN[0m
+  [4;36;1mLocation Update (0.000211)[0m   [0;1mUPDATE `locations` SET position = (position - 1) WHERE (parent_id = 5 AND position > 8) [0m
+  [4;35;1mLocation Update (0.000213)[0m   [0mUPDATE `locations` SET `updated_at` = '2009-12-06 12:27:20', `position` = NULL WHERE `id` = 52[0m
+  [4;36;1mLocation Load (0.000263)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 52) ORDER BY position[0m
+  [4;35;1mLocation Destroy (0.000162)[0m   [0m DELETE FROM `locations`
+ WHERE `id` = 52
+[0m
+  [4;36;1mSQL (0.001640)[0m   [0;1mCOMMIT[0m
+Redirected to http://dinshaw-gobhais-computer-2.local:3000/admin/locations
+Completed in 0.03015 (33 reqs/sec) | DB: 0.01665 (55%) | 302 Found [http://dinshaw-gobhais-computer-2.local/admin/locations/52]
+
+
+Processing Admin::LocationsController#index (for 127.0.0.1 at 2009-12-06 12:27:20) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"action"=>"index", "controller"=>"admin/locations"}
+  [4;35;1mUser Columns (0.001895)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000312)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mLocation Load (0.000473)[0m   [0mSELECT * FROM `locations` WHERE (parent_id is null) ORDER BY position[0m
+  [4;36;1mLocation Columns (0.001716)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mLocation Load (0.000825)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.`id` = 5) [0m
+  [4;36;1mLocation Load (0.000179)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.`id` = 16) [0m
+Rendering template within layouts/admin
+Rendering admin/locations/index
+  [4;35;1mLocation Load (0.000314)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 5) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000263)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 29) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000266)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 46) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000415)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 1) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000232)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 36) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000210)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 44) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000249)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 50) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000197)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 51) ORDER BY position[0m
+Rendered admin/locations/_ul_list (0.01152)
+  [4;35;1mLocation Load (0.000324)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 16) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000277)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 27) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000318)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 31) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000381)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 34) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000235)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 38) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000241)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 40) ORDER BY position[0m
+Rendered admin/locations/_ul_list (0.00959)
+Completed in 0.03883 (25 reqs/sec) | Rendering: 0.01968 (50%) | DB: 0.00932 (24%) | 200 OK [http://dinshaw-gobhais-computer-2.local/admin/locations]
+
+
+Processing StylesheetsController#admin (for 127.0.0.1 at 2009-12-06 12:27:20) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"format"=>"css", "action"=>"admin", "controller"=>"stylesheets"}
+Rendering stylesheets/admin
+Completed in 0.00274 (365 reqs/sec) | Rendering: 0.00048 (17%) | DB: 0.00000 (0%) | 200 OK [http://dinshaw-gobhais-computer-2.local/stylesheets/admin.css]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2009-12-06 12:27:21) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.00293 (340 reqs/sec) | Rendering: 0.00049 (16%) | DB: 0.00000 (0%) | 200 OK [http://dinshaw-gobhais-computer-2.local/stylesheets/main.css]
+
+
+Processing Admin::LocationsController#destroy (for 127.0.0.1 at 2009-12-06 12:27:22) [DELETE]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"815f7b539dea719b6eb2baa6c5831146a33c890a", "id"=>"51", "controller"=>"admin/locations"}
+  [4;35;1mUser Columns (0.011180)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000722)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mLocation Columns (0.001726)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mLocation Load (0.000799)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.`id` = 51) [0m
+  [4;35;1mSQL (0.000078)[0m   [0mBEGIN[0m
+  [4;36;1mLocation Update (0.000225)[0m   [0;1mUPDATE `locations` SET position = (position - 1) WHERE (parent_id = 5 AND position > 7) [0m
+  [4;35;1mLocation Update (0.000207)[0m   [0mUPDATE `locations` SET `updated_at` = '2009-12-06 12:27:23', `position` = NULL WHERE `id` = 51[0m
+  [4;36;1mLocation Load (0.000240)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 51) ORDER BY position[0m
+  [4;35;1mLocation Destroy (0.000127)[0m   [0m DELETE FROM `locations`
+ WHERE `id` = 51
+[0m
+  [4;36;1mSQL (0.001273)[0m   [0;1mCOMMIT[0m
+Redirected to http://dinshaw-gobhais-computer-2.local:3000/admin/locations
+Completed in 0.02974 (33 reqs/sec) | DB: 0.01658 (55%) | 302 Found [http://dinshaw-gobhais-computer-2.local/admin/locations/51]
+
+
+Processing Admin::LocationsController#index (for 127.0.0.1 at 2009-12-06 12:27:23) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"action"=>"index", "controller"=>"admin/locations"}
+  [4;35;1mUser Columns (0.001777)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000342)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;35;1mLocation Load (0.000476)[0m   [0mSELECT * FROM `locations` WHERE (parent_id is null) ORDER BY position[0m
+  [4;36;1mLocation Columns (0.001559)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mLocation Load (0.000876)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.`id` = 5) [0m
+  [4;36;1mLocation Load (0.000154)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.`id` = 16) [0m
+Rendering template within layouts/admin
+Rendering admin/locations/index
+  [4;35;1mLocation Load (0.000315)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 5) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000338)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 29) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000359)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 46) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000280)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 1) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000213)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 36) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000232)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 44) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000205)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 50) ORDER BY position[0m
+Rendered admin/locations/_ul_list (0.01131)
+  [4;36;1mLocation Load (0.000350)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 16) ORDER BY position[0m
+  [4;35;1mLocation Load (0.001220)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 27) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000374)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 31) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000535)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 34) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000311)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 38) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000293)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 40) ORDER BY position[0m
+Rendered admin/locations/_ul_list (0.01038)
+Completed in 0.03891 (25 reqs/sec) | Rendering: 0.01862 (47%) | DB: 0.01021 (26%) | 200 OK [http://dinshaw-gobhais-computer-2.local/admin/locations]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2009-12-06 12:27:23) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.00293 (341 reqs/sec) | Rendering: 0.00049 (16%) | DB: 0.00000 (0%) | 200 OK [http://dinshaw-gobhais-computer-2.local/stylesheets/main.css]
+
+
+Processing StylesheetsController#admin (for 127.0.0.1 at 2009-12-06 12:27:23) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"format"=>"css", "action"=>"admin", "controller"=>"stylesheets"}
+Rendering stylesheets/admin
+Completed in 0.00271 (368 reqs/sec) | Rendering: 0.00056 (20%) | DB: 0.00000 (0%) | 200 OK [http://dinshaw-gobhais-computer-2.local/stylesheets/admin.css]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-12-06 12:27:25) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"action"=>"index", "controller"=>"locations"}
+  [4;36;1mPage Columns (0.010999)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.000929)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`title` = 'Restaurants') LIMIT 1[0m
+  [4;36;1mLocation Load (0.000365)[0m   [0;1mSELECT * FROM `locations` WHERE (parent_id is null) ORDER BY position[0m
+  [4;35;1mLocation Columns (0.001445)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mLocation Load (0.000833)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.`id` = 5) [0m
+  [4;35;1mLocation Load (0.000197)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.`id` = 16) [0m
+Rendering template within layouts/main
+Rendering locations/index
+Rendered shared/_html_head_tags (0.00114)
+  [4;36;1mLocation Load (0.000490)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 5) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000368)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 29) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000240)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 46) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000339)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 1) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000236)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 36) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000320)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 44) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000332)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 50) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000234)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 16) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000212)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 27) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000295)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 31) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000246)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 34) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000228)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 38) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000200)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 40) ORDER BY position[0m
+  [4;35;1mConcept Load (0.000330)[0m   [0mSELECT * FROM `concepts` ORDER BY position[0m
+  [4;36;1mConcept Columns (0.001849)[0m   [0;1mSHOW FIELDS FROM `concepts`[0m
+Rendered public/_slideshow (0.00003)
+  [4;35;1mConcept Load (0.000335)[0m   [0mSELECT * FROM `concepts` [0m
+Completed in 0.05085 (19 reqs/sec) | Rendering: 0.01762 (34%) | DB: 0.02102 (41%) | 200 OK [http://dinshaw-gobhais-computer-2.local/locations]
+
+
+Processing StylesheetsController#layout (for 127.0.0.1 at 2009-12-06 12:27:25) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+Rendering stylesheets/layout
+Completed in 0.00363 (275 reqs/sec) | Rendering: 0.00085 (23%) | DB: 0.00000 (0%) | 200 OK [http://dinshaw-gobhais-computer-2.local/stylesheets/layout.css]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2009-12-06 12:27:25) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.00315 (317 reqs/sec) | Rendering: 0.00049 (15%) | DB: 0.00000 (0%) | 200 OK [http://dinshaw-gobhais-computer-2.local/stylesheets/main.css]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-12-06 12:27:45) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"action"=>"index", "controller"=>"locations"}
+  [4;36;1mPage Columns (0.011019)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.000905)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`title` = 'Restaurants') LIMIT 1[0m
+  [4;36;1mLocation Load (0.000356)[0m   [0;1mSELECT * FROM `locations` WHERE (parent_id is null) ORDER BY position[0m
+  [4;35;1mLocation Columns (0.001502)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mLocation Load (0.000832)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.`id` = 5) [0m
+  [4;35;1mLocation Load (0.000153)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.`id` = 16) [0m
+Rendering template within layouts/main
+Rendering locations/index
+Rendered shared/_html_head_tags (0.00105)
+  [4;36;1mLocation Load (0.000362)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 5) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000320)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 29) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000221)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 46) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000194)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 1) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000251)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 36) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000213)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 44) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000217)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 50) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000219)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 16) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000241)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 27) ORDER BY position[0m
+  [4;35;1mLocation Load (0.002636)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 31) ORDER BY position[0m
+  [4;36;1mLocation Load (0.002439)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 34) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000342)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 38) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000214)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 40) ORDER BY position[0m
+  [4;35;1mConcept Load (0.000352)[0m   [0mSELECT * FROM `concepts` ORDER BY position[0m
+  [4;36;1mConcept Columns (0.001472)[0m   [0;1mSHOW FIELDS FROM `concepts`[0m
+Rendered public/_slideshow (0.00003)
+  [4;35;1mConcept Load (0.000438)[0m   [0mSELECT * FROM `concepts` [0m
+Completed in 0.05754 (17 reqs/sec) | Rendering: 0.02003 (34%) | DB: 0.02490 (43%) | 200 OK [http://dinshaw-gobhais-computer-2.local/locations]
+
+
+Processing StylesheetsController#layout (for 127.0.0.1 at 2009-12-06 12:27:45) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+Rendering stylesheets/layout
+Completed in 0.00303 (329 reqs/sec) | Rendering: 0.00046 (15%) | DB: 0.00000 (0%) | 200 OK [http://dinshaw-gobhais-computer-2.local/stylesheets/layout.css]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2009-12-06 12:27:45) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.00324 (308 reqs/sec) | Rendering: 0.00050 (15%) | DB: 0.00000 (0%) | 200 OK [http://dinshaw-gobhais-computer-2.local/stylesheets/main.css]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-12-06 12:27:53) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"action"=>"index", "controller"=>"locations"}
+  [4;36;1mPage Columns (0.001842)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.000441)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`title` = 'Restaurants') LIMIT 1[0m
+  [4;36;1mLocation Load (0.000552)[0m   [0;1mSELECT * FROM `locations` WHERE (parent_id is null) ORDER BY position[0m
+  [4;35;1mLocation Columns (0.002480)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mLocation Load (0.000798)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.`id` = 5) [0m
+  [4;35;1mLocation Load (0.000166)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.`id` = 16) [0m
+Rendering template within layouts/main
+Rendering locations/index
+Rendered shared/_html_head_tags (0.00135)
+  [4;36;1mLocation Load (0.001125)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 5) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000465)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 29) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000299)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 46) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000202)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 1) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000198)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 36) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000195)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 44) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000212)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 50) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000209)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 16) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000218)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 27) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000233)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 31) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000196)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 34) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000191)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 38) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000203)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 40) ORDER BY position[0m
+  [4;35;1mConcept Load (0.000360)[0m   [0mSELECT * FROM `concepts` ORDER BY position[0m
+  [4;36;1mConcept Columns (0.001862)[0m   [0;1mSHOW FIELDS FROM `concepts`[0m
+Rendered public/_slideshow (0.00003)
+  [4;35;1mConcept Load (0.000565)[0m   [0mSELECT * FROM `concepts` [0m
+Completed in 0.04432 (22 reqs/sec) | Rendering: 0.01902 (42%) | DB: 0.01301 (29%) | 200 OK [http://dinshaw-gobhais-computer-2.local/locations]
+
+
+Processing StylesheetsController#layout (for 127.0.0.1 at 2009-12-06 12:27:53) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+Rendering stylesheets/layout
+Completed in 0.00301 (331 reqs/sec) | Rendering: 0.00047 (15%) | DB: 0.00000 (0%) | 200 OK [http://dinshaw-gobhais-computer-2.local/stylesheets/layout.css]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2009-12-06 12:27:53) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.09114 (10 reqs/sec) | Rendering: 0.00061 (0%) | DB: 0.00000 (0%) | 200 OK [http://dinshaw-gobhais-computer-2.local/stylesheets/main.css]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-12-06 12:28:00) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"action"=>"index", "controller"=>"locations"}
+  [4;36;1mPage Columns (0.011014)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.001033)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`title` = 'Restaurants') LIMIT 1[0m
+  [4;36;1mLocation Load (0.000439)[0m   [0;1mSELECT * FROM `locations` WHERE (parent_id is null) ORDER BY position[0m
+  [4;35;1mLocation Columns (0.001536)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mLocation Load (0.000868)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.`id` = 5) [0m
+  [4;35;1mLocation Load (0.000154)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.`id` = 16) [0m
+Rendering template within layouts/main
+Rendering locations/index
+Rendered shared/_html_head_tags (0.00121)
+  [4;36;1mLocation Load (0.000383)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 5) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000254)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 29) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000301)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 46) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000246)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 1) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000198)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 36) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000196)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 44) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000190)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 50) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000229)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 16) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000388)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 27) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000220)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 31) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000245)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 34) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000277)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 38) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000299)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 40) ORDER BY position[0m
+  [4;35;1mConcept Load (0.001437)[0m   [0mSELECT * FROM `concepts` ORDER BY position[0m
+  [4;36;1mConcept Columns (0.002879)[0m   [0;1mSHOW FIELDS FROM `concepts`[0m
+Rendered public/_slideshow (0.00003)
+  [4;35;1mConcept Load (0.000344)[0m   [0mSELECT * FROM `concepts` [0m
+Completed in 0.13889 (7 reqs/sec) | Rendering: 0.01990 (14%) | DB: 0.02313 (16%) | 200 OK [http://dinshaw-gobhais-computer-2.local/locations]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2009-12-06 12:28:00) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.00320 (312 reqs/sec) | Rendering: 0.00053 (16%) | DB: 0.00000 (0%) | 200 OK [http://dinshaw-gobhais-computer-2.local/stylesheets/main.css]
+
+
+Processing StylesheetsController#layout (for 127.0.0.1 at 2009-12-06 12:28:00) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+Rendering stylesheets/layout
+Completed in 0.00254 (393 reqs/sec) | Rendering: 0.00040 (15%) | DB: 0.00000 (0%) | 200 OK [http://dinshaw-gobhais-computer-2.local/stylesheets/layout.css]
+
+
+Processing Admin::LocationsController#destroy (for 127.0.0.1 at 2009-12-06 12:28:07) [DELETE]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"action"=>"destroy", "_method"=>"delete", "authenticity_token"=>"815f7b539dea719b6eb2baa6c5831146a33c890a", "id"=>"50", "controller"=>"admin/locations"}
+  [4;36;1mUser Columns (0.011680)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000475)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mLocation Columns (0.001754)[0m   [0;1mSHOW FIELDS FROM `locations`[0m
+  [4;35;1mLocation Load (0.000702)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.`id` = 50) [0m
+  [4;36;1mSQL (0.000100)[0m   [0;1mBEGIN[0m
+  [4;35;1mLocation Update (0.000249)[0m   [0mUPDATE `locations` SET position = (position - 1) WHERE (parent_id = 5 AND position > 6) [0m
+  [4;36;1mLocation Update (0.000251)[0m   [0;1mUPDATE `locations` SET `updated_at` = '2009-12-06 12:28:07', `position` = NULL WHERE `id` = 50[0m
+  [4;35;1mLocation Load (0.000292)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 50) ORDER BY position[0m
+  [4;36;1mLocation Destroy (0.000163)[0m   [0;1m DELETE FROM `locations`
+ WHERE `id` = 50
+[0m
+  [4;35;1mSQL (0.001470)[0m   [0mCOMMIT[0m
+Redirected to http://dinshaw-gobhais-computer-2.local:3000/admin/locations
+Completed in 0.03481 (28 reqs/sec) | DB: 0.01714 (49%) | 302 Found [http://dinshaw-gobhais-computer-2.local/admin/locations/50]
+
+
+Processing Admin::LocationsController#index (for 127.0.0.1 at 2009-12-06 12:28:07) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"action"=>"index", "controller"=>"admin/locations"}
+  [4;36;1mUser Columns (0.011080)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000292)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) LIMIT 1[0m
+  [4;36;1mLocation Load (0.000383)[0m   [0;1mSELECT * FROM `locations` WHERE (parent_id is null) ORDER BY position[0m
+  [4;35;1mLocation Columns (0.001605)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mLocation Load (0.000839)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.`id` = 5) [0m
+  [4;35;1mLocation Load (0.000168)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.`id` = 16) [0m
+Rendering template within layouts/admin
+Rendering admin/locations/index
+  [4;36;1mLocation Load (0.000298)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 5) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000311)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 29) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000224)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 46) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000223)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 1) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000279)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 36) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000278)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 44) ORDER BY position[0m
+Rendered admin/locations/_ul_list (0.01005)
+  [4;36;1mLocation Load (0.000269)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 16) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000450)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 27) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000281)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 31) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000278)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 34) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000244)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 38) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000235)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 40) ORDER BY position[0m
+Rendered admin/locations/_ul_list (0.09260)
+Completed in 0.12904 (7 reqs/sec) | Rendering: 0.10132 (78%) | DB: 0.01774 (13%) | 200 OK [http://dinshaw-gobhais-computer-2.local/admin/locations]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2009-12-06 12:28:08) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.00288 (346 reqs/sec) | Rendering: 0.00049 (16%) | DB: 0.00000 (0%) | 200 OK [http://dinshaw-gobhais-computer-2.local/stylesheets/main.css]
+
+
+Processing StylesheetsController#admin (for 127.0.0.1 at 2009-12-06 12:28:08) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"format"=>"css", "action"=>"admin", "controller"=>"stylesheets"}
+Rendering stylesheets/admin
+Completed in 0.00266 (375 reqs/sec) | Rendering: 0.00043 (16%) | DB: 0.00000 (0%) | 200 OK [http://dinshaw-gobhais-computer-2.local/stylesheets/admin.css]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2009-12-06 12:28:12) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"action"=>"index", "controller"=>"locations"}
+  [4;36;1mPage Columns (0.011149)[0m   [0;1mSHOW FIELDS FROM `pages`[0m
+  [4;35;1mPage Load (0.000927)[0m   [0mSELECT * FROM `pages` WHERE (`pages`.`title` = 'Restaurants') LIMIT 1[0m
+  [4;36;1mLocation Load (0.000354)[0m   [0;1mSELECT * FROM `locations` WHERE (parent_id is null) ORDER BY position[0m
+  [4;35;1mLocation Columns (0.001429)[0m   [0mSHOW FIELDS FROM `locations`[0m
+  [4;36;1mLocation Load (0.000681)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.`id` = 5) [0m
+  [4;35;1mLocation Load (0.000190)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.`id` = 16) [0m
+Rendering template within layouts/main
+Rendering locations/index
+Rendered shared/_html_head_tags (0.00096)
+  [4;36;1mLocation Load (0.000348)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 5) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000280)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 29) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000265)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 46) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000247)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 1) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000196)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 36) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000192)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 44) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000202)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 16) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000225)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 27) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000262)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 31) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000242)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 34) ORDER BY position[0m
+  [4;36;1mLocation Load (0.000213)[0m   [0;1mSELECT * FROM `locations` WHERE (`locations`.parent_id = 38) ORDER BY position[0m
+  [4;35;1mLocation Load (0.000485)[0m   [0mSELECT * FROM `locations` WHERE (`locations`.parent_id = 40) ORDER BY position[0m
+  [4;36;1mConcept Load (0.000927)[0m   [0;1mSELECT * FROM `concepts` ORDER BY position[0m
+  [4;35;1mConcept Columns (0.001737)[0m   [0mSHOW FIELDS FROM `concepts`[0m
+Rendered public/_slideshow (0.00003)
+  [4;36;1mConcept Load (0.000365)[0m   [0;1mSELECT * FROM `concepts` [0m
+Completed in 0.04850 (20 reqs/sec) | Rendering: 0.01652 (34%) | DB: 0.02092 (43%) | 200 OK [http://dinshaw-gobhais-computer-2.local/locations]
+
+
+Processing StylesheetsController#main (for 127.0.0.1 at 2009-12-06 12:28:12) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"format"=>"css", "action"=>"main", "controller"=>"stylesheets"}
+Rendering stylesheets/main
+Completed in 0.00318 (313 reqs/sec) | Rendering: 0.00048 (15%) | DB: 0.00000 (0%) | 200 OK [http://dinshaw-gobhais-computer-2.local/stylesheets/main.css]
+
+
+Processing StylesheetsController#layout (for 127.0.0.1 at 2009-12-06 12:28:12) [GET]
+  Session ID: BAh7CToMdXNlcl9pZGkGOg5yZXR1cm5fdG8wOgxjc3JmX2lkIiU3MWNjNmZj
+NWU0OWI3MzEwY2NmMzY2NWU4ODA3Mjc2YiIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--ecd1fc2932875e79f746407b13ec0533c6aeb726
+  Parameters: {"format"=>"css", "action"=>"layout", "controller"=>"stylesheets"}
+Rendering stylesheets/layout
+Completed in 0.00417 (240 reqs/sec) | Rendering: 0.00146 (35%) | DB: 0.00000 (0%) | 200 OK [http://dinshaw-gobhais-computer-2.local/stylesheets/layout.css]
